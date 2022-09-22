@@ -1,0 +1,1 @@
+cmake ../.. -DCMAKE_TOOLCHAIN_FILE=../../../Monster_RPG_3/tools/batch_files/cmake/ios/iOS.cmake -DUSER_INCLUDE_PATH="/Users/trent/code/libs/ios/include;/Users/trent/code/libs/ios/include/SDL2;/Users/trent/code/tgui3/include;/Users/trent/code/SDL2_ttf-2.0.14/external/freetype-2.4.12/include" -DUSER_LIBRARY_PATH=/Users/trent/code/libs/ios/lib -G Xcode

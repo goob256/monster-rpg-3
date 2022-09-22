@@ -1,0 +1,44 @@
+#ifndef ACHIEVEMENTS_H
+#define ACHIEVEMENTS_H
+
+const int CHESTS_FOR_ACHIEVEMENT = 50;
+
+#if defined STEAMWORKS
+#define ACHIEVE_SAVE "m3_1"
+#define ACHIEVE_LUCKY "m3_2"
+#define ACHIEVE_VAMPIRE "m3_3"
+#define ACHIEVE_LUNKER "m3_4"
+#define ACHIEVE_RESURRECTED "m3_5"
+#define ACHIEVE_CACTUS "m3_6"
+#define ACHIEVE_FOUND_ITEMS "m3_7"
+#define ACHIEVE_MERCY "m3_8"
+#define ACHIEVE_HARDCORE "m3_9"
+#define ACHIEVE_CREDITS "m3_10"
+#elif !defined IOS && !defined MAS
+enum Achievement {
+	ACHIEVE_SAVE = 0,
+	ACHIEVE_LUCKY,
+	ACHIEVE_VAMPIRE,
+	ACHIEVE_LUNKER,
+	ACHIEVE_RESURRECTED,
+	ACHIEVE_CACTUS,
+	ACHIEVE_FOUND_ITEMS,
+	ACHIEVE_MERCY,
+	ACHIEVE_HARDCORE,
+	ACHIEVE_CREDITS,
+	ACHIEVE_SIZE
+};
+#else
+#define ACHIEVE_SAVE "grp.m3.1"
+#define ACHIEVE_LUCKY "grp.m3.2"
+#define ACHIEVE_VAMPIRE "grp.m3.3"
+#define ACHIEVE_LUNKER "grp.m3.4"
+#define ACHIEVE_RESURRECTED "grp.m3.5"
+#define ACHIEVE_CACTUS "grp.m3.6"
+#define ACHIEVE_FOUND_ITEMS "grp.m3.7"
+#define ACHIEVE_MERCY "grp.m3.8"
+#define ACHIEVE_HARDCORE "grp.m3.9"
+#define ACHIEVE_CREDITS "grp.m3.10"
+#endif
+
+#endif // ACHIEVEMENTS_H

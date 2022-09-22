@@ -1,0 +1,805 @@
+0:Eny
+1:Tiggy
+2:Sanación
+3:Cura
+4:Sanación+
+5:Fuego
+6:Rayo
+7:Hielo
+8:vRayo
+9:vHielo
+10:vFuego
+11:Sanación Omega
+12:Desconocido…
+13:Poción
+14:Un frasco pequeño.$Recupera 100 PS.
+16:Un tónico especial.$Cura las alteraciones de estado.
+17:Agua bendita
+18:Agua que ha sido bendecida.$Revive a un miembro caído del equipo.
+19:Elixir
+20:Una mezcla potente.$Recupera PM.
+21:Pergamino de Fuego
+22:Un pergamino mágico polvoriento.
+23:Pergamino de Rayo
+25:Pergamino de Sanación
+27:Pergamino de Cura
+29:Manzana
+30:Fruta fresca.$Recupera todos los PS.
+31:Cebo
+32:Un gusano grande.
+33:Poción+
+34:Un frasco lleno de líquido.$Recupera 250 PS.
+35:Pergamino de Sanación+
+37:Pez
+38:Un atún pequeño.$Recupera todos los PS y PM.
+39:Pergamino de Hielo
+41:Hacha
+42:Un hacha roma.$Se puede usar para cortar madera.
+43:Espada corta
+44:Una espada pequeña.$Podría pertenecer a un niño.
+45:Espada espectral
+46:Una espada verde.$Pertenecía a un espectro.
+47:Pincho
+48:Una cuchara afilada.
+49:Tomahawk
+50:Un hacha afilada.$¡Es todo un hallazgo!
+51:Lanza
+52:Una lanza con púas para pescar.
+53:Espada larga
+54:Una espada larga.$Pertenecía a un caballero.
+55:Hoz de hielo
+56:Tan gélida como afilada.$Nunca se derrite.
+57:Casco
+58:Un casco con forma de bol. Pensado para cabezas grandes.
+59:Cota de malla
+60:Cota de malla.$Nunca se ha usado.
+61:Cota oxidada
+62:Cota de malla oxidada.$Está bastante bien.
+63:Coraza
+64:Una coraza resistente.$Tiene la insignia de un caballero.
+65:Anillo
+66:Un anillo de plata.$Está grabado con unas iniciales.
+69:Colgante de vampiro
+70:Un medallón con joyas.$Tiene forma de murciélago.
+73:Segunda oportunidad
+74:Despierta a los muertos.$¡Es toda una rareza!
+75:Runa
+76:NNONEEN
+77:Espada de ónice
+78:Una espada oscura y afilada.$Está hecha de roca de montaña.
+79:Armadura de ónice
+80:Armadura negra y resistente.$Es casi impenetrable.
+81:Espada de jade
+82:Un arma verde y brilante.$Una auténtica gema.
+83:Tipo
+84:Soldado
+85:Coro
+86:Moryt
+87:Capitán
+88:Mujer
+89:Niña
+90:Alcalde
+91:Palla
+92:Marinero
+93:Druida
+94:INTRO
+95:ESCAPE
+96:RETROCESO
+97:TAB
+98:BARRA ESPACIADORA
+99:BLOQ MAYÚS
+100:F1
+101:F2
+102:F3
+103:F4
+104:F5
+105:F6
+106:F7
+107:F8
+108:F9
+109:F10
+110:F11
+111:F12
+112:IMP PANT
+113:BLOQ DESPL
+114:PAUSA
+115:INSERT
+116:INICIO
+117:RE PÁG
+118:SUPR
+119:FIN
+120:AV PÁG
+121:DERECHA
+122:IZQUIERDA
+123:ABAJO
+124:ARRIBA
+125:BLOQ NÚM
+126:TECLADO /
+127:TECLADO *
+128:TECLADO -
+129:TECLADO +
+130:TECLADO INTRO
+131:TECLADO 1
+132:TECLADO 2
+133:TECLADO 3
+134:TECLADO 4
+135:TECLADO 5
+136:TECLADO 6
+137:TECLADO 7
+138:TECLADO 8
+139:TECLADO 9
+140:TECLADO 0
+141:TECLADO .
+142:APLICACIÓN
+143:POWER
+144:TECLADO =
+145:F13
+146:F14
+147:F15
+148:F16
+149:F17
+150:F18
+151:F19
+152:F20
+153:F21
+154:F22
+155:F23
+156:F24
+157:EJECUTAR
+158:AYUDA
+159:MENÚ
+160:SELECCIONAR
+161:STOP
+162:REPETIR
+163:DESHACER
+164:CORTAR
+165:COPIAR
+166:PEGAR
+167:BUSCAR
+168:SILENCIAR
+169:SUBIR VOLUMEN
+170:BAJAR VOLUMEN
+171:TECLADO ,
+172:TECLADO = (AS400)
+173:ALTERASE
+174:SYSREQ
+175:CANCELAR
+176:BORRAR
+177:ANTERIOR
+178:INTRO
+179:SEPARADOR
+180:OUT
+181:OPER
+182:BORRAR/REPETIR
+183:CRSEL
+184:EXSEL
+185:TECLADO 00
+186:TECLADO 000
+187:SEPARADOR DE MILES
+188:SEPARADOR DE DECIMALES
+189:UNIDAD DE MONEDA
+190:SUBUNIDAD DE MONEDA
+191:TECLADO (
+192:TECLADO )
+193:TECLADO {
+194:TECLADO }
+195:TECLADO TAB
+196:TECLADO RETROCESO
+197:TECLADO A
+198:TECLADO B
+199:TECLADO C
+200:TECLADO D
+201:TECLADO E
+202:TECLADO F
+203:TECLADO XOR
+204:TECLADO ^
+205:TECLADO %
+206:TECLADO <
+207:TECLADO >
+208:TECLADO &
+209:TECLADO &&
+210:TECLADO |
+211:TECLADO ||
+212:TECLADO :
+213:TECLADO #
+214:TECLADO BARRA ESPACIADORA
+215:TECLADO @
+216:TECLADO !
+217:TECLADO MEMSTORE
+218:TECLADO MEMRECALL
+219:TECLADO MEMCLEAR
+220:TECLADO MEMADD
+221:TECLADO MEMSUBTRACT
+222:TECLADO MEMMULTIPLY
+223:TECLADO MEMDIVIDE
+224:TECLADO +/-
+225:TECLADO BORRAR
+226:TECLADO BORRAR ENTRADA
+227:TECLADO BINARIO
+228:TECLADO OCTAL
+229:TECLADO DECIMAL
+230:TECLADO HEXADECIMAL
+231:CTRL IZQ
+232:MAYÚS IZQ
+233:ALT IZQ
+234:GUI IZQ
+235:CTRL DER
+236:MAYÚS DER
+237:ALT DER
+238:GUI DER
+239:CAMBIAR MODO
+240:SIGUIENTE AUDIO
+241:ANTERIOR AUDIO
+242:DETENER AUDIO
+243:REPRODUCIR AUDIO
+244:SILENCIAR AUDIO
+245:SELECCIÓN DE MEDIOS
+246:WWW
+247:CORREO
+248:CALCULADORA
+249:ORDENADOR
+250:AC BUSCAR
+251:AC INICIO
+252:AC ATRÁS
+253:AC ADELANTE
+254:AC STOP
+255:AC ACTUALIZAR
+256:AC MARCADORES
+257:BAJAR BRILLO
+258:SUBIR BRILLO
+259:CAMBIO DE PANTALLA
+260:KBDILLUMTOGGLE
+261:KBDILLUMDOWN
+262:KBDILLUMUP
+263:EJECT
+264:DORMIR
+265:APP1
+266:APP2
+267:REBOBINAR AUDIO
+268:AVANCE RÁPIDO DE AUDIO
+269:A
+270:B
+271:X
+272:Y
+273:LB
+274:RB
+275:Pergamino de Sanación Omega
+277:Poción Omega
+278:Una jarra con un líquido brillante.$Recupera 999 PS.
+279:Hombre Poderoso
+280:Fruto de cactus
+281:Inglés
+282:Francés
+283:Armadura de jade
+284:Armadura rara.$Ligera y resistente.
+285:Espada de llamas
+286:Una espada de fuego.$Arde sin cesar.
+287:¡Qué rico! O no...
+1000:¡ATAQUE SIGILOSO!
+1001:¡Has obtenido %d de oro!
+1002:¡Has obtenido %d de experiencia!
+1003:¡Inventario lleno!
+1004:¡Has obtenido: %s x%d!
+1005:¡Has obtenido: %s!
+1006:¡%s ha subido %d niveles!
+1007:¡%s ha subido de nivel!
+1008:¡Veneno!
+1013:¿Conservar tus progresos hasta que vuelvas?
+1014:¿Salir a la pantalla de título?
+1015:¡Te ha matado el veneno!
+1018:¡Estaban por aquí! ¡Sígueme!
+1019:Usa la cruceta para moverte.
+1020:Pulsa A para interactuar con cosas.
+1021:Toca el lugar al que quieras ir.
+1022:Toca cosas que tengas cerca para interactuar con ellas.
+1023:Usa las TECLAS DE DIRECCIÓN para moverte.
+1024:Pulsa
+1025:para interactuar con cosas.
+1029:Pulsa A para continuar...
+1030:Toca para continuar...
+1032:para continuar...
+1036:(grita) ¡¡¡Por aquí, Eny!!!
+1038:¡Ja! ¡Te lo dije! ¡Fíjate!
+1040:¡Aaah! ¡T-Tiggy! ¡Ven aquí!
+1042:¡Santo cielo! ¿Cómo haremos para llevarnos esto a casa?
+1044:¿Has visto eso?
+1046:¿Ver el qué?
+1048:¡Tiggy, cuidado!
+1050:Ya recojo yo estos. ¡Tú ve a por más!
+1052:¡Ve a por helechos!
+1054:¿¿¿Qué está pasando???
+1056:¿Qué era esa cosa?
+1057:¡Llevaba eones sin ver a un monstruo!
+1059:¡Espero que no haya más!
+1060:Volvamos a la aldea.
+1061:Pulsa B para acceder al menú.
+1062:Toca en la esquina superior izquierda para acceder al menú.
+1064:para acceder al menú.
+1067:Esto es una zona de guardado.
+1068:Aquí podrás guardar tus progresos.
+1070:¡Alto! ¡¿Quién va?!
+1072:Somos nosotros, Eny y Tiggy.
+1074:Ah, vale... Es que últimamente han aparecido muchos monstruos y no podemos bajar la guardia.
+1076:Sí, bueno, puede que sea por nuestra culpa...
+1078:Tendría que habérmelo imaginado...
+1079:En fin, el alcalde quiere veros. ¡Descansad un rato en la posada y, luego, id derechos al palacio!
+1081:No podréis salir de la ciudad sin pasar antes por el palacio. ¡Son órdenes del alcalde!
+1083:"A la costa"...
+1085:"A la mansión encantada"...
+1086:Posadero
+1087:¡Eny! ¡Tiggy! ¿Queréis descansar en la posada?
+1088:¡Volved cuando queráis!
+1089:¡Que durmáis bien!
+1090:Tendero
+1091:Me dedico al comercio con objetos. ¿Qué necesitas?
+1093:Me dedico a vender armas. ¿Qué estás buscando?
+1094:Spike
+1095:Soy Spike. ¿Necesitas una armadura?
+1096:Anciano
+1097:Mis chicos estaban trabajando en el bosque cuando aparecieron los monstruos.
+1098:¡Encuéntralos, por favor!
+1100:¿Has encontrado a uno de mis chicos en el bosque? ¡Ese es su anillo!
+1101:¡Encuentra a mi otro hijo, por favor!
+1103:Cuánto pesar. Vuestro rostro fue lo último que vieron mis chicos antes de morir.
+1104:Sé usar la magia, ¿sabes?
+1105:Pretendía enseñársela a mis chicos, pero... puedo enseñártela a ti.
+1106:Te propongo un trato: un hechizo por cada anillo.
+1109:Voy a echar mucho de menos a mis chicos...
+1111:Vendedor pergaminos
+1115:¿Queréis un Pergamino de Sanación+? ¡Os lo vendo por 250 de oro!
+1120:¿Queréis un Pergamino de Cura? ¡Os lo vendo por 100 de oro!
+1121:Prisionero
+1122:Puedo salir de aquí cuando quiera...
+1124:¿Queréis conocer a mi rata mascota? ¡Ja, ja, ja!
+1126:¿Quería vernos, señor?
+1128:Aaanda, Eny y Tiggy.^Perdonad, hay un asunto importante que debo resolver antes de nada...^¿¿¿Por qué estáis descalzos???
+1130:Estábamos recogiendo helechos, señor.
+1132:Aaaah. Eso lo explica todo...
+1134:Bueno, como ya sabéis, hay una plaga de monstruos.^Mis guardias son solo para lucir... Sí, pueden con monstruos de nivel 1, pero más allá de eso no valen para nada.^Vosotros sois los únicos héroes de la ciudad con algo de experiencia real, así que tengo una misión para vosotros.
+1136:Ya no aceptamos "misiones", señor.
+1138:¿Acaso preferís aceptar un par de "prisiones"?
+1140:¿Cuál decía que era esa misión, señor?
+1142:Ya decía yo...^Bueno, todos conocemos esa mansión encantada que está al otro lado del río, al sureste, ¿verdad?^Tengo razones para creer que ese es el origen de la plaga.^Preparaos, partid raudos hacia allí y poned fin a esta locura.
+1144:Pero ¿no estaba... encantada?
+1146:Dicen que en la prisión también hay algún que otro fantasma...
+1148:Muy bien, señor. Partiremos raudos...
+1150:Excelente.^Pasaos por el sótano, a ver si el comerciante de pergaminos tiene algo que os pueda ser útil.
+1151:Ah, y llevaos mucha agua bendita y muchos elixires. Es un viaje peligroso.
+1153:¡Habéis vuelto! ¿Habéis puesto fin a la amenaza?
+1155:¡Aquí la única amenaza eres tú!
+1157:Nos hemos encontrado a tu hermano. ¡Nos contó lo del colgante que usas para absorber su poder!
+1159:Bueno..., a ver..., yo tampoco lo definiría como absorber... *Glups*
+1160:¡Es más bien un préstamo!
+1162:¡Alimaña! ¿Cómo le has podido hacer algo así a tu hermano?
+1164:¡Buaaa! ¿Por qué a mí? ¡Yo tan solo quería ser alcalde! ¿Acaso es tanto pedir? ¡No me han dejado hacer nada en toda mi vida!
+1166:¡Basta! ¡Que tú no eres la víctima en esta historia!
+1167:¡Y, además, nada de todo esto cambia el hecho de que vuelva a haber monstruos vagando libremente por ahí!
+1169:¡Aaay, pobre de mí! ¿Qué es lo que queréis?
+1171:Necesitaremos un barco...
+1173:Vaaale... ¡Decidle al capitán que su barco está a vuestra disposición!
+1174:¡Llevaos lo que necesitéis!
+1176:¡Entendido!
+1178:¡Tened cuidado con eso!
+1179:¡Quien lo usa absorbe el poder de la persona que esté portando el otro!
+1181:Sí, a eso ya habíamos llegado.
+1182:¡Has aprendido vRayo!
+1183:(¡Usa Vampiros en combate para infligir mucho daño!)
+1185:Pero ¿de dónde has sacado eso?
+1187:De una cueva. *Snif*
+1188:En las montañas del Reino Oriental...
+1190:Puede que vayamos a echar un vistazo, ya que estamos...
+1192:¡Vaya, vaya! ¡Como nuevo!
+1194:Echemos un vistazo.
+1196:¡Eh, tú! ¿Quién eres?
+1198:¿Yo? Vivo aquí.
+1200:Entonces..., ¡eres quien está generando a esos monstruos!
+1202:¿Quién os envía?
+1204:El alcalde.
+1205:¡Hemos venido a detener la plaga de monstruos!
+1207:Anda, así que sois amigos del alcalde...
+1208:¡Pues todo amigo del alcalde es enemigo mío!
+1209:¡Preparaos para morir!
+1211:Arg... ¿Por qué atormentáis mi alma?
+1213:¡¿Atormentarte?! ¡¿A ti?! ¡Pero si eres tú quien nos pone a todos en peligro con esos monstruos!
+1215:Uy, no, me temo que te equivocas...
+1216:A estos monstruos los genera un pesar mucho más profundo que el mío.
+1217:Toma.
+1219:¿Qué es esto?
+1221:El alcalde... es mi hermano.
+1222:Encontramos estos colgantes de vampiro cuando éramos pequeños.
+1223:El que los usa obtiene un gran poder...
+1224:Aunque a costa de otra persona...
+1225:Mi hermano obtuvo un gran poder a mi costa...
+1226:Yo me negué a usar mi colgante.
+1228:¡Menuda sabandija!
+1229:¡Y nos mandó aquí, a matarte!
+1231:¡Lo sentimos muchísimo, señor!
+1232:¡Eny, vayamos a hacerle una visita al alcalde!
+1234:¡Eso!
+1236:Tras todo lo que he sufrido, he llegado a desarrollar... unos sentidos muy agudos... Percibo un gran pesar... en el Reino Oriental.
+1237:¡Es...! ¡Es de ahí de donde provienen los monstruos!
+1238:Pero ahora...
+1239:Me temo que no... no puedo levantarme...
+1241:No te preocupes, ¡le quitaremos el otro colgante al alcalde!
+1243:Gracias. Daos prisa. Me siento... muy... débil...
+1245:¡Capitán! ¡Tenemos que hablar!
+1247:¿De qué se trata, jovencita?
+1249:El alcalde dijo que podíamos usar tu barco.
+1251:¿Y para qué necesitáis mi barco?
+1253:Tenemos que ir al Reino Oriental.^Creemos que los monstruos provienen de allí.
+1255:Vale, ¡pero el mar es muy peligroso!^¡Más os vale prepararos bien para el combate!
+1257:Nos las apañaremos...
+1258:¡Rumbo al este!
+1259:Puede que más tarde...
+1261:¡Estoy a tu servicio, señorita!
+1262:¿Dormir aquí?
+1264:¿Buscas alguna mejora?
+1266:¿Necesitas suministros?
+1268:Se rumorea que hay bestias feroces por esta zona. ¡Preparaos!
+1270:¡Dad la vuelta!
+1271:Tanto da...
+1276:¿Echar el anzuelo?
+1277:¡Seguir adelante!
+1278:Echar el ancla.
+1279:Regresar...
+1280:¿Órdenes del capitán?
+1282:¡El mar es demasiado profundo como para echar el ancla aquí!
+1284:¡Hemos llegado, señorita!
+1285:El reino está al norte de aquí, al otro lado del... mmmm... desierto.
+1286:¡Rumbo al oeste!
+1294:¿Deseas comprar un Pergamino de Hielo! ¡Son solo 1000 de oro!
+1296:Si vais a ir al norte, necesitaréis protección...
+1298:¡Las armaduras occidentales no sirven de nada aquí!
+1300:¿Uh? ¿¿¿Cómo hemos acabado aquí de nuevo???
+1301:¡Has aprendido vHielo!
+1303:¡Si queréis volver al mar, dirigíos al sur!
+1305:¡Buen trabajo atravesando el desierto!^¡Tomad esto!
+1307:¿¿¿Qué son esas cosas???
+1309:¡Más monstruos!
+1311:¡Larguémonos de aquí!
+1313:¡Me preocupan los habitantes de Ribera!
+1315:¡Vamos!
+1317:¡Es innegable que hay monstruos aquí!
+1319:¡Este podría ser el origen de la plaga!
+1321:Sigamos buscando...
+1323:¡Creo que vamos por el buen camino!
+1325:¡Sigamos buscando!
+1326:Volumen efectos:
+1327:Volumen música:
+1328:Ajustes de sonido
+1329:¡FALLO!
+1330:¡GOLPE DE SUERTE!
+1331:¿Repetir el jefe?
+1332:Selecciona un objetivo...
+1333:Selecciona un objeto...
+1334:Selecciona un hechizo...
+1335:Selecciona un vampiro...
+1336:Selecciona una acción...
+1337:PM
+1338:PS
+1340:Defendiendo...
+1341:No se puede huir...
+1342:¡Vamos!
+1346:¡Has perdido %d de oro!
+1347:Atacar
+1348:Objeto
+1349:Hechizo
+1350:Vampiro
+1351:Defender
+1352:Huir
+1353:Inventario vacío...
+1354:¡Ha vuelto de entre los muertos!
+1355:¡Has muerto en combate!
+1356:Monstruo
+1357:¿Habéis venido a quitarme la runa?
+1359:¿Qué runa? ¿A qué te refieres?
+1361:¡Nunca os llevaréis mi runa!
+1363:¿He dicho %d besos? ¡Quería decir oro!
+1366:¡Tú te lo pierdes!
+1368:¡Levad el ancla, muchachos! ¡Zarpamos!
+1370:¡Media vuelta, muchachos! ¡Volvemos!
+1372:¡Cuando digas!
+1373:¿Aplicar cambios?
+1374:Pulsa una tecla...
+1375:Pulsa un botón...
+1376:Controles con teclado
+1377:Controles con mando
+1378:Acción
+1379:Atrás/Menú
+1380:Examinar
+1381:Ajustes
+1382:Personaje siguiente
+1383:Pantalla completa
+1384:Izquierda
+1385:Derecha
+1386:Arriba
+1387:Abajo
+1393:¡Se han encontrado duplicados! ¿Deseas descartarlo?
+1394:Helecho
+1395:Pringue
+1396:Champiñón
+1397:Minipringue
+1398:Hinchado
+1399:Escupitajo
+1400:Treant
+1401:Bellota
+1402:Fango
+1403:Mugre
+1404:Aberración
+1405:Aterrador
+1406:Hombre lobo
+1407:Ñaco
+1408:Caballeroso
+1410:Lanzamiento
+1412:Murciélagos
+1413:Tentáculo
+1414:Ola
+1415:Marea
+1416:Impactador
+1420:Remolino
+1421:Chillido
+1422:Gusano
+1423:Oculto
+1424:Destello
+1427:Ciclón
+1428:¡Ceguera!
+1429:Huesos
+1431:Pues parece que no pican...
+1432:No tienes cebo.
+1433:K.O.
+1434:OK
+1435:Veneno
+1437:¡Partida guardada!
+1438:¡Se ha producido un error!
+1439:¡CURA!
+1440:¡PM!
+1441:¡SALUD!
+1442:Continuar
+1443:Empezar
+1444:Cargar
+1445:Salir
+1457:¿Guardar la partida?
+1458:PROGRESO
+1459:ESTAD.
+1460:OBJETOS
+1461:MAGIAS
+1462:ARMAS
+1463:ARMADURA
+1464:VAMPIROS
+1465:DESCARTAR
+1467:para ver información en el inventario.
+1468:Mantén pulsado para ver información en el inventario.
+1471:Reanudar partida
+1472:Guardar partida
+1473:Salir al título
+1476:Nivel
+1477:EXP
+1478:Próximo
+1479:ATQ
+1480:DEF
+1481:SUE
+1482:Oro
+1485:Sin objetos
+1488:¡PM insuficientes!
+1489:Todo
+1490:Elegir objetivo:
+1491:Sin hechizos
+1492:Arma
+1494:Sin armas
+1495:Armadura
+1496:Defensa
+1497:Sin armadura
+1498:Coste (PS)
+1499:Coste (PM)
+1500:¿Cuánto quieres descartar?
+1502:Modo seguro TV
+1503:Usar mando en pantalla
+1504:Vibración activada
+1505:Ocultar botón de ajustes
+1506:Otros ajustes
+1507:¿Borrar esta partida?
+1508:Elige una ranura de guardado:
+1509:¿Sobrescribir esta partida?
+1510:¿Cargar esta partida?
+1514:Todo el que lea un pergamino aprenderá su hechizo.
+1515:Los pergaminos desaparecen tras ser leídos una vez.
+1516:Vale, como quieras.
+1517:Ajustes
+1518:Ajustes de idioma
+1519:Ajustes de vídeo
+1524:Licencias de terceros
+1526:¿Comprar %d por %d de oro?
+1527:¿Vender %d por %d de oro?
+1532:Armadura
+1535:COMPRANDO
+1536:VENDIENDO
+1541:¿Cuánto quieres comprar?
+1542:¿Cuánto quieres vender?
+1544:Modos en ventana:
+1545:Modos en pantalla completa:
+1546:- Vacío -
+1547:*** DAÑADA ***
+1553:Pronto tendré más mercancía. No dudes en volver a echar un vistazo.
+1554:Ya no me queda nada por enseñarte...
+1556:"¡PELIGRO!"...
+1558:¡Alto ahí! ¡No tienes el permiso de la reina!
+1560:¿Acaso no te he dado ya suficiente?
+1562:Lo cierto es que podría sacarme una pasta con este pergamino...^¡Pero el mundo te necesita! ¡Toma, yo invito!
+1565:¡Necesitarás algo mejor que esa armadura oxidada con la que has venido!
+1567:Fabricamos las mejores armas del multiverso.
+1569:Tan solo vendemos objetos de la mejor calidad.
+1570:Reina
+1571:¡Una visita! ¡Rara vez tenemos visitas!^¿Con qué motivo habéis atravesado ese peligroso desierto para venir a mi castillo?^Es más..., ¿por qué vais descalzos?
+1573:Todo empezó recogiendo helechos...^Y, ahora, venimos a acabar con los monstruos. ¿Sabes por qué están apareciendo?
+1575:Anda... Ojalá lo supiese. Mis Hombres Poderosos llevan varios días enfrentándose a ellos.
+1577:Un amigo nos dijo que los generaba un gran pesar...
+1579:Había un niño que solía vagar por el castillo.^Era el crío más triste que jamás se hubiese visto. Solía robar pan, pero daba tanta pena que ni podíamos castigarlo.^La última vez que lo vieron, estaba adentrándose en las montañas del norte.
+1581:¿Qué sabes sobre ese niño?
+1583:No demasiado. Apareció hace unos meses y daba mucha pena... Nadie lo había visto antes.
+1585:Gracias por la ayuda. Iremos al norte e intentaremos seguirle el rastro.
+1587:Buena suerte. Si queréis, podéis descansar en el castillo antes de partir.^Puede que los mercaderes del castillo tengan equipo que ofreceros. ¡Lo vais a necesitar!
+1589:¡Hemos conseguido llegar hasta aquí!
+1591:¡Buena suerte en las montañas!
+1593:Se va a cerrar este menú.
+1594:¿Instalar .desktop?
+1595:¿Instalar el archivo .desktop en ~/.local/share/applications?^Al hacerlo, obtendrás un icono precioso.
+1596:Me he pasado toda la vida en alta mar... y he obtenido un montón de tesoros maravillosos..., pero, pese a todo, me siento muy solo...
+1597:A la hora de luchar, la perfección se alcanza practicando mucho.^Si eres débil, ¡ponte a practicar!
+1598:El misterio del desierto es un secreto de los druidas. Je, je, je.
+1599:Es cierto... ¡El hombre que vive al otro lado de la ciudad prende fuegos con la mente!
+1600:Dale esto... a mi hermano...
+1601:Mi hermano... Dale esto, por favor...
+1602:¡¿Quééé?! ¡¿Por qué yo?!
+1603:¡Explora la mansión encantada de arriba abajo! ¡Sé que los monstruos provienen de allí!
+1604:Los monstruos provienen de la mansión encantada al sureste. ¡Id allí!
+1605:Tuve que salir a que me diese un poco el aire...
+1606:¡Estáis más locos que la reina!^Ay... ¡No le digáis que he dicho eso!
+1607:Mmm.... ¿Dónde está mi amigo poderoso?
+1608:¡Bienvenidos al Castillo del Cruce!^¡Por aquí! ¡Por aquí!
+1609:No solemos tener mucha visitas.
+1610:Llevamos varios días en alerta.
+1611:Mi padre era un Hombre Poderoso. ¡Y su padre también fue un Hombre Poderoso!
+1612:Encontraréis a la reina subiendo por estas escaleras.
+1613:¡La sala del trono está por aquí!
+1614:*ronquido* Poderoso...$*ronquido* ¡Ese soy yo!
+1615:¿Vais a ir a las montañas? ¡Qué valientes!
+1616:¿Vais a ir a las montañas? ¡Qué valientes!^Sobre todo, si no sabéis Sanación Omega...
+1617:*ronquido*$*balbuceo* Hechicero...$... demonios *ronquido*
+1618:Siento como... si me escurriese...
+1619:¡Así es la vida de marinero!
+1620:¡Hay unos peces enormes en las profundidades!
+1621:¿Quieres que te cuente una locura?^¡No sé nadar!
+1622:¡Estoy a punto de subir de nivel!
+1623:Descansad y, luego, id directamente al palacio. El alcalde quiere veros.
+1624:Se puede GUARDAR PARTIDA en la posada.
+1625:¡No te metas en problemas!
+1626:¡Esta plaga de monstruos me ha estropeado las vacaciones!
+1627:¡Seguid adelante!
+1628:Civil, está en marcha la operación "Halcón Nocturno"... No te entrometas.
+1629:Mi compañero de guardia se toma el trabajo muy en serio...
+1630:Seguid, venga...
+1631:¡El pez gordo está en una misión! ¡Pfff!
+1632:El alcalde quiere veros.
+1633:Ay, lo que pica esta armadura...
+1634:Sigue recto.
+1635:Pobre alcalde...
+1636:La alcaldía es la vida...
+1637:¿Voy a cobrar igual?
+1638:Este trabajo está bien pagado. ¡Eso sí que es un buen incentivo para proteger al alcalde con mi vida!
+1639:El alcalde dice que debemos meter a esos delincuentes entre rejas de por vida.^Yo no lo veo tan claro... Todos hemos robado algo alguna vez, ¿no?
+1640:He tenido que castigar a mi hija... ¡No deja de atormentar al pobre anciano de la otra punta de la ciudad!
+1641:Ceguera
+1642:© 2021 Nooskewl
+1643:Partidas
+1644:Autoguardado
+1645:Gayan
+1646:Ira
+1647:Rocoso
+1648:Sombra
+1649:Segador
+1650:Oscuridad total
+1651:Llanto
+1652:Maldición
+1653:Bola de fuego
+1654:Golpe
+1655:Oscuridad
+1656:Esos tipos son duros. ¡Debemos de estar cerca!
+1657:¡Eh, tú! ¿Eres tú el responsable de que aparezcan todos estos monstruos?
+1658:¡Buaaa! ¡Dejadme en paz con mi pesar!^¡No necesito a nadie que intente animarme!
+1659:Escúchanos, anda. Estás muy muy triste y creemos que eso provoca la aparición de monstruos. ¡Tienes que parar!
+1660:¡Buaaa! ¡Siempre estaré triste! ¡Es lo que me merezco, después de lo que he hecho!
+1661:No tengo ninguna duda de que estás muy arrepentido de lo que has hecho y has aprendido la lección... ¡No tienes por qué seguir así!
+1662:¡Buaaa! ¡Ya, claro! ¡Detenedme si podéis!
+1663:¡Gayan está cambiando de forma!
+1664:Tiggy..., ¡ya sabes lo que tenemos que hacer!
+1665:*asiente*
+1666:Han... muerto por mí.^Sabían que era una persona horrible, ¡pero han muerto por mí!
+1667:*llorando*
+1668:...
+1669:¿Qué ha pasado?
+1670:¡No has muerto! ¡Increíble!
+1671:¿Te encuentras mejor?
+1672:Creía que nunca nadie me perdonaría eso tan horrible que he hecho...
+1673:Pero ¿qué has hecho?
+1674:Era el cumpleaños de mi hermano... y le preparé una tarta... con glaseado de helecho gigante..., pero era venenoso...
+1675:Lo lamento, pero tienes que pasar página y aprender a perdonarte. ¡Si no lo haces, seguirás causando problemas!
+1676:*ríe* He estado causando muchos problemas.^Gracias a ambos. ¡Ya me encuentro mejor!
+1677:¡Venga, hagamos algo divertido para que te olvides de todos los problemas!
+1678:Oye, ¿podemos ir a por unos zapatos antes de nada? ¡Que me duelen los pies!
+1679:Pero ¿por qué no tienes zapatos?
+1680:Eny, Tiggy
+1681:Eny, Tiggy, Gayan
+1682:*risas*
+1683:Eny
+1684:¡Vamos por el buen camino! ¡Lo sé!
+1685:^GFX, sonido
+1686:^Historia y código
+1687:Trent Gamblin
+1688:^Control de calidad
+1689:Eric Johnson
+1690:Kristian Johnson
+1691:^Paleta original
+1692:ENDESGA
+1693:^Fuentes
+1694:Craig Kroeger
+1695:^Música de los combates
+1696:Jacob Dawid
+1697:^Música adicional
+1698:Rupert Cole
+1699:^Agradecimientos
+1700:Darryl Becker
+1701:Tanya Gamblin-Becker
+1702:¿Estás viendo lo mismo que yo?
+1703:Esos agujeros de la pared... ¡son iguales a los colgantes de vampiro!
+1704:¡Puede que el alcalde y Palla los encontrasen aquí!
+1705:¡Has aprendido vFuego!
+1706:vFuego, también llamado Vampiro doble, es la habilidad vampírica más poderosa de todas. Nadie que lo haya usado ha vivido para contarlo, ¡ya que absorbe el 100% de la salud y de la magia del portador de los colgantes!
+1707:¡Mola!
+1708:Pero ¿qué dices? ¡Nos va a matar a ambos!
+1709:Elige un guardado automático:
+1710:Se ha producido un error al iniciar sesión. Inténtalo de nuevo más tarde.
+1711:Logros
+1712:Se sobrescribirán %d ranuras locales y %d ranuras de la nube. ¿Quieres continuar?
+1713:¡Se ha producido un error!
+1714:¡No se han podido mostrar las licencias!
+1715:¡No te has conectado a tu cuenta de Amazon!
+1716:Sincronizar guardados en la nube
+1717:¿Quieres sincronizar con la nube?
+1718:¿Borrar todas las partidas guardadas en la nube?
+1719:¡Listo!
+1720:¡No hay nada que hacer!
+1721:Espera...
+1722:Inicia sesión en iCloud para usar esta característica.
+1723:Manual
+1724:^Traducción al francés
+1725:Words of Magic
+1726:Cartas náuticas y mapas...
+1727:¡Has aprendido %s!
+1728:¿Quieres saber más sobre los pergaminos?
+1729:Sí
+1730:No
+1731:Siempre
+1732:Cancelar
+1733:Resultados variados...
+1734:No les ha gustado eso...
+1735:Les ha gustado eso...
+1736:desaprueba eso...
+1737:adora eso...
+1738:^Arreglos
+1739:MAPA
+1740:Entrar/Salir
+1741:Elige para leyenda
+1742:Alemán
+1743:Italiano
+1744:Español
+1745:^Traducción al español
+1746:^Traducción al alemán
+1747:^Traducción al italiano
+1748:Ramón Méndez
+1749:^Portugués de Brasil
+1750:^Traducción
+1751:Charmander
+1752:Portugués de Brasil
+1753:Alba Calvo
+1754:Usar fuente alternativa
+1755:Jonas Hecksher

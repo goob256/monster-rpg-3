@@ -1,0 +1,3126 @@
+{
+	"game": {
+		"gold": 1511,
+		"step_count": 100,
+		"party_following_player": true,
+		"play_time": 6914
+	},
+	"players": [
+		{
+			"name": "Eny",
+			"level": 4,
+			"experience": 7056,
+			"stats": {
+				"status": 0,
+				"hp": 250,
+				"mp": 75,
+				"fixed": {
+					"max_hp": 250,
+					"max_mp": 75,
+					"attack": 40,
+					"defense": 35,
+					"weakness": 0,
+					"strength": 0,
+					"extra": [
+						30,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				},
+				"spells": [
+					"Heal Plus",
+					"Cure",
+					"Heal"
+				],
+				"extra": [
+				]
+			},
+			"weapon": {
+				"id": 6
+			},
+			"armour": {
+				"id": 2
+			},
+			"sprite": {
+				"json_filename": "gfx/sprites/eny/sprite.json",
+				"image_directory": "gfx/sprites/eny",
+				"animation": "stand_e"
+			}
+		},
+		{
+			"name": "Tiggy",
+			"level": 4,
+			"experience": 7056,
+			"stats": {
+				"status": 0,
+				"hp": 250,
+				"mp": 75,
+				"fixed": {
+					"max_hp": 250,
+					"max_mp": 75,
+					"attack": 40,
+					"defense": 35,
+					"weakness": 0,
+					"strength": 0,
+					"extra": [
+						30,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				},
+				"spells": [
+					"Ice",
+					"Bolt",
+					"Fire"
+				],
+				"extra": [
+				]
+			},
+			"weapon": {
+				"id": 6
+			},
+			"armour": {
+				"id": 2
+			},
+			"sprite": {
+				"json_filename": "gfx/sprites/tiggy/sprite.json",
+				"image_directory": "gfx/sprites/tiggy",
+				"animation": "stand_w"
+			}
+		}
+	],
+	"inventory": [
+		{
+			"type": 0,
+			"id": 9,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 1,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 8,
+			"quantity": 0
+		},
+		{
+			"type": 3,
+			"id": 2,
+			"quantity": 2
+		},
+		{
+			"type": 0,
+			"id": 2,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 2,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 2,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 2,
+			"quantity": 0
+		},
+		{
+			"type": 1,
+			"id": 2,
+			"quantity": 2
+		},
+		{
+			"type": 0,
+			"id": 7,
+			"quantity": 0
+		},
+		{
+			"type": 1,
+			"id": 4,
+			"quantity": 9
+		},
+		{
+			"type": 0,
+			"id": 5,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 3,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 6,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 12,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 1,
+			"quantity": 0
+		},
+		{
+			"type": 1,
+			"id": 3,
+			"quantity": 10
+		},
+		{
+			"type": 0,
+			"id": 14,
+			"quantity": 0
+		},
+		{
+			"type": 1,
+			"id": 1,
+			"quantity": 14
+		},
+		{
+			"type": 1,
+			"id": 11,
+			"quantity": 1
+		},
+		{
+			"type": 0,
+			"id": 2,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 2,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 1,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 4,
+			"quantity": 0
+		},
+		{
+			"type": 2,
+			"id": 6,
+			"quantity": 2
+		},
+		{
+			"type": 0,
+			"id": 5,
+			"quantity": 0
+		},
+		{
+			"type": 4,
+			"id": 6,
+			"quantity": 1
+		},
+		{
+			"type": 4,
+			"id": 3,
+			"quantity": 1
+		},
+		{
+			"type": 4,
+			"id": 4,
+			"quantity": 1
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		},
+		{
+			"type": 0,
+			"id": 0,
+			"quantity": 0
+		}
+	],
+	"milestones": [
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		false,
+		true,
+		true,
+		true,
+		true,
+		false,
+		false,
+		false,
+		false,
+		false
+	],
+	"vampires": [
+		"vIce",
+		"vBolt"
+	],
+	"boatin": false,
+	"boatin_pos": {
+		"x": 385,
+		"y": 6
+	},
+	"boatin_direction": 2,
+	"boat_w": false,
+	"boatin_done": true,
+	"fish_caught": 0,
+	"areas": {
+		"castle_front": {
+			"entities": {
+				"Tiggy": {
+					"type": "sailor",
+					"position": {
+						"x": 14,
+						"y": 34
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/tiggy/sprite.json",
+						"image_directory": "gfx/sprites/tiggy",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true,
+					"extra_offset": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"Eny": {
+					"type": "sailor",
+					"position": {
+						"x": 14,
+						"y": 34
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/eny/sprite.json",
+						"image_directory": "gfx/sprites/eny",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true,
+					"extra_offset": {
+						"x": 0,
+						"y": 0
+					}
+				}
+			},
+			"hook": ""
+		},
+		"below_deck": {
+			"entities": {
+				"Tiggy": {
+					"type": "sailor",
+					"position": {
+						"x": 2,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/tiggy/sprite.json",
+						"image_directory": "gfx/sprites/tiggy",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true,
+					"extra_offset": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"Eny": {
+					"type": "sailor",
+					"position": {
+						"x": 2,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/eny/sprite.json",
+						"image_directory": "gfx/sprites/eny",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true,
+					"extra_offset": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"item_merchant": {
+					"type": "sailor",
+					"position": {
+						"x": 10,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true,
+					"extra_offset": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"weapons_merchant": {
+					"type": "sailor",
+					"position": {
+						"x": 10,
+						"y": 4
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true,
+					"extra_offset": {
+						"x": 0,
+						"y": 0
+					}
+				}
+			},
+			"hook": ""
+		},
+		"at_sea": {
+			"entities": {
+				"sailor1": {
+					"type": "sailor",
+					"movement_type": "look_around",
+					"position": {
+						"x": 25,
+						"y": 12
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_e"
+					},
+					"direction": 2,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor5": {
+					"type": "sailor",
+					"movement_type": "look_around",
+					"can_look_e": false,
+					"can_look_n": false,
+					"position": {
+						"x": 7,
+						"y": 12
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"captain": {
+					"type": "sailor",
+					"position": {
+						"x": 6,
+						"y": 13
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/captain/sprite.json",
+						"image_directory": "gfx/sprites/captain",
+						"animation": "stand_e"
+					},
+					"direction": 2,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor3": {
+					"type": "sailor_npc",
+					"movement_type": "look_around",
+					"can_look_e": false,
+					"position": {
+						"x": 18,
+						"y": 13
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor4": {
+					"type": "sailor_npc",
+					"movement_type": "look_around",
+					"can_look_e": false,
+					"position": {
+						"x": 18,
+						"y": 14
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor2": {
+					"type": "sailor",
+					"movement_type": "look_around",
+					"position": {
+						"x": 25,
+						"y": 15
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_e"
+					},
+					"direction": 2,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor6": {
+					"type": "sailor_npc",
+					"movement_type": "look_around",
+					"position": {
+						"x": 6,
+						"y": 15
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailship_low": {
+					"type": "sailship",
+					"position": {
+						"x": 3,
+						"y": 18
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailship_low/sprite.json",
+						"image_directory": "gfx/sprites/sailship_low",
+						"animation": "only"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"sailship_high": {
+					"type": "sailship",
+					"position": {
+						"x": 3,
+						"y": 18
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailship_high/sprite.json",
+						"image_directory": "gfx/sprites/sailship_high",
+						"animation": "only"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 3,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"beach_e": {
+			"entities": {
+				"Druid": {
+					"type": "npc",
+					"tag": "Druid",
+					"dialogue_name": "druid",
+					"position": {
+						"x": 13,
+						"y": 6
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/druid/sprite.json",
+						"image_directory": "gfx/sprites/druid",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"Scroll Dealer": {
+					"position": {
+						"x": 17,
+						"y": 10
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/scroll_dealer/sprite.json",
+						"image_directory": "gfx/sprites/scroll_dealer",
+						"animation": "stand_s"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"weapons_dealer": {
+					"position": {
+						"x": 15,
+						"y": 10
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/druid/sprite.json",
+						"image_directory": "gfx/sprites/druid",
+						"animation": "stand_s"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"armour_dealer": {
+					"position": {
+						"x": 16,
+						"y": 10
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/druid/sprite.json",
+						"image_directory": "gfx/sprites/druid",
+						"animation": "stand_s"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor1": {
+					"type": "sailor",
+					"movement_type": "look_around",
+					"position": {
+						"x": 25,
+						"y": 22
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor5": {
+					"type": "sailor",
+					"movement_type": "look_around",
+					"can_look_e": false,
+					"can_look_n": false,
+					"position": {
+						"x": 7,
+						"y": 22
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"captain": {
+					"type": "sailor",
+					"position": {
+						"x": 6,
+						"y": 23
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/captain/sprite.json",
+						"image_directory": "gfx/sprites/captain",
+						"animation": "stand_e"
+					},
+					"direction": 2,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor3": {
+					"type": "sailor_npc",
+					"type": "npc",
+					"tag": "",
+					"dialogue_name": "",
+					"movement_type": "look_around",
+					"can_look_e": false,
+					"position": {
+						"x": 18,
+						"y": 23
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor4": {
+					"type": "sailor_npc",
+					"type": "npc",
+					"tag": "",
+					"dialogue_name": "",
+					"movement_type": "look_around",
+					"can_look_e": false,
+					"position": {
+						"x": 18,
+						"y": 24
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor2": {
+					"type": "sailor",
+					"movement_type": "look_around",
+					"position": {
+						"x": 25,
+						"y": 25
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor6": {
+					"type": "sailor_npc",
+					"type": "npc",
+					"tag": "",
+					"dialogue_name": "",
+					"movement_type": "look_around",
+					"position": {
+						"x": 6,
+						"y": 25
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailship_low": {
+					"type": "sailship",
+					"position": {
+						"x": 3,
+						"y": 28
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailship_low/sprite.json",
+						"image_directory": "gfx/sprites/sailship_low",
+						"animation": "only"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"sailship_high": {
+					"type": "sailship",
+					"position": {
+						"x": 3,
+						"y": 28
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailship_high/sprite.json",
+						"image_directory": "gfx/sprites/sailship_high",
+						"animation": "only"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 3,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"beach_w": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": false,
+					"chest_type": 1,
+					"chest_object_id": 4,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 27,
+						"y": 18
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "closed"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor1": {
+					"type": "sailor",
+					"movement_type": "look_around",
+					"position": {
+						"x": 25,
+						"y": 42
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor5": {
+					"type": "sailor",
+					"movement_type": "look_around",
+					"can_look_e": false,
+					"can_look_n": false,
+					"position": {
+						"x": 7,
+						"y": 42
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"captain": {
+					"type": "sailor",
+					"position": {
+						"x": 6,
+						"y": 43
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/captain/sprite.json",
+						"image_directory": "gfx/sprites/captain",
+						"animation": "stand_e"
+					},
+					"direction": 2,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor3": {
+					"type": "sailor_npc",
+					"movement_type": "look_around",
+					"can_look_e": false,
+					"position": {
+						"x": 18,
+						"y": 43
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor4": {
+					"type": "sailor_npc",
+					"movement_type": "look_around",
+					"can_look_e": false,
+					"position": {
+						"x": 18,
+						"y": 44
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor2": {
+					"type": "sailor",
+					"movement_type": "look_around",
+					"position": {
+						"x": 25,
+						"y": 45
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailor6": {
+					"type": "sailor_npc",
+					"movement_type": "look_around",
+					"position": {
+						"x": 6,
+						"y": 45
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailor/sprite.json",
+						"image_directory": "gfx/sprites/sailor",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sailship_low": {
+					"type": "sailship",
+					"position": {
+						"x": 3,
+						"y": 48
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailship_low/sprite.json",
+						"image_directory": "gfx/sprites/sailship_low",
+						"animation": "only"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"sailship_high": {
+					"type": "sailship",
+					"position": {
+						"x": 3,
+						"y": 48
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/sailship_high/sprite.json",
+						"image_directory": "gfx/sprites/sailship_high",
+						"animation": "only"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 3,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"boatin": {
+			"entities": {
+			},
+			"hook": ""
+		},
+		"captains1": {
+			"entities": {
+				"Captain": {
+					"type": "npc",
+					"tag": "Captain",
+					"dialogue_name": "captain",
+					"movement_type": "wander",
+					"can_wander_l": true,
+					"can_wander_r": true,
+					"can_wander_u": true,
+					"can_wander_d": true,
+					"home_position": {
+						"x": 9,
+						"y": 3
+					},
+					"max_dist_from_home": 3,
+					"position": {
+						"x": 11,
+						"y": 3
+					},
+					"speed": 0.012500,
+					"sprite": {
+						"json_filename": "gfx/sprites/captain/sprite.json",
+						"image_directory": "gfx/sprites/captain",
+						"animation": "stand_e"
+					},
+					"direction": 2,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"captains2": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 0,
+					"chest_object_id": 0,
+					"chest_quantity": 0,
+					"chest_gold": 100,
+					"chest_milestone": -1,
+					"position": {
+						"x": 11,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"captains_quarters": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 9,
+					"chest_quantity": 3,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 3,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"fiddler": {
+			"entities": {
+				"chest1": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 1,
+					"chest_quantity": 3,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 6,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"chest2": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 3,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 7,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"forest1": {
+			"entities": {
+				"chest1": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 1,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 24,
+						"y": 8
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2
+				},
+				"chest2": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 2,
+					"chest_object_id": 1,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 3,
+						"y": 14
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 5
+				},
+				"chest3": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 2,
+					"chest_object_id": 2,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 5,
+						"y": 14
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 5
+				}
+			},
+			"hook": ""
+		},
+		"forest2": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 3,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 24,
+						"y": 7
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 1,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 25,
+						"y": 7
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"forest_save": {
+			"entities": {
+			},
+			"hook": ""
+		},
+		"hh": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 8,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 86,
+						"y": 32
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"chest2": {
+					"type": "chest",
+					"chest_open": false,
+					"chest_type": 3,
+					"chest_object_id": 3,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 86,
+						"y": 43
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "closed"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"hh1": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 1,
+					"chest_quantity": 3,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 7,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 3,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 9,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 4,
+					"chest_quantity": 2,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 11,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 3,
+					"chest_object_id": 2,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 38,
+						"y": 16
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 3,
+					"chest_object_id": 2,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 40,
+						"y": 16
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"hh2": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 3,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 38,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 1,
+					"chest_quantity": 5,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 40,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 4,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 9,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 4,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 12,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"hh3": {
+			"entities": {
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 40,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 43,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 46,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"platform": {
+					"position": {
+						"x": 29,
+						"y": 7
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/platform/sprite.json",
+						"image_directory": "gfx/sprites/platform",
+						"animation": "only"
+					},
+					"direction": 0,
+					"solid": false,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 0,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 40,
+						"y": 8
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 43,
+						"y": 8
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 46,
+						"y": 8
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"hh_basement": {
+			"entities": {
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 1,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 18,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 21,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 17,
+						"y": 17
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 22,
+						"y": 17
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 17,
+						"y": 19
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 22,
+						"y": 19
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 17,
+						"y": 21
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 22,
+						"y": 21
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"hh_save": {
+			"entities": {
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 8,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				},
+				"revive": {
+					"type": "revive",
+					"position": {
+						"x": 8,
+						"y": 7
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"hh_secret": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 2,
+					"chest_object_id": 5,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 3,
+						"y": 4
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 2,
+					"chest_object_id": 5,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 6,
+						"y": 4
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"hh_stairs": {
+			"entities": {
+			},
+			"hook": ""
+		},
+		"lumberjacks_dads": {
+			"entities": {
+				"dad": {
+					"movement_type": "wander",
+					"can_wander_l": true,
+					"can_wander_r": true,
+					"can_wander_u": true,
+					"can_wander_d": true,
+					"home_position": {
+						"x": 4,
+						"y": 3
+					},
+					"max_dist_from_home": 2,
+					"position": {
+						"x": 5,
+						"y": 4
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/lumberjacks_dad/sprite.json",
+						"image_directory": "gfx/sprites/lumberjacks_dad",
+						"animation": "stand_e"
+					},
+					"direction": 2,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2
+				}
+			},
+			"hook": ""
+		},
+		"moryts": {
+			"entities": {
+				"Moryt": {
+					"type": "npc",
+					"tag": "Moryt",
+					"dialogue_name": "moryt",
+					"position": {
+						"x": 6,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/moryt/sprite.json",
+						"image_directory": "gfx/sprites/moryt",
+						"animation": "sleep"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 4,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 6,
+						"y": 4
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"palace1": {
+			"entities": {
+				"soldier1": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier_palace1-1",
+					"position": {
+						"x": 7,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"soldier2": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier_palace1-2",
+					"position": {
+						"x": 12,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"soldier3": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier_palace1-3",
+					"position": {
+						"x": 7,
+						"y": 10
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"soldier4": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier_palace1-4",
+					"position": {
+						"x": 12,
+						"y": 10
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"palace2": {
+			"entities": {
+				"mayor": {
+					"type": "npc",
+					"tag": "Mayor",
+					"dialogue_name": "mayor",
+					"position": {
+						"x": 5,
+						"y": 8
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/mayor/sprite.json",
+						"image_directory": "gfx/sprites/mayor",
+						"animation": "cry"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"soldier1": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier_palace2-1",
+					"position": {
+						"x": 3,
+						"y": 8
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"soldier2": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier_palace2-2",
+					"position": {
+						"x": 12,
+						"y": 8
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"palaceb1": {
+			"entities": {
+				"Scroll Dealer": {
+					"position": {
+						"x": 6,
+						"y": 4
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/scroll_dealer/sprite.json",
+						"image_directory": "gfx/sprites/scroll_dealer",
+						"animation": "stand_s"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"palaceb2": {
+			"entities": {
+				"prisoner1": {
+					"movement_type": "wander",
+					"can_wander_l": true,
+					"can_wander_r": true,
+					"can_wander_u": false,
+					"can_wander_d": false,
+					"home_position": {
+						"x": 6,
+						"y": 3
+					},
+					"max_dist_from_home": 1,
+					"position": {
+						"x": 6,
+						"y": 3
+					},
+					"speed": 0.025000,
+					"sprite": {
+						"json_filename": "gfx/sprites/prisoner1/sprite.json",
+						"image_directory": "gfx/sprites/prisoner1",
+						"animation": "stand_e"
+					},
+					"direction": 2,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"prisoner2": {
+					"movement_type": "wander",
+					"can_wander_l": true,
+					"can_wander_r": true,
+					"can_wander_u": false,
+					"can_wander_d": false,
+					"home_position": {
+						"x": 10,
+						"y": 3
+					},
+					"max_dist_from_home": 1,
+					"position": {
+						"x": 9,
+						"y": 3
+					},
+					"speed": 0.025000,
+					"sprite": {
+						"json_filename": "gfx/sprites/prisoner2/sprite.json",
+						"image_directory": "gfx/sprites/prisoner2",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"soldier": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier_palaceb2",
+					"position": {
+						"x": 4,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 2,
+					"chest_object_id": 4,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 8,
+						"y": 25
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"riverside": {
+			"entities": {
+				"soldier1": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier1",
+					"position": {
+						"x": 20,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"soldier2": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier2",
+					"position": {
+						"x": 25,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"soldier3": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier3",
+					"position": {
+						"x": 21,
+						"y": 7
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"soldier4": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier4",
+					"position": {
+						"x": 24,
+						"y": 7
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_n"
+					},
+					"direction": 1,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"coro": {
+					"type": "npc",
+					"tag": "Coro",
+					"dialogue_name": "coro",
+					"position": {
+						"x": 33,
+						"y": 20
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/coro/sprite.json",
+						"image_directory": "gfx/sprites/coro",
+						"animation": "rocking"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 2,
+						"h": 2
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"soldier5": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier5",
+					"position": {
+						"x": 21,
+						"y": 28
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"soldier6": {
+					"type": "npc",
+					"tag": "Soldier",
+					"dialogue_name": "soldier6",
+					"position": {
+						"x": 24,
+						"y": 28
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/soldier/sprite.json",
+						"image_directory": "gfx/sprites/soldier",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sign1": {
+					"position": {
+						"x": 16,
+						"y": 47
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				},
+				"sign2": {
+					"position": {
+						"x": 30,
+						"y": 48
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2,
+					"visible": true
+				}
+			},
+			"hook": ""
+		},
+		"riverside_equipment_shop": {
+			"entities": {
+				"weapons_dealer": {
+					"position": {
+						"x": 2,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/riverside_weapons_dealer/sprite.json",
+						"image_directory": "gfx/sprites/riverside_weapons_dealer",
+						"animation": "stand_s"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"armour_dealer": {
+					"position": {
+						"x": 4,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/riverside_armour_dealer/sprite.json",
+						"image_directory": "gfx/sprites/riverside_armour_dealer",
+						"animation": "stand_s"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"riverside_inn": {
+			"entities": {
+				"innkeep": {
+					"movement_type": "wander",
+					"can_wander_l": true,
+					"can_wander_r": true,
+					"can_wander_u": false,
+					"can_wander_d": false,
+					"home_position": {
+						"x": 11,
+						"y": 3
+					},
+					"max_dist_from_home": 2,
+					"position": {
+						"x": 10,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/innkeep/sprite.json",
+						"image_directory": "gfx/sprites/innkeep",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2
+				},
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 1,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 13,
+						"y": 5
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2
+				}
+			},
+			"hook": ""
+		},
+		"riverside_inn_upper": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 2,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 9,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2
+				},
+				"chest2": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 3,
+					"chest_quantity": 1,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 7,
+						"y": 10
+					},
+					"speed": 0.050000,
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2
+				}
+			},
+			"hook": ""
+		},
+		"riverside_item_shop": {
+			"entities": {
+				"dealer": {
+					"position": {
+						"x": 3,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/riverside_item_dealer/sprite.json",
+						"image_directory": "gfx/sprites/riverside_item_dealer",
+						"animation": "stand_s"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		},
+		"start": {
+			"entities": {
+				"chest": {
+					"type": "chest",
+					"chest_open": true,
+					"chest_type": 1,
+					"chest_object_id": 1,
+					"chest_quantity": 3,
+					"chest_gold": -1,
+					"chest_milestone": -1,
+					"position": {
+						"x": 15,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/chest/sprite.json",
+						"image_directory": "gfx/sprites/chest",
+						"animation": "open"
+					},
+					"direction": 0,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 2
+				}
+			},
+			"hook": ""
+		},
+		"womans": {
+			"entities": {
+				"Girl": {
+					"type": "npc",
+					"tag": "Girl",
+					"dialogue_name": "littlegirl",
+					"position": {
+						"x": 1,
+						"y": 2
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/littlegirl/sprite.json",
+						"image_directory": "gfx/sprites/littlegirl",
+						"animation": "stand_s"
+					},
+					"direction": 3,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				},
+				"Woman": {
+					"type": "npc",
+					"tag": "Woman",
+					"dialogue_name": "woman",
+					"movement_type": "wander",
+					"can_wander_l": true,
+					"can_wander_r": true,
+					"can_wander_u": true,
+					"can_wander_d": true,
+					"home_position": {
+						"x": 6,
+						"y": 3
+					},
+					"max_dist_from_home": 4,
+					"position": {
+						"x": 4,
+						"y": 3
+					},
+					"speed": 0.050000,
+					"sprite": {
+						"json_filename": "gfx/sprites/woman/sprite.json",
+						"image_directory": "gfx/sprites/woman",
+						"animation": "stand_w"
+					},
+					"direction": 4,
+					"solid": true,
+					"size": {
+						"w": 1,
+						"h": 1
+					},
+					"layer": 1
+				}
+			},
+			"hook": ""
+		}
+	}
+}

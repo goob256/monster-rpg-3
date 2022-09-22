@@ -1,0 +1,38 @@
+Available everywhere:
+---------------------
+
++mute // no audio
++freq // sampling rate is next argument e.g., 441000 (default) or 192000
++samples // next argument is samples per audio buffer (default is 2048)
++float-samples // using 32 bit floating point samples for audio (default is 16 bit integer)
+-vsync // default is on
++fps // show FPS
++log // enable console logging in release mode
++dump-images // compresses TGAs and dumps them to directory (next argument, messes up TGAs with an alpha channel)
++b-for-battle // 'b' key starts a battle in release mode
+
+Not on mobile:
+--------------
+
++fullscreen // regardless of settings
++scale // next argument is a number, e.g., 5 is 5x the base window size
++width // next argument is window/fullscreen width
++height // next argument is window/fullscreen height
+-custom-cursor // disable custom cursor
+
+Windows only:
+-------------
+
++opengl // the only option on other platforms. default on Windows is D3D.
+-directsound // the default, this will cause it to pick automatically
++winmm // other available audio drivers...
++wasapi // other available audio drivers...
+
+Linux only:
+-----------
+
++install // force to ask about installing a .desktop again (e.g., if you said no before)
+
+Useless:
+--------
++logging // currently always on already in Monster RPG 3

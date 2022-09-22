@@ -1,0 +1,17 @@
+#!/bin/sh
+#cp tgui3/build/lib* "m3/Monster RPG 3.app/Contents/MacOS"
+#cp Nooskewl_Shim/build/lib* "m3/Monster RPG 3.app/Contents/MacOS"
+#cp Nooskewl_Wedge/build/lib* "m3/Monster RPG 3.app/Contents/MacOS"
+#might need debug symbols...
+#strip Monster_RPG_3/build/MonsterRPG3
+cp Monster_RPG_3/build/MonsterRPG3 "m3/Monster RPG 3.app/Contents/MacOS"
+#rm -rf "m3/Monster RPG 3.app/Contents/Resources/data"
+#cp -a Monster_RPG_3/data "m3/Monster RPG 3.app/Contents/Resources"
+cd Monster_RPG_3/data
+sh ../../Nooskewl_Shim/tools/cpa/mkcpa.sh "../../m3/Monster RPG 3.app/Contents/Resources/data.cpa"
+cp "../../m3/Monster RPG 3.app/Contents/Resources/data.cpa" "../../m3_mac_resources"
+cd ../..
+cp "Monster_RPG_3/docs/3rd_party.html" "m3/Monster RPG 3.app/Contents/Resources"
+cp Monster_RPG_3/docs/manual_english.html "m3/Monster RPG 3.app/Contents/Resources"
+cp Monster_RPG_3/docs/manual_french.html "m3/Monster RPG 3.app/Contents/Resources"
+cp Monster_RPG_3/docs/manual_spanish.html "m3/Monster RPG 3.app/Contents/Resources"

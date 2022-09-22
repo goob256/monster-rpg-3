@@ -1,0 +1,39 @@
+10
+Rolls the Credits
+Take in the credits.
+
+1	
+Save Early, Save Often
+Save your game for the first time.
+
+7
+Gimme the Loot!
+Find 50 treasures.
+
+4
+Lunker
+Reel in a prize catch.
+
+2
+Lucky Shot
+Deal 10 lucky blows.
+
+3
+Hey, Zeus!
+Learn a Vampire attack.
+
+6
+Sickly from the Prickly
+Get sick eating Cactus Fruit.
+
+5
+Good as New!
+Raise from the dead.
+
+8
+Could be Me
+Have mercy on a villain.
+
+9
+One Sitting
+Finish the game without dying or loading.

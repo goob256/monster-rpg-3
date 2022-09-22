@@ -1,0 +1,2 @@
+@VAS0 = { 192 64 0 }
+A @TYPE3 l16 t200 o4 @VAS0 b @VAS0 r64

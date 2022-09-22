@@ -1,0 +1,11 @@
+Monster RPG 3 est un jeu de rôle de style japonais (JRPG) à l'ancienne, se déroulant dans un univers fantastique. Des monstres errent à nouveau sur les terres et terrifient la population. Deux amis inséparables partiront en mission pour trouver la source de cette invasion. Au cours de leur aventure, ils rencontreront des personnages insolites et mèneront de nombreux combats en tour par tour. Un style d'attaque unique, les Vampires, viennent pimenter les combats classiques. Une musique chip-tune synthétisée en temps réel rythme les aventures souvent cocasses de nos deux héros.
+
+Caractéristiques :
+
+- Batailles en tour par tour
+- Attaques Vampires uniques
+- Sons et musiques synthétisés en temps réel
+- Jouable à la manette
+- Sauvegardes automatiques et synchronisation dans le cloud
+- Une taille de téléchargement minuscule pour une telle aventure
+

@@ -1,0 +1,91 @@
+#TITLE Monster RPG 3 Soundtrack
+#COMPOSER Nooskewl
+#MAKER Trent Gamblin
+
+#NO-BANKSWITCH
+#SETBANK A,3
+#SETBANK B,3
+#SETBANK C,0
+#SETBANK D,1
+#SETBANK E,2
+
+@0 = { 0 }
+@1 = { 1 }
+@2 = { 2 }
+@DPCM0 = { "kick.dmc", 15 }
+@DPCM2 = { "drum.dmc", 15 }
+@DPCM4 = { "crash.dmc", 13 }
+@EP0 = { 1 }
+
+A v10 t160 o3
+A <a4r8>c2^8
+A <a4r8>c2^8
+A <a4r8>c2^8
+A <a4r8>c2^8
+A d4r8c2^8
+A d4r8c2^8
+A d4r8c2^8
+A d4r8c2^8
+A <a4r8>c2^8
+A <a4r8>c2^8
+A <a4r8>c2^8
+A <a4r8>c2^8
+A d4r8c2^8
+A d4r8c2^8
+A d4r8c2^8
+A d4r8c2^8
+A EP0 d1^1^1^1^1^1^1^1 ENOF
+A r192
+
+D v10 t160 o8
+D c32.r64r4..c32.r64r16c32.r64r16c32.r64r8.
+D c32.r64r4..c32.r64r4..
+D c32.r64r4..c32.r64r16c32.r64r16c32.r64r8.
+D c32.r64r4..c32.r64r4..
+D c32.r64r4..c32.r64r16c32.r64r16c32.r64r8.
+D c32.r64r4..c32.r64r4..
+D c32.r64r4..c32.r64r16c32.r64r16c32.r64r8.
+D c32.r64r4..c32.r64r4..
+D c32.r64r4..c32.r64r16c32.r64r16c32.r64r8.
+D c32.r64r4..c32.r64r4..
+D c32.r64r4..c32.r64r16c32.r64r16c32.r64r8.
+D c32.r64r4..c32.r64r4..
+D c32.r64r4..c32.r64r16c32.r64r16c32.r64r8.
+D c32.r64r4..c32.r64r4..
+D c32.r64r4..c32.r64r16c32.r64r16c32.r64r8.
+D c32.r64r4..c32.r64r1
+D r1
+D r1
+D r1
+D r1
+D r1
+D r1
+D r1
+D r3
+D r16..
+
+E t160 o0
+E c4r2c16r8.
+E c4r2c16r8.
+E c4r2c16r8.
+E c4r2c16r16c16r16
+E c4r2c16r8.
+E c4r2c16r8.
+E c4r2c16r8.
+E c4r2c16r16c16r16
+E c4r2c16r8.
+E c4r2c16r8.
+E c4r2c16r8.
+E c4r2c16r16c16r16
+E c4r2c16r8.
+E c4r2c16r8.
+E c4r2c16r8.
+E c4r2c16r16c16r16
+E c4r2c16r8.
+E c16r16c16r16c16r16c16r16c16r16c16r16c16r16c16r16
+E c4r2c16r8.
+E c16r16c16r16c16r16c16r16c16r16c16r16c16r16c16r16
+E c4r2c16r8.
+E c16r16c16r16c16r16c16r16c16r16c16r16c16r16c16r16
+E c4r2c16r8.
+E c16r16c16r16c16r16c16r16c16r16c16r16c16r16c16

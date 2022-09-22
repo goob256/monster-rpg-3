@@ -1,0 +1,69 @@
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: COLOR0;
+	float4 gl_FragCoord : TEXCOORD1;
+};
+
+static const float M_PI = 3.1415926535897932384626433832795f;
+
+texture tex;
+sampler2D tex_s = sampler_state {
+	texture = <tex>;
+};
+
+int screen_offset_x;
+int screen_offset_y;
+float real_screen_h;
+float scale;
+float screen_x;
+float screen_y;
+float screen_w;
+float screen_h;
+float heat_w;
+float heat_h;
+float t;
+float inv_tex_w;
+float inv_tex_h;
+float wave_size;
+
+// Calculated gl_FragCoord equivalent from Input.gl_FragCoord (from the default vertex shader)
+// NOTE: invert_y=true makes this exactly the same as OpenGL, otherwise y is 0-(h-1) from top to bottom
+float4 get_gl_FragCoord(float4 input/*, bool invert_y*/)
+{
+	float4 gl_FragCoord = input / input.w;
+	// screen_w/h in other shaders are real_screen_size, the ones passed into this shader are shim::screen_size
+	float sw = screen_w * scale + screen_offset_x * 2;
+	float sh = real_screen_h;
+	gl_FragCoord.x = floor((gl_FragCoord.x + 1.0f) / 2.0f * sw);
+	gl_FragCoord.y = floor((1.0f - gl_FragCoord.y) / 2.0f * sh);
+	/*
+	if (invert_y) {
+		gl_FragCoord.y = sh - gl_FragCoord.y;
+	}
+	*/
+	return gl_FragCoord;
+}
+
+float4 main(VS_OUTPUT Input) : COLOR0
+{
+	float4 gl_FragCoord = get_gl_FragCoord(Input.gl_FragCoord);
+
+	float x = (gl_FragCoord.x - screen_offset_x) / scale;
+	float y = (gl_FragCoord.y - screen_offset_y) / scale;
+
+	x -= screen_x;
+	y -= screen_y;
+
+	float dx = x - (heat_w/2.0f);
+	float dy = (heat_h - y) / 3.0f;
+
+	float len = sqrt(dx*dx + dy*dy);
+	float intensity = 1.0f - min(1.0f, len/(heat_w/2.0f));
+
+	float sx = cos(((t*20.0f) % (M_PI*2.0f))+x/heat_w*M_PI*2.0f) * wave_size * intensity;
+	float sy = sin(((t*10.0f) % (M_PI*2.0f))+y/heat_h*M_PI*2.0f) * (wave_size/2.0f) * intensity;
+
+	return tex2D(tex_s, float2(inv_tex_w * sx + Input.TexCoord.x, inv_tex_h * sy + Input.TexCoord.y)) * Input.Colour;
+}

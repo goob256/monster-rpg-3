@@ -1,0 +1,8 @@
+@PO0 = { 0 1000 }
+@PO1 = { 0 2000 }
+@PO2 = { 0 25 }
+A t100 l16 @TYPE4 v384 o6
+A @PO0 cw @PO0 r16
+A @PO0 cw @PO0 r16
+A @PO1 c2 @PO1 r16
+B @CP2 o0 @PO2 a2.. @PO2

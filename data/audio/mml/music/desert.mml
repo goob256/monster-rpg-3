@@ -1,0 +1,54 @@
+@VAS0 = { 255 255 0 }
+
+A t120 @TYPE3 @VAS0 v0 @CV1
+A o4c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A <c8>b8<c8>b8<c8>b8<c8>b8
+A a8g8a8g8a8g8a8g8
+A @VAS0
+
+B t120 v64
+B o4c4r4c4r8>b16r16
+B a16r16a16r16g16r8.b16r8.a16r1
+B r1
+B r8.
+B <c4r4c4r8>b16r16
+B a16r16a16r16g16r8.b16r8.a16r1
+B r1
+B r8.
+B <c1
+B >b2..a16g16
+B a2.r1
+B r4
+B <c1
+B >b2..a16g16
+B a2.r1
+B r4
+B <d8a2..
+B <c2>b4.a16g16
+B a2...r1
+B r16
+B d8a2..
+B <c2>b4.a16g16
+B a2...r1
+B r16

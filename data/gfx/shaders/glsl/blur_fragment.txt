@@ -1,0 +1,17 @@
+uniform sampler2D tex;
+
+uniform float offset_x;
+uniform float offset_y;
+
+varying vec4 colour;
+varying vec2 texcoord;
+
+void main()
+{
+	vec4 pix1 = texture2D(tex, vec2(texcoord.x+offset_x, texcoord.y));
+	vec4 pix2 = texture2D(tex, vec2(texcoord.x-offset_x, texcoord.y));
+	vec4 pix3 = texture2D(tex, vec2(texcoord.x, texcoord.y+offset_y));
+	vec4 pix4 = texture2D(tex, vec2(texcoord.x, texcoord.y-offset_y));
+
+	gl_FragColor = ((pix1 + pix2 + pix3 + pix4) / 4.0) * colour;
+}

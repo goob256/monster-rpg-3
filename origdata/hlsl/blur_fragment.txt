@@ -1,0 +1,25 @@
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: COLOR0;
+	float4 gl_FragCoord : TEXCOORD1;
+};
+
+texture tex;
+sampler2D s = sampler_state {
+	texture = <tex>;
+};
+
+float offset_x;
+float offset_y;
+
+float4 main(VS_OUTPUT Input) : COLOR0
+{
+	float4 pix1 = tex2D(s, float2(Input.TexCoord.x+offset_x, Input.TexCoord.y));
+	float4 pix2 = tex2D(s, float2(Input.TexCoord.x-offset_x, Input.TexCoord.y));
+	float4 pix3 = tex2D(s, float2(Input.TexCoord.x, Input.TexCoord.y+offset_y));
+	float4 pix4 = tex2D(s, float2(Input.TexCoord.x, Input.TexCoord.y-offset_y));
+
+	return ((pix1 + pix2 + pix3 + pix4) / 4.0f) * Input.Colour;
+}

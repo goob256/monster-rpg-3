@@ -1,0 +1,79 @@
+@VAS0 = { 0 }
+@PO0 = { 0 -32 }
+@PO1 = { 0 -64 }
+@S0 = { drum.ogg }
+@S1 = { hat.ogg }
+
+A v192 t115 y64
+A o5d16r16d16r16d16r16d16r16e16r16d16r16c16r16>b16r16
+A <c16r16>a8r2<c16r16>b16r16
+A <c16r16>a8r2b16r16a16r16
+A b16r16g8r2.
+A <d16r16d16r16d16r16d16r16e12r24d12r24c16.r32>b16r16
+A <c16.r32e16.r2r32c16r16>b16r16
+A <c8r8>b8r8a12r6f+8r8
+A g8r2..
+A d8r8d16r8d16e8r8c8r8
+A d16r16>a8r2<e16r16d16r16
+A e16r16c8r2d16r16c16r16
+A >b16r16g8r2.
+
+B v0 t115
+B o4d8r8d16r8d16e8r8c8r8
+B d16r16>a8r2<e16r16d16r16
+B e16r16c8r2d16r16c16r16
+B >b16r16g8r2.
+B <d8r8d16r8d16e8r8c8r8
+B e16r16c8r2e16r16d16r16
+B e16r16c8r2d16r16c16r16
+B >b16r16g8r8g8r8e8r8f+8
+B <<<d16r16d16r16d16r16d16r16e16r16d16r16c16r16>b16r16
+B <c16r16>a8r2<c16r16>b16r16
+B <c16r16>a8r2b16r16a16r16
+B b16r2r16>>g8<d8
+
+C v1024 t115 y192 @TYPE4
+C o2g8<g8r2..
+C c8>a8<d8c16r16>b8<c8>a8
+C r4.<c8>a8<d8r2
+C >d8r8e8r8f+8r8
+C g8<g8r2..
+C c8>a8<d8c16r16>b8<c8>a8
+C r4.<c8>a8<d8r2
+C >d8r8e8r8f+8r8
+C g8<g8r2..
+C c8>a8<d8c16r16>b8<c8>a8
+C r4.<c8>a8<d8r2
+C >g8r8g8
+
+D @S0 v512
+D t115
+D r4g8.r2.
+D r16
+D g8.r4r16g8r2..
+D g6r3
+D g16.r8r32g8r8g8r2..
+D g6r3
+D g8r4.g16.r2..
+D r32
+D g16.r8r32
+D g16.r2r32g24r12g16.r8r32
+D g8r1
+D r8
+D g8r4.g8r4.
+D g8r4.g8r2
+D g24r12g6r12g8
+
+E t115 @S1 v80
+E g3r6r8g16r16g16.r8r32
+E g4r2.
+E g8.r8.g24r12g16.r8r32g16.r8r32
+E g6r3r4g16.r8r32
+E g8r2.g16r16
+E g8.r4..g24r12g16r16g32r16.
+E g8.r4r16g16.r8r32g16.r8r32
+E g16.r4...r8.g24r12g24r12
+E g4r4.g24r12g16.r8r32
+E g8r2g24r12g24r6r24
+E g12r2r6g12r6
+E g12r2r6g16w64

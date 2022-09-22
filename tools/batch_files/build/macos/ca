@@ -1,0 +1,59 @@
+#!/bin/bash
+TGUI3_FLAGS="-DSHARED=off"
+SHIM_FLAGS="-DUSE_STATIC_LIBS=on -DSHARED=off"
+WEDGE_FLAGS="-DUSE_STATIC_LIBS=on -DSHARED=off"
+M3_FLAGS="-DUSE_STATIC_LIBS=on"
+DEPLOYMENT="10.9"
+while [ "${1-}" ] ; do
+	case "$1" in
+		"debug")
+			FLAGS="$FLAGS -DDEBUG=on"
+			;;
+		"release")
+			FLAGS="$FLAGS -DCMAKE_BUILD_TYPE=Release"
+			;;
+		"tools")
+			SHIM_FLAGS="$SHIM_FLAGS -DWANT_TOOLS=on"
+			;;
+		"steam")
+			FLAGS="$FLAGS -DSTEAMWORKS=on"
+			;;
+		"mas")
+			FLAGS="$FLAGS -DMAS=on"
+			DEPLOYMENT="10.10"
+			;;
+	esac
+	shift
+done
+TGUI3_FLAGS="$FLAGS $TGUI3_FLAGS"
+SHIM_FLAGS="$FLAGS $SHIM_FLAGS"
+WEDGE_FLAGS="$FLAGS $WEDGE_FLAGS"
+M3_FLAGS="$FLAGS $M3_FLAGS"
+
+rm -rf tgui3/build
+rm -rf Nooskewl_Shim/build
+rm -rf Nooskewl_Wedge/build
+rm -rf Monster_RPG_3/build
+cd tgui3
+mkdir build
+cd build
+/Users/trent/code/Monster_RPG_3/tools/batch_files/cmake/macos/tgui3.sh $DEPLOYMENT $TGUI3_FLAGS
+cd ../..
+
+cd Nooskewl_Shim
+mkdir build
+cd build
+/Users/trent/code/Monster_RPG_3/tools/batch_files/cmake/macos/Nooskewl_Shim.sh $DEPLOYMENT $SHIM_FLAGS
+cd ../..
+
+cd Nooskewl_Wedge
+mkdir build
+cd build
+/Users/trent/code/Monster_RPG_3/tools/batch_files/cmake/macos/Nooskewl_Wedge.sh $DEPLOYMENT $WEDGE_FLAGS
+cd ../..
+
+cd Monster_RPG_3
+mkdir build
+cd build
+/Users/trent/code/Monster_RPG_3/tools/batch_files/cmake/macos/Monster_RPG_3.sh $DEPLOYMENT $M3_FLAGS
+cd ../..

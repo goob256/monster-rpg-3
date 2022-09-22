@@ -1,0 +1,22 @@
+uniform sampler2D tex;
+uniform bool use_tex;
+
+uniform float brightness;
+
+varying vec4 colour;
+varying vec2 texcoord;
+
+void main()
+{
+	vec4 result;
+	if (use_tex) {
+		result = texture2D(tex, texcoord) * colour;
+	}
+	else {
+		result = colour;
+	}
+
+	result.rgb *= brightness;
+
+	gl_FragColor = result;
+}

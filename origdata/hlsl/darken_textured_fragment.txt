@@ -1,0 +1,30 @@
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: COLOR0;
+	float4 gl_FragCoord : TEXCOORD1;
+};
+
+bool use_tex;
+float brightness;
+texture tex;
+sampler2D s = sampler_state {
+	texture = <tex>;
+};
+
+float4 main(VS_OUTPUT Input) : COLOR0
+{
+	float4 result;
+
+	if (use_tex) {
+		result = Input.Colour * tex2D(s, Input.TexCoord);
+	}
+	else {
+		result = Input.Colour;
+	}
+
+	result.rgb *= brightness;
+
+	return result;
+}

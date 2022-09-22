@@ -1,0 +1,73 @@
+#define M_PI 3.1415926535897932384626433832795
+
+const float fade = 5.0;
+
+uniform sampler2D tex;
+
+uniform float p; // percent 0-1 total effect done
+uniform float tint_p; // percent till full tint
+uniform vec4 tint;
+uniform int sprite_w;
+uniform int sprite_h;
+uniform int draw_x;
+uniform int draw_y;
+uniform int screen_offset_x;
+uniform int screen_offset_y;
+uniform int screen_w;
+uniform int screen_h;
+uniform float scale;
+
+varying vec4 colour;
+varying vec2 texcoord;
+
+void main()
+{
+	vec4 result = texture2D(tex, texcoord) * colour;
+	float shade = (result.r + result.g + result.b) / 3.0;
+	float p2 = min(1.0, p / tint_p);
+	float p3 = 1.0 - p2;
+
+	float add_x = floor(p * float(sprite_h)); // gives it some movement horizontally
+	float pix_x =  floor((gl_FragCoord.x - float(screen_offset_x)) / scale) - float(draw_x) + add_x;
+	float pix_y =  floor(((float(screen_h) - gl_FragCoord.y) - float(screen_offset_y)) / scale) - float(draw_y);
+
+	float wave = sin((pix_x/float(sprite_w))*M_PI*2.0*5.0);
+	float end_y = floor(p * (float(sprite_h)+fade));
+	end_y += wave;
+	float step = end_y - pix_y;
+
+	result = vec4(
+		p3 * result.r + p2 * shade * tint.r,
+		p3 * result.g + p2 * shade * tint.g,
+		p3 * result.b + p2 * shade * tint.b,
+		result.a
+	);
+
+	vec4 pix_grey = vec4(shade, shade, shade, shade) * (1.0 - (p*p)) * result.a;
+
+	float alpha_result;
+	float alpha_grey;
+
+	if (step >= 1.0) {
+		if ((step-fade) >= 1.0) {
+			alpha_result = 0.0;
+			alpha_grey = 1.0;
+		}
+		else {
+			if (mod(pix_x, step) >= 1.0) {
+				alpha_result = 0.0;
+				alpha_grey = 1.0;
+			}
+			else {
+				alpha_result = (fade - (step-1.0)) / fade * 0.8 + 0.2;
+				alpha_grey = 1.0 - alpha_result;
+			}
+		}
+	}
+	else {
+		alpha_result = 1.0;
+		alpha_grey = 0.0;
+	}
+
+	gl_FragColor = result * alpha_result + pix_grey * alpha_grey;
+}

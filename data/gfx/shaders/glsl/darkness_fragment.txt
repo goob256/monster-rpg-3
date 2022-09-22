@@ -1,0 +1,29 @@
+#define M_PI 3.1415926535897932384626433832795
+
+uniform int screen_w;
+uniform int screen_h;
+uniform float t;
+uniform float mush_x;
+uniform float mush_y;
+uniform float maxx;
+uniform vec4 colour1;
+uniform vec4 colour2;
+
+void main()
+{
+	float x = gl_FragCoord.x - mush_x;
+	float y = gl_FragCoord.y - mush_y;
+	float angle = atan(y, x);
+	float len = sqrt(x*x + y*y);
+	float p = 1.0 - (len / maxx);
+
+	angle += p * M_PI * 2.0 * 2.0;
+	angle += t * M_PI * 2.0 * 5.0;
+
+	if (t > p && sin(angle) < t) {
+		gl_FragColor = colour1;
+	}
+	else {
+		gl_FragColor = colour2;
+	}
+}

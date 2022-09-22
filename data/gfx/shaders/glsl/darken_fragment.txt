@@ -1,0 +1,10 @@
+uniform float brightness;
+
+varying vec4 colour;
+
+void main()
+{
+	vec4 result = colour;
+	result.rgb *= brightness;
+	gl_FragColor = result;
+}

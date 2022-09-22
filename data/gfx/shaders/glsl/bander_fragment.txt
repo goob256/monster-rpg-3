@@ -1,0 +1,23 @@
+uniform vec3 m;
+uniform vec3 range;
+uniform float alpha;
+uniform vec4 cmin;
+uniform vec4 cmax;
+
+varying vec4 colour;
+
+void main()
+{
+	vec4 result = colour;
+
+	vec3 a = result.rgb - m;
+	vec3 b = mod(a, range);
+	result.rgb -= b;
+
+	result.rgb = max(result.rgb, cmin.rgb);
+	result.rgb = min(result.rgb, cmax.rgb);
+
+	result *= alpha;
+
+	gl_FragColor = result;
+}

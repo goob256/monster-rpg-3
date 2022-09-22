@@ -1,0 +1,29 @@
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: COLOR0;
+	float4 gl_FragCoord : TEXCOORD1;
+};
+
+float3 m;
+float3 range;
+float alpha;
+float4 cmin;
+float4 cmax;
+
+float4 main(VS_OUTPUT Input) : COLOR0
+{
+	float4 result = Input.Colour;
+
+	float3 a = result.rgb - m;
+	float3 b = a % range;
+	result.rgb -= b;
+
+	result.rgb = max(result.rgb, cmin.rgb);
+	result.rgb = min(result.rgb, cmax.rgb);
+
+	result *= alpha;
+
+	return result;
+}

@@ -1,0 +1,48 @@
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: COLOR0;
+	float4 gl_FragCoord : TEXCOORD1;
+};
+
+static const float M_PI = 3.1415926535897932384626433832795f;
+
+int screen_w;
+int screen_h;
+float t;
+float mush_x;
+float mush_y;
+float maxx;
+float4 colour1;
+float4 colour2;
+
+// Calculated gl_FragCoord equivalent from Input.gl_FragCoord (from the default vertex shader)
+float4 get_gl_FragCoord(float4 input)
+{
+	float4 gl_FragCoord = input / input.w;
+	gl_FragCoord.x = floor((gl_FragCoord.x + 1.0f) / 2.0f * screen_w);
+	gl_FragCoord.y = screen_h - floor((1.0f - gl_FragCoord.y) / 2.0f * screen_h);
+	return gl_FragCoord;
+}
+
+float4 main(VS_OUTPUT Input) : COLOR0
+{
+	float4 gl_FragCoord = get_gl_FragCoord(Input.gl_FragCoord);
+
+	float x = gl_FragCoord.x - mush_x;
+	float y = gl_FragCoord.y - mush_y;
+	float angle = atan2(y, x);
+	float len = sqrt(x*x + y*y);
+	float p = 1.0f - (len / maxx);
+
+	angle += p * M_PI * 2 * 2;
+	angle += t * M_PI * 2 * 5;
+
+	if (t > p && sin(angle) < t) {
+		return colour1;
+	}
+	else {
+		return colour2;
+	}
+}

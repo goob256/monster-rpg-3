@@ -1,0 +1,39 @@
+10
+Créditos para todos
+Has visto los créditos.
+
+1	
+Guardar nunca está de más
+Guarda partida por primera vez.
+
+7
+¡Dame el botín!
+Encuentra 50 tesoros.
+
+4
+El pez gordo
+Pesca un pez digno de premio.
+
+2
+Tiro afortunado
+Asesta 10 golpes de suerte.
+
+3
+¡Eh, Zeus!
+Aprende un ataque Vampiro.
+
+6
+Indigestión
+Enferma por comer un fruto de cáctus.
+
+5
+¡Como nuevo!
+Resucita de entre los muertos.
+
+8
+Podría ser yo
+Ten piedad de un villano.
+
+9
+De una sentada
+Termina el juego sin morir o cargar partida.

@@ -1,0 +1,9 @@
+@PO0 = { 0 25 }
+@PO1 = { 0 25 100 0 }
+@PO2 = { 0 25 -25 0 }
+@PO3 = { 0 0 75 0 }
+@VAS0 = { 2048 2048 0 }
+A v1536 l2 @TYPE3 @CP4 o1 @RT0 @PO0 c @PO1 @PO1 cw @PO0
+B r4 v1536 l2 @TYPE3 @CP4 o1 @RT0 @PO0 c @PO1 @PO1 cw @PO0
+C v1536 l2 @TYPE3 @CP4 o2 @RT0 @PO2 cww @PO2 @VAS0 @PO3 c @PO3 @VAS0
+D r16 v1536 l2 @TYPE3 @CP4 o2 @RT0 @PO2 cww @PO2 @VAS0 @PO3 c @PO3 @VAS0

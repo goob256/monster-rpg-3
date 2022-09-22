@@ -1,0 +1,805 @@
+0:Eny
+1:Tiggy
+2:Heal
+3:Cure
+4:Heal Plus
+5:Fire
+6:Bolt
+7:Ice
+8:vBolt
+9:vIce
+10:vFire
+11:Heal Omega
+12:Unknown...
+13:Potion
+14:A small vial.$Heals 100 HP.
+16:Special tonic.$Cures status ailments.
+17:Holy Water
+18:Blessed water.$Revives KO'd party member.
+19:Elixir
+20:A potent mix.$Restores MP.
+21:Fire Scroll
+22:A dusty Magic Scroll.
+23:Bolt Scroll
+25:Heal Scroll
+27:Cure Scroll
+29:Apple
+30:Fresh fruit.$Heals all HP.
+31:Bait
+32:A large nightcrawler.
+33:Potion Plus
+34:A flask full of liquid.$Heals 250 HP.
+35:Heal Plus Scroll
+37:Fish
+38:A small tuna.$Restores all HP and MP.
+39:Ice Scroll
+41:Axe
+42:A blunt axe.$Good for chopping wood.
+43:Short Sword
+44:A small blade.$Could be a child's.
+45:Ghoul Sword
+46:A green blade.$Was once a Ghoul's.
+47:Shank
+48:A sharpened spoon.
+49:Tomahawk
+50:A sharp axe.$Nice find!
+51:Spear
+52:A barbed fishing spear.
+53:Long Sword
+54:A long blade.$Belonged to a Knight.
+55:Ice Sickle
+56:Icy and sharp.$Never melts.
+57:Helmet
+58:A bowl-like helmet for a big head.
+59:Chain Mail
+60:Chain mail.$Never used.
+61:Rusty Mail
+62:Rusty chain mail.$Good enough.
+63:Plate Mail
+64:Tough plate mail.$Knight's insignia.
+65:Ring
+66:A silver ring.$Engraved with initials.
+69:Vampire Pendant
+70:A jeweled medallion.$Shaped like a bat.
+73:Second Chance
+74:Raises the dead.$Rare indeed!
+75:Rune
+76:NNWNEEN
+77:Onyx Blade
+78:A sharp, dark blade.$Made from mountain rock.
+79:Onyx Armour
+80:Tough black armour.$Nearly impenetrable.
+81:Jade Sword
+82:A shiny green weapon.$A real gem.
+83:Feller
+84:Soldier
+85:Coro
+86:Moryt
+87:Captain
+88:Woman
+89:Girl
+90:Mayor
+91:Palla
+92:Sailor
+93:Druid
+94:RETURN
+95:ESCAPE
+96:BACKSPACE
+97:TAB
+98:SPACE
+99:CAPSLOCK
+100:F1
+101:F2
+102:F3
+103:F4
+104:F5
+105:F6
+106:F7
+107:F8
+108:F9
+109:F10
+110:F11
+111:F12
+112:PRINTSCREEN
+113:SCROLLLOCK
+114:PAUSE
+115:INSERT
+116:HOME
+117:PAGEUP
+118:DELETE
+119:END
+120:PAGEDOWN
+121:RIGHT
+122:LEFT
+123:DOWN
+124:UP
+125:NUMLOCK
+126:KEYPAD /
+127:KEYPAD *
+128:KEYPAD -
+129:KEYPAD +
+130:KEYPAD ENTER
+131:KEYPAD 1
+132:KEYPAD 2
+133:KEYPAD 3
+134:KEYPAD 4
+135:KEYPAD 5
+136:KEYPAD 6
+137:KEYPAD 7
+138:KEYPAD 8
+139:KEYPAD 9
+140:KEYPAD 0
+141:KEYPAD .
+142:APPLICATION
+143:POWER
+144:KEYPAD =
+145:F13
+146:F14
+147:F15
+148:F16
+149:F17
+150:F18
+151:F19
+152:F20
+153:F21
+154:F22
+155:F23
+156:F24
+157:EXECUTE
+158:HELP
+159:MENU
+160:SELECT
+161:STOP
+162:AGAIN
+163:UNDO
+164:CUT
+165:COPY
+166:PASTE
+167:FIND
+168:MUTE
+169:VOLUMEUP
+170:VOLUMEDOWN
+171:KEYPAD ,
+172:KEYPAD = (AS400)
+173:ALTERASE
+174:SYSREQ
+175:CANCEL
+176:CLEAR
+177:PRIOR
+178:RETURN
+179:SEPARATOR
+180:OUT
+181:OPER
+182:CLEAR / AGAIN
+183:CRSEL
+184:EXSEL
+185:KEYPAD 00
+186:KEYPAD 000
+187:THOUSANDSSEPARATOR
+188:DECIMALSEPARATOR
+189:CURRENCYUNIT
+190:CURRENCYSUBUNIT
+191:KEYPAD (
+192:KEYPAD )
+193:KEYPAD {
+194:KEYPAD }
+195:KEYPAD TAB
+196:KEYPAD BACKSPACE
+197:KEYPAD A
+198:KEYPAD B
+199:KEYPAD C
+200:KEYPAD D
+201:KEYPAD E
+202:KEYPAD F
+203:KEYPAD XOR
+204:KEYPAD ^
+205:KEYPAD %
+206:KEYPAD <
+207:KEYPAD >
+208:KEYPAD &
+209:KEYPAD &&
+210:KEYPAD |
+211:KEYPAD ||
+212:KEYPAD :
+213:KEYPAD #
+214:KEYPAD SPACE
+215:KEYPAD @
+216:KEYPAD !
+217:KEYPAD MEMSTORE
+218:KEYPAD MEMRECALL
+219:KEYPAD MEMCLEAR
+220:KEYPAD MEMADD
+221:KEYPAD MEMSUBTRACT
+222:KEYPAD MEMMULTIPLY
+223:KEYPAD MEMDIVIDE
+224:KEYPAD +/-
+225:KEYPAD CLEAR
+226:KEYPAD CLEARENTRY
+227:KEYPAD BINARY
+228:KEYPAD OCTAL
+229:KEYPAD DECIMAL
+230:KEYPAD HEXADECIMAL
+231:LEFT CTRL
+232:LEFT SHIFT
+233:LEFT ALT
+234:LEFT GUI
+235:RIGHT CTRL
+236:RIGHT SHIFT
+237:RIGHT ALT
+238:RIGHT GUI
+239:MODESWITCH
+240:AUDIONEXT
+241:AUDIOPREV
+242:AUDIOSTOP
+243:AUDIOPLAY
+244:AUDIOMUTE
+245:MEDIASELECT
+246:WWW
+247:MAIL
+248:CALCULATOR
+249:COMPUTER
+250:AC SEARCH
+251:AC HOME
+252:AC BACK
+253:AC FORWARD
+254:AC STOP
+255:AC REFRESH
+256:AC BOOKMARKS
+257:BRIGHTNESSDOWN
+258:BRIGHTNESSUP
+259:DISPLAYSWITCH
+260:KBDILLUMTOGGLE
+261:KBDILLUMDOWN
+262:KBDILLUMUP
+263:EJECT
+264:SLEEP
+265:APP1
+266:APP2
+267:AUDIOREWIND
+268:AUDIOFASTFORWARD
+269:A
+270:B
+271:X
+272:Y
+273:LB
+274:RB
+275:Heal Omega Scroll
+277:Potion Omega
+278:A jug of glowing fluid.$Heals 999 HP.
+279:Mighty Man
+280:Cactus Fruit
+281:English
+282:French
+283:Jade Armour
+284:Rare armour.$Light and strong.
+285:Flame Sword
+286:A molten blade.$Burns continuously.
+287:Yum! Or not!
+1000:SNEAK ATTACK!
+1001:Received %d gold!
+1002:Received %d experience!
+1003:Inventory full!
+1004:Received %d %s!
+1005:Received %s!
+1006:%s gained %d levels!
+1007:%s gained a level!
+1008:Poisoned!
+1013:Keep your progress until you come back?
+1014:Quit to title?
+1015:You died from poison!
+1018:They were up this way! Follow me!
+1019:Use the DPAD to move.
+1020:Press A to interact with things.
+1021:Tap where you want to walk to.
+1022:Tap things next to you to interact with them.
+1023:Use the ARROW KEYS to move.
+1024:Press
+1025:to interact with things.
+1029:Press A to scroll...
+1030:Tap to scroll...
+1032:to scroll...
+1036:(shouting) THIS WAY ENY!
+1038:Hoo! I told you so! Look at these!
+1040:ZAA! T-Tiggy! Come here!
+1042:Man alive! How do we carry it home?
+1044:Did you see that?
+1046:See what?
+1048:Tiggy, look out!
+1050:I'll get these ones, you look for more!
+1052:Go look for fiddleheads!
+1054:What's going on???
+1056:What was that thing?
+1057:I haven't seen a monster in ages!
+1059:I hope it's the last!
+1060:Let's head back to the village.
+1061:Press B to access the menu.
+1062:Tap the top left corner to access the menu.
+1064:to access the menu.
+1067:This is a Save Zone.
+1068:You can save your progress here.
+1070:Halt! Who goes there?!
+1072:It's just us. Eny and Tiggy.
+1074:Oh, it's you... There has been a sudden influx of monsters so we're on our guard.
+1076:Yeah, that might be our fault...
+1078:I should have known.
+1079:Well, the mayor wants to see you. Head to the inn to rest then go to the palace!
+1081:You're not to leave town until you go to the palace. Mayor's orders.
+1083:"To the Coast"...
+1085:"To the Haunted Mansion"...
+1086:Innkeep
+1087:Eny, Tiggy! Would you like to stay at the inn?
+1088:Come back anytime!
+1089:Enjoy your sleep!
+1090:Shopkeep
+1091:I deal in items. What can I get for you?
+1093:I sell weapons. What do you need?
+1094:Spike
+1095:I'm Spike. Do you need armour?
+1096:Old Man
+1097:My boys were working in the woods when the monsters came.
+1098:Please find them for me!
+1100:You found one of my boys in the woods? That's his ring!
+1101:Please find my other son!
+1103:Woe is me. You were the last people my boys saw before they died.
+1104:Would you believe I know magic?
+1105:I was planning on teaching my boys, but I'll teach you instead.
+1106:I'll trade you. One spell per ring.
+1109:I'm going to miss my boys...
+1111:Scroll Dealer
+1115:Would you like to buy a Heal Plus Scroll? Only 250 gold!
+1120:Would you like to buy a Cure Scroll? Only 100 gold!
+1121:Prisoner
+1122:I could get outta here anytime I want...
+1124:Want to meet my pet rat? Hahaha!
+1126:You wanted to see us, sir?
+1128:Ahhh, Eny and Tiggy.^Allow me to get this important matter out of the way first...^Why are you barefoot???
+1130:We were collecting fiddleheads, sir.
+1132:Ahhh, that explains it...
+1134:Well, as you know, there has been a monster outbreak.^My guards really are just for show... sure, they can handle Level 1 monsters, but anything beyond that and they're useless.^Seeing as you two are the only heroes in town with real experience, I have a mission for you.
+1136:We don't do "missions" anymore, sir.
+1138:Do you do "prisons"?
+1140:What was that mission, sir?
+1142:I thought so.^We are all familiar with the haunted mansion across the river in the South East, no?^I have reason to believe it is the source of the outbreak.^Once you've made preparations, head there and put an end to this madness.
+1144:But isn't it... haunted?
+1146:I hear the prison has a few ghosts of its own...
+1148:Very well sir, we'll be on our way soon...
+1150:Excellent.^Do stop by the basement and see if the Scroll Dealer has anything you can use before you go...
+1151:And bring plenty of HOLY WATER and ELIXIR. It's a tad dangerous.
+1153:You're back! I trust you've put an end to the menace?
+1155:The only menace here is YOU!
+1157:We met your brother. He told us all about the Pendant you're using to drain his power!
+1159:Well... heh, uh, I wouldn't say drain. *gulp*
+1160:Think of it as borrowing!
+1162:You little snake! How could you do that to your own brother?
+1164:Waaa, why me? I only wanted to be mayor! Is that too much to ask? I never got to do anything my whole life!
+1166:Hold up! You are NOT the victim here!
+1167:And none of this changes the fact that there are MONSTERS roaming around again!
+1169:Ohhh my poor soul! What do you want from me?
+1171:We'll be needing a ship...
+1173:Fiiine... tell the Captain his ship is at your mercy!
+1174:Take whatever you need!
+1176:You got it!
+1178:Be careful with that!
+1179:Whoever uses it drains the power of the person wearing the other one!
+1181:Yeah, we kind of got that.
+1182:Learned vBolt!
+1183:(Use Vampires in battle to deal big damage!)
+1185:Where did you find these anyway?
+1187:In a cave. *sniff*
+1188:In the mountains in the Eastern Kingdom...
+1190:Maybe we'll check it out while we're there.
+1192:Woot woot! Good as new!
+1194:Let's take a look around.
+1196:Hey! You! Who are you?
+1198:Me? I live here.
+1200:Then you're the one spawning these monsters!
+1202:Who sent you here?
+1204:The mayor sent us.
+1205:We're here to put an end to the monster outbreak!
+1207:Oh, you're friends of the mayor...
+1208:Well, any friend of the mayor is an enemy of mine!
+1209:Prepare to meet your doom!
+1211:Ugh... why must you torment my soul further?
+1213:Torment YOU?! You're putting everyone in danger by spawning monsters!
+1215:I'm afraid you're mistaken...
+1216:A deeper sorrow than my own is spawning these monsters.
+1217:Here, take this.
+1219:What's this?
+1221:The mayor... is my brother.
+1222:When we were children, we found these Vampire Pendants.
+1223:The one using them gains great power...
+1224:At the expense of the other...
+1225:My brother gained power at my expense...
+1226:I refused to use my pendant.
+1228:That little snake!
+1229:And he sent us here to kill you!
+1231:We're really sorry Mister!
+1232:Eny, let's pay the mayor a visit!
+1234:Definitely!
+1236:With all my suffering, I've developed very... keen senses... I sense a great sorrow... in the Eastern Kingdom.
+1237:That's... where the monsters are coming from!
+1238:But now...
+1239:I'm afraid I can't... I can't get up...
+1241:Don't worry sir, we'll get the other Pendant from the mayor!
+1243:Thank you, but do hurry. I feel... very... weak...
+1245:Captain! We need to talk!
+1247:What'll it be young lady?
+1249:The mayor said we can use your ship.
+1251:What d'ya need my ship for?
+1253:We need to get to the Eastern Kingdom.^We think the monsters are coming from there.
+1255:Aye, but the seas are fierce!^You best be equipped for battle!
+1257:We can handle it...
+1258:Head East!
+1259:Maybe later...
+1261:At your command, miss!
+1262:Sleep here?
+1264:Looking to upgrade?
+1266:Need supplies?
+1268:Rumours are there's a fierce beast in these parts. Be ready!
+1270:Turn back!
+1271:Nevermind...
+1276:Cast a line?
+1277:Keep going!
+1278:Drop anchor.
+1279:Turn back...
+1280:Captain's orders?
+1282:Sea's too deep to anchor here!
+1284:Here we are, miss!
+1285:The Kingdom is North of here, through the ummm, errr, desert!
+1286:Head West!
+1294:Would you like to buy an Ice Scroll? Only 1000 gold!
+1296:You'll be needing protection if you're heading North...
+1298:Western armour is no good here!
+1300:Huh? How did we wind up back here???
+1301:Learned vIce!
+1303:If you want to get back to the sea, head South!
+1305:Nice work, navigating the desert!^You should have this!
+1307:What are these things???
+1309:More monsters!
+1311:Let's get out of here!
+1313:I'm worried about the folks in Riverside!
+1315:Let's go!
+1317:There are definitely monsters here!
+1319:This could be the source of the outbreak!
+1321:Let's keep looking...
+1323:I think we're on the right track!
+1325:Keep looking!
+1326:SFX Volume:
+1327:Music Volume:
+1328:Audio Settings
+1329:MISS!
+1330:LUCKY HIT!
+1331:Retry boss?
+1332:Select a target...
+1333:Select an item...
+1334:Select a spell...
+1335:Select a vampire...
+1336:Select an action...
+1337:MP
+1338:HP
+1340:Defending...
+1341:Couldn't run...
+1342:Go!
+1346:Dropped %d gold!
+1347:Attack
+1348:Item
+1349:Spell
+1350:Vampire
+1351:Defend
+1352:Run
+1353:Inventory empty...
+1354:Raised from the dead!
+1355:You died in battle!
+1356:Monster
+1357:Are you here to take my Rune?
+1359:What Rune? What are you talking about?
+1361:You'll never take my Rune!
+1363:Did I say %d kisses? I meant GOLD!
+1366:Your loss!
+1368:Weigh anchor, mates! Away we go!
+1370:Turn her around, mates! We're headin' back!
+1372:Ready when you are, miss!
+1373:Apply changes?
+1374:Press a key...
+1375:Press a button...
+1376:Keyboard Controls
+1377:Joystick Controls
+1378:Action
+1379:Back/Menu
+1380:Examine
+1381:Settings
+1382:Next Character
+1383:Fullscreen
+1384:Left
+1385:Right
+1386:Up
+1387:Down
+1393:Duplicates found! Discard?
+1394:Fiddler
+1395:Goo
+1396:Mushroom
+1397:Mini Goo
+1398:Bloated
+1399:Spit
+1400:Treant
+1401:Acorn
+1402:Sludge
+1403:Gunk
+1404:Ghastly
+1405:Creepy
+1406:Werewolf
+1407:Bite
+1408:Knightly
+1410:Throw
+1412:Bats
+1413:Tentacle
+1414:Wave
+1415:Tidal
+1416:Shocker
+1420:Whirlpool
+1421:Screech
+1422:Sandworm
+1423:Hide
+1424:Flare
+1427:Cyclone
+1428:Blinded!
+1429:Bones
+1431:Fish aren't biting...
+1432:You have no bait.
+1433:KO
+1434:OK
+1435:Poison
+1437:Game saved!
+1438:An error occurred!
+1439:CURE!
+1440:MP!
+1441:LIFE!
+1442:Continue
+1443:Start
+1444:Load
+1445:Quit
+1457:Save your game?
+1458:PROGRESS
+1459:STATS
+1460:ITEMS
+1461:SPELLS
+1462:WEAPONS
+1463:ARMOUR
+1464:VAMPIRES
+1465:DISCARD
+1467:for info on your inventory.
+1468:Press and hold for info on your inventory.
+1471:Resume Game
+1472:Save Game
+1473:Quit to title
+1476:Level
+1477:Exp
+1478:Next
+1479:ATK
+1480:DEF
+1481:LUK
+1482:Gold
+1485:No items
+1488:Not enough MP!
+1489:All
+1490:Select target:
+1491:No spells
+1492:Weapon
+1494:No weapons
+1495:Armour
+1496:Defense
+1497:No armour
+1498:Cost (HP)
+1499:Cost (MP)
+1500:Discard how many?
+1502:TV safe mode
+1503:Use on-screen controller
+1504:Rumble enabled
+1505:Hide settings button
+1506:Other Settings
+1507:Erase this game?
+1508:Choose a save slot:
+1509:Overwrite this game?
+1510:Load this game?
+1514:Whoever reads a Scroll learns its spell.
+1515:Scrolls disappear after they've been read once.
+1516:OK, suit yourself.
+1517:Settings
+1518:Language Settings
+1519:Video Settings
+1524:3rd Party Licenses
+1526:Buy %d for %d gold?
+1527:Sell %d for %d gold?
+1532:Armour
+1535:BUYING
+1536:SELLING
+1541:Buy how many?
+1542:Sell how many?
+1544:Windowed Modes:
+1545:Fullscreen Modes:
+1546:- Empty -
+1547:*** CORRUPT ***
+1553:I'll have more inventory soon. Check back again sometime.
+1554:There's nothing more I can teach you...
+1556:"DANGER AHEAD!"...
+1558:HALT! Not without the Queen's permission!
+1560:Haven't I given you enough?!
+1562:You know, I could make a killing off this scroll...^But the world needs you! Here, it's on me!
+1565:You'll need better than that rusty armour you came here with!
+1567:We make the finest weapons found anywhere.
+1569:We sell only top quality goods here.
+1570:Queen
+1571:Visitors! We rarely have visitors!^What brings you through the perils of the desert to my castle?^Also... why are you barefoot?
+1573:We were picking fiddleheads.^And we're here to get rid of the monsters. Do you know why they're spawning?
+1575:Ah... I wish I did. My Mighty Men have been fighting them for days now.
+1577:Our friend said a great sadness was spawning them...
+1579:There was a boy who used to hang around the castle.^Saddest fellow anyone's ever seen. He used to steal bread, but he was so sad we couldn't bear punishing him.^Last anyone saw of him, he went up into mountains to the North.
+1581:What do you know about this boy?
+1583:Not much. He came around a few months ago, sad as can be... nobody had seen him before.
+1585:Thanks for your help. We'll head North to try and track him down.
+1587:Good luck, and feel free to get some rest in the castle before you leave.^The castle merchants may have some better equipment for you also. You're going to need it!
+1589:We've made it this far!
+1591:Good luck in the mountains!
+1593:This menu will now exit.
+1594:Install .desktop?
+1595:Install .desktop file to ~/.local/share/applications?^This will give you a shiny icon.
+1596:I've sailed the mighty seas all me life... and brought back plenty of fine treasure... but alas, I'm a lonely man.
+1597:When it comes to battling, practice makes perfect.^If you're a little weak, practice up!
+1598:The mystery of the desert is a Druid secret. Hehehe.
+1599:It's true... the man across town starts fires with his mind!
+1600:Give this... to my brother...
+1601:My brother... please give this to him...
+1602:Waaa! Why me?!
+1603:Explore that haunted mansion top to bottom! I know the monsters are coming from there!
+1604:The source of the monsters is the haunted mansion in the South East. Head there now!
+1605:I had to get outside and get some fresh air...
+1606:You're crazier than the Queen!^... Don't tell her I said that!
+1607:Hmm... Where did my Mighty friend go?
+1608:Welcome to Crossroads Castle!^Right this way! Right this way!
+1609:We don't get many visitors.
+1610:We've been on alert for days.
+1611:My father was a Mighty Man, HIS father was a Mighty Man!
+1612:The Queen is up these stairs.
+1613:Throne Room is this way!
+1614:*snore* Mighty...$*snore* That's me!
+1615:Heading into the mountains? Brave!
+1616:Heading into the mountains? Brave!^Especially since you don't know Heal Omega...
+1617:*snore*$*mumble* Warlock...$...demons *snore*
+1618:I feel myself... slipping away...
+1619:It's the sailor's life for me!
+1620:There are mighty big fish in the great deep!
+1621:Want to hear something crazy?^I can't swim!
+1622:I'm about to level up!
+1623:Head to the palace after getting some rest. The mayor wants to see you.
+1624:You can SAVE at the inn.
+1625:Stay out of trouble!
+1626:This whole monster outbreak has ruined my vacation!
+1627:Go on ahead!
+1628:Operation "Night Hawk" is underway civilian... stay out of the way.
+1629:My watch-mate takes his job very seriously...
+1630:Keep 'er movin'...
+1631:Bigshots on a quest! Pffft!
+1632:The mayor wants to see you.
+1633:This armour itches...
+1634:Straight ahead, ma'am.
+1635:Poor Mayor...
+1636:Mayor is life...
+1637:Am I still getting paid?
+1638:This job pays well, therefore I would protect the mayor with my life!
+1639:Mayor says we have to keep these criminals locked up permanently.^I don't know, we've all stolen something, right?
+1640:I grounded my daughter... She keeps tormenting the poor old man across town.
+1641:Blind
+1642:© 2021 Nooskewl
+1643:Saves
+1644:Autosaves
+1645:Gayan
+1646:Wraith
+1647:Rocky
+1648:Shadow
+1649:Reaper
+1650:Pitch Black
+1651:Weep
+1652:Curse
+1653:Fireball
+1654:Slam
+1655:Darkness
+1656:These guys are tough. We must be getting close!
+1657:You there! Are you the one spawning these monsters?
+1658:Waaa, please leave me here alone in my sorrows!^I don't need anyone trying to cheer me up!
+1659:Listen, we can tell you're really sad, and we think that's causing monsters to appear. You have to stop!
+1660:Waaa, I'll always be sad. After what I've done, I deserve nothing else!
+1661:I'm sure you're very sorry for what you've done and you've learned your lesson... You don't have to go on like this!
+1662:Waaa, oh yeah, try and stop me!
+1663:Gayan is changing forms!
+1664:Tiggy... you know what we have to do!
+1665:*nods*
+1666:They... died for me.^Knowing how awful I am, they died for me!
+1667:*crying*
+1668:...
+1669:What happened?
+1670:You're alive! I can't believe it!
+1671:Feeling better are we?
+1672:I thought with the terrible deed I committed, I'd never be forgiven...
+1673:What is it you did?
+1674:It was my brother's birthday... I baked him a cake... with rare giant fiddlehead icing... and it poisoned him...
+1675:I'm sorry. But now you must move forward and forgive yourself. Not doing so just causes more problems!
+1676:*laughs* I have been stirring up heaps of trouble.^Thank you both. I feel better!
+1677:Come on, let's go do something fun to get your mind off your troubles!
+1678:Can we find some shoes first? My feet hurt!
+1679:Why are you barefoot?
+1680:Eny, Tiggy
+1681:Eny, Tiggy, Gayan
+1682:*laughing*
+1683:Eny
+1684:We're on the right track! I know it!
+1685:^GFX, Sounds
+1686:^Story + Code
+1687:Trent Gamblin
+1688:^Quality Assurance
+1689:Eric Johnson
+1690:Kristian Johnson
+1691:^Original Palette
+1692:ENDESGA
+1693:^Fonts
+1694:Craig Kroeger
+1695:^Battle Music
+1696:Jacob Dawid
+1697:^Extra Music
+1698:Rupert Cole
+1699:^Special Thanks
+1700:Darryl Becker
+1701:Tanya Gamblin-Becker
+1702:Do you see what I see?
+1703:The holes in the wall... they match our Vampire Pendants!
+1704:Maybe this is where the Mayor and Palla found them!
+1705:Learned vFire!
+1706:vFire, also known as Double Vampire, is the most powerful Vampire skill of all! No one who has used it ever lived to tell the tale, because it drains 100% of the health and magic of both of those who hold the Pendants!
+1707:Nice!
+1708:Are you crazy?! It'll kill us both!
+1709:Choose an autosave:
+1710:There was an issue with sign in. Please try again later.
+1711:Achievements
+1712:%d local slots and %d cloud slots will be overwritten. Continue?
+1713:An error occurred!
+1714:Displaying the licenses failed!
+1715:You are not connected to your Amazon account!
+1716:Sync Cloud Saves
+1717:Sync with the cloud now?
+1718:Erase all saves from the cloud?
+1719:Success!
+1720:Nothing to do!
+1721:Please wait...
+1722:Please sign into iCloud to use this feature.
+1723:Manual
+1724:^French Translation
+1725:Words of Magic
+1726:Charts and maps...
+1727:Learned %s!
+1728:Do you want to learn about Scrolls?
+1729:Yes
+1730:No
+1731:Always
+1732:Cancel
+1733:Mixed results...
+1734:They didn't like that...
+1735:They liked that...
+1736:didn't like that...
+1737:liked that...
+1738:^Arrangement
+1739:MAP
+1740:Enter/Exit
+1741:Select for Legend
+1742:German
+1743:Italian
+1744:Spanish
+1745:^Spanish Translation
+1746:^German Translation
+1747:^Italian Translation
+1748:Ramón Méndez
+1749:^Brazilian Portuguese
+1750:^Translation
+1751:Charmander
+1752:Brazilian Portuguese
+1753:Alba Calvo
+1754:Use alternative font
+1755:Jonas Hecksher

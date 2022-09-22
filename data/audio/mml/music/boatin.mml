@@ -1,0 +1,223 @@
+@PO0 = { 0 -24 }
+@PO1 = { 0 -48 }
+@PO2 = { 0 -96 }
+@VAS0 = { 0 }
+@VAS1 = { 128 0 }
+@D0 = { 32 80 128 32 }
+@D1 = { 128 0 }
+@D2 = { 32 128 32 128 }
+
+A @TYPE3 @PO0 @CP4 @VAS0 t130
+A o2c8c8c8r8c8r8c8r8
+A c8r8c8r8c8r8c8r8
+A c8c8c8r8c8r8c8r8
+A c8r8c8r8c8r8c8r8
+A c8c8c8r8c8r8c8r8
+A c8r8c8r8c8r8c8r8
+A c8c8c8r8c8r8c8r8
+A c8c8c8r8c8r8c8r8
+A c8c8c8r8c8r8c8r8
+A c8r8c8r8c8r8c8r8
+A c8c8c8c8c8r8c8r8
+A c8r8c8r8c8r8c8r8
+A r192
+A c8c8c8r8c8r8c8r8
+A c8r8c8r8c8r8c8r8
+A c8r8c8r8c8r8c8r8
+A c8c8c8r8c8c8c8c16..w96
+A c192r8...r96c8c8r8c8r8c8
+A r4.c8r8c8r8c8
+A r8c8c8r8c8r8c8r8
+A c8r8c8c8c8c8r8c8
+A r2.c4
+A r4c8r8c8r8c8r2.
+A c8r4.
+A c8c8r8c8r8c8r8
+A c8c8r8c8r8c8r4.
+A c8r8c8r8c8r8c8
+A c8r8c8r8c8r8c8r8
+A c8c8c8c8r8c8r2.
+A c4r4
+A c8r8c8r8c8r2.
+A c8r4.c8
+A c8r8c8r8 @VAS0 @PO0
+
+B @VAS1 t130 @TYPE1 o9c16r8.c16r8.c16r8.c16r8.
+B c16r8.c16r8.c16r16c16r16c16r8.
+B c16r8.c16r8.c16r8.c16r8.
+B c16r8.c16r8.c16r16c16r16c16r8.
+B c16r8.c16r8.c16r8.c16r8.
+B c16r8.c16r8.c16r16c16r16c16r8.
+B c16r8.c16r8.c16r8.c16r8.
+B c16r8.c16r8.c16r16c16r16c16r8.
+B c16r8.c16r8.c16r8.c16r8.
+B c16r8.c16r8.c16r16c16r16c16r8.
+B c16r8.c16r8.c16r8.c16r8.
+B c16r8.c16r8.c16r16c16r16c16r8.
+B r192
+B c16r8.c16r8.c16r8.c16r8.
+B c16r8.c16r8.c16r16c16r16c16r8.
+B c16r8.c16r8.c16r8.c16r8.
+B c16r8.c16r8.c16r16c16r16c16r6r64
+B c16r8.c16r16c16r8.c16r8.c16r4..
+B c16r8.c16r8.c16r8.
+B c16r16c16r8.c16r8.c16r8.
+B c16r16c16r16c16r16c16r16c16r16c16r16>f+16r16<c16r8.
+B c16r16c16r8.c16r8.c16r4..
+B c16r8.c16r8.c16r8.
+B c16r16c16r8.c16r8.c16r8.c16r16
+B c16r16c16r16c16r16c16r16c16r16>f+16r16<c16r8.
+B c16r16c16r8.c16r8.c16r4..
+B c16r8.c16r8.c16r8.c16r16
+B c16r8.c16r8.c16r8.c16r16c16r16
+B c16r16c16r16c16r16c16r16>f+16r16<c16r8.c16r16
+B c16r8.c16r8.c16r4..
+B c16r8.c16r8.c16r8.c16r16c16r8.
+B c16r8.c16r8.c16r16c16r16c16r16
+B c16r16c16r16c16r16>f+16r16 @VAS1
+
+C @CD2 y32 @TYPE0 t130
+C @D2
+C o3b8<e4r4.d16r16d16r16
+C c8>b4r4.<c16r16c16r16
+C f8g4d8r8d8r8
+C @D2
+C @D0e1w8@D0
+C @D2
+C >b8<e4r4.d16r16d16r16
+C c8>b4r4.<c16r16c16r16
+C f8g4d8r8d8r8>b1w8
+C @D2
+C @D2
+C <e2w6r12d16r16d16r16
+C c8>b4r4.<c16r16c16r16
+C f8g4d8r8d8r8
+C @D2
+C @D0e1w8@D0
+C @D2
+C r192>b8<e4r4.d16r16d16r16
+C c8>b4r4.<c16r16c16r16
+C f8g4>b8r8b8r8
+C @D2
+C @D1e1w16..w96@D1
+C <c8r8>b8<c8r8>b8r8a4.
+C r8g8r8b4<c8
+C r8>b8<c8r8>b8r8g8r8
+C g8g8a8<c8>b8a4<c8
+C r8>b8<c8r8>b8r8a4.
+C r8g8r8b4<c8r8
+C >b8<c8r8>b8r8g8r8g8
+C r8a8e8r8e4<c8r8
+C >b8<c8r8>b8r8a4.
+C r8g8r8b4<c8r8>b8
+C <c8r8>b8r8g8r8g8g8
+C a8<c8>b8a4<c8r8>b8
+C <c8r8>b8r8a4.r8
+C g8r8b4<c8r8>b8<c8
+C r8>b8r8g8r8g8r8a8
+C e8r8e4
+
+D @TYPE3 @PO1 @CP4 @VAS0 t130
+D o3c8c8c8r8c8r8c8r8
+D c8r8c8r8c8r8c8r8
+D c8c8c8r8c8r8c8r8
+D c8r8c8r8c8r8c8r8
+D c8c8c8r8c8r8c8r8
+D c8r8c8r8c8r8c8r8
+D c8c8c8r8c8r8c8r8
+D c8c8c8r8c8r8c8r8
+D c8c8c8r8c8r8c8r8
+D c8r8c8r8c8r8c8r8
+D c8c8c8c8c8r8c8r8
+D c8r8c8r8c8r8c8r8
+D r192
+D c8c8c8r8c8r8c8r8
+D c8r8c8r8c8r8c8r8
+D c8r8c8r8c8r8c8r8
+D c8c8c8r8c8c8c8c16..w96
+D c192r8...r96c8c8r8c8r8c8
+D r4.c8r8c8r8c8
+D r8c8c8r8c8r8c8r8
+D c8r8c8c8c8c8r8c8
+D r2.c4
+D r4c8r8c8r8c8r2.
+D c8r4.
+D c8c8r8c8r8c8r8
+D c8c8r8c8r8c8r4.
+D c8r8c8r8c8r8c8
+D c8r8c8r8c8r8c8r8
+D c8c8c8c8r8c8r2.
+D c4r4
+D c8r8c8r8c8r2.
+D c8r4.c8
+D c8r8c8r8 @VAS0 @PO1
+
+E @TYPE3 @PO2 @CP4 @VAS0 t130
+E o4c8c8c8r8c8r8c8r8
+E c8r8c8r8c8r8c8r8
+E c8c8c8r8c8r8c8r8
+E c8r8c8r8c8r8c8r8
+E c8c8c8r8c8r8c8r8
+E c8r8c8r8c8r8c8r8
+E c8c8c8r8c8r8c8r8
+E c8c8c8r8c8r8c8r8
+E c8c8c8r8c8r8c8r8
+E c8r8c8r8c8r8c8r8
+E c8c8c8c8c8r8c8r8
+E c8r8c8r8c8r8c8r8
+E r192
+E c8c8c8r8c8r8c8r8
+E c8r8c8r8c8r8c8r8
+E c8r8c8r8c8r8c8r8
+E c8c8c8r8c8c8c8c16..w96
+E c192r8...r96c8c8r8c8r8c8
+E r4.c8r8c8r8c8
+E r8c8c8r8c8r8c8r8
+E c8r8c8c8c8c8r8c8
+E r2.c4
+E r4c8r8c8r8c8r2.
+E c8r4.
+E c8c8r8c8r8c8r8
+E c8c8r8c8r8c8r4.
+E c8r8c8r8c8r8c8
+E c8r8c8r8c8r8c8r8
+E c8c8c8c8r8c8r2.
+E c4r4
+E c8r8c8r8c8r2.
+E c8r4.c8
+E c8r8c8r8 @VAS0 @PO2
+
+F @PO1 @CP4 @VAS0 t130
+F o3c8c8c8r8c8r8c8r8
+F c8r8c8r8c8r8c8r8
+F c8c8c8r8c8r8c8r8
+F c8r8c8r8c8r8c8r8
+F c8c8c8r8c8r8c8r8
+F c8r8c8r8c8r8c8r8
+F c8c8c8r8c8r8c8r8
+F c8c8c8r8c8r8c8r8
+F c8c8c8r8c8r8c8r8
+F c8r8c8r8c8r8c8r8
+F c8c8c8c8c8r8c8r8
+F c8r8c8r8c8r8c8r8
+F r192
+F c8c8c8r8c8r8c8r8
+F c8r8c8r8c8r8c8r8
+F c8r8c8r8c8r8c8r8
+F c8c8c8r8c8c8c8c16..w96
+F c192r8...r96c8c8r8c8r8c8
+F r4.c8r8c8r8c8
+F r8c8c8r8c8r8c8r8
+F c8r8c8c8c8c8r8c8
+F r2.c4
+F r4c8r8c8r8c8r2.
+F c8r4.
+F c8c8r8c8r8c8r8
+F c8c8r8c8r8c8r4.
+F c8r8c8r8c8r8c8
+F c8r8c8r8c8r8c8r8
+F c8c8c8c8r8c8r2.
+F c4r4
+F c8r8c8r8c8r2.
+F c8r4.c8
+F c8r8c8r8 @VAS0 @PO1

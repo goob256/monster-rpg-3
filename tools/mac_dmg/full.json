@@ -1,0 +1,10 @@
+{
+	"title": "Monster RPG 3",
+	"icon-size": 80,
+	"icon": "icon.icns",
+	"background": "bg.png",
+	"contents": [
+		{ "x": 180, "y": 180, "type": "file", "path": "/Users/trent/code/m3/Monster RPG 3.app" },
+		{ "x": 620, "y": 180, "type": "link", "path": "/Applications" }
+	]
+}

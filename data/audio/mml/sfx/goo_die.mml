@@ -1,0 +1,6 @@
+@PO0 = { 1000 0 }
+@PO1 = { 750 0 }
+@PO2 = { 500 0 }
+@PO3 = { 0 100 }
+A o4 l16 @PO0 a @PO0 r64 @PO1 a @PO1 r64
+B y32 l32 o3 @PO3 cdcdcdc @PO3 r64

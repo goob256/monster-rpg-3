@@ -1,0 +1,39 @@
+10
+Crédits
+Regarder le générique.
+
+1	
+Ça, c'est fait
+Sauvegarder votre partie pour la première fois.
+
+7
+Pillards
+Trouver 50 trésors.
+
+4
+Gros poisson
+Pêcher une belle pièce.
+
+2
+Chanceux
+Effectuer 10 coups de chance.
+
+3
+Puissance et gloire
+Apprendre une attaque Vampire.
+
+6
+Ouille, ça pique
+Tomber malade en mangeant un fruit de cactus.
+
+5
+C'est reparti pour un tour
+Ressusciter un personnage.
+
+8
+Ça pourrait être moi
+Prendre pitié d'un méchant.
+
+9
+D'un seul coup
+Finir le jeu sans mourir, ni charger.

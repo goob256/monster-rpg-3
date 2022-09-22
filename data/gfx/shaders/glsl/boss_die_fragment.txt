@@ -1,0 +1,92 @@
+#define SMALL_TEXTURE_OFFSET 0.00001
+#define M_PI 3.1415926535897932384626433832795
+#define MAX_X_LEN 50.0
+#define MAX_Y_LEN 25.0
+#define MAX_RAND 10.0
+
+uniform sampler2D tex;
+uniform sampler2D noise;
+
+uniform float p; // percent 0-1 total effect done
+uniform float p2;
+uniform float p3;
+uniform float p4;
+uniform vec4 tint;
+uniform int sprite_w;
+uniform int sprite_h;
+uniform int draw_x;
+uniform int draw_y;
+uniform int screen_offset_x;
+uniform int screen_offset_y;
+uniform int screen_w;
+uniform int screen_h;
+uniform int shim_screen_w;
+uniform int shim_screen_h;
+uniform float scale;
+uniform int num_frames;
+uniform float frame_offset;
+
+varying vec4 colour;
+varying vec2 texcoord;
+
+float put_in_bounds(float f)
+{
+	return min(1.0-SMALL_TEXTURE_OFFSET, max(SMALL_TEXTURE_OFFSET, f));
+}
+
+void main()
+{
+	float x = (gl_FragCoord.x - float(screen_offset_x)) / scale;
+	float y = ((float(screen_h) - gl_FragCoord.y) - float(screen_offset_y)) / scale;
+
+	vec2 r = vec2(x / float(shim_screen_w), y / float(shim_screen_h));
+	vec4 noise_pixel = texture2D(noise, vec2(put_in_bounds(r.x), put_in_bounds(r.y)));
+	r.x = ((noise_pixel.r * 255.0 * 255.0) + (noise_pixel.g * 255.0)) / 65280.0 * 2.0 - 1.0;
+	r.y = ((noise_pixel.b * 255.0 * 255.0) + (noise_pixel.a * 255.0)) / 65280.0 * 2.0 - 1.0;
+
+	x += p * p * MAX_RAND * r.x + p2 * p2 * MAX_RAND * r.x;
+	y += p * p * MAX_RAND * r.y + p2 * p2 * MAX_RAND * r.y;
+
+	x -= float(draw_x);
+	y -= float(draw_y);
+
+	float add_x = p * M_PI * 2.0 * 2.0;
+	float len_x = p * MAX_X_LEN;
+	float cy = cos((y/float(sprite_h))*M_PI*2.0+add_x);
+
+	if (p2 > 0.0) {
+		float add_y = p2 * M_PI * 2.0;
+		float len_y = p2 * MAX_Y_LEN;
+		float sx = sin((x/float(sprite_w))*M_PI*2.0*2.0+add_y);
+		y -= sx * len_y;
+	}
+
+	// After using it for y calculation...
+	x -= cy * len_x;
+
+	if (x < 0.0 || x > float(sprite_w)-1.0 || y < 0.0 || y > float(sprite_h)-1.0) {
+		discard;
+	}
+	else {
+		x = x / (float(sprite_w)-1.0) / float(num_frames);
+		y = y / (float(sprite_h)-1.0);
+		y = 1.0 - y; // y was in 'normal' coordinates (0-h top to bottom)
+		x += frame_offset;
+		vec4 result = texture2D(tex, vec2(put_in_bounds(x), put_in_bounds(y)));
+		if (result.a == 0.0) {
+			discard;
+		}
+		else {
+			float shade = (result.r + result.g + result.b) / 3.0;
+			result = vec4(
+				p4 * result.r + p2 * shade,
+				p4 * result.g + p2 * shade,
+				p4 * result.b + p2 * shade,
+				result.a
+			);
+			vec4 inv = vec4(1.0, 1.0, 1.0, 1.0) - result;
+			inv = p2 * inv * tint;
+			gl_FragColor = (result + inv) * (1.0 - p3);
+		}
+	}
+}

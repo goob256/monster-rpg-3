@@ -1,0 +1,61 @@
+diff --git a/android-project/jni/SDL2/src/core/android/SDL_android.c b/android-project/jni/SDL2/src/core/android/SDL_android.c
+index a7f4e52..2bc6055 100644
+--- a/android-project/jni/SDL2/src/core/android/SDL_android.c
++++ b/android-project/jni/SDL2/src/core/android/SDL_android.c
+@@ -1971,6 +1971,20 @@ const char * SDL_AndroidGetExternalStoragePath(void)
+     return s_AndroidExternalFilesPath;
+ }
+ 
++void Android_JNI_JoystickInit(void)
++{
++    JNIEnv *env = Android_JNI_GetEnv();
++    jmethodID mid = (*env)->GetStaticMethodID(env, mActivityClass, "init_joystick", "()V");
++    (*env)->CallStaticVoidMethod(env, mActivityClass, mid);    
++}
++
++void Android_JNI_JoystickQuit(void)
++{
++    JNIEnv *env = Android_JNI_GetEnv();
++    jmethodID mid = (*env)->GetStaticMethodID(env, mActivityClass, "shutdown_joystick", "()V");
++    (*env)->CallStaticVoidMethod(env, mActivityClass, mid);    
++}
++
+ #endif /* __ANDROID__ */
+ 
+ /* vi: set ts=4 sw=4 expandtab: */
+diff --git a/android-project/jni/SDL2/src/core/android/SDL_android.h b/android-project/jni/SDL2/src/core/android/SDL_android.h
+index e0ae7b5..f168ceb 100644
+--- a/android-project/jni/SDL2/src/core/android/SDL_android.h
++++ b/android-project/jni/SDL2/src/core/android/SDL_android.h
+@@ -89,6 +89,9 @@ int Android_JNI_SetupThread(void);
+ /* Generic messages */
+ int Android_JNI_SendMessage(int command, int param);
+ 
++void Android_JNI_JoystickInit(void);
++void Android_JNI_JoystickQuit(void);
++
+ /* Init */
+ JNIEXPORT void JNICALL SDL_Android_Init(JNIEnv* mEnv, jclass cls);
+ 
+diff --git a/android-project/jni/SDL2/src/joystick/android/SDL_sysjoystick.c b/android-project/jni/SDL2/src/joystick/android/SDL_sysjoystick.c
+index 59adb85..a3343eb 100644
+--- a/android-project/jni/SDL2/src/joystick/android/SDL_sysjoystick.c
++++ b/android-project/jni/SDL2/src/joystick/android/SDL_sysjoystick.c
+@@ -352,6 +352,8 @@ Android_RemoveJoystick(int device_id)
+ int
+ SDL_SYS_JoystickInit(void)
+ {
++    Android_JNI_JoystickInit();
++
+     SDL_SYS_JoystickDetect();
+     
+     if (SDL_GetHintBoolean(SDL_HINT_ACCELEROMETER_AS_JOYSTICK, SDL_TRUE)) {
+@@ -531,6 +533,8 @@ SDL_SYS_JoystickQuit(void)
+ 
+     numjoysticks = 0;
+     instance_counter = 0;
++
++    Android_JNI_JoystickQuit();
+ }
+ 
+ SDL_JoystickGUID SDL_SYS_JoystickGetDeviceGUID( int device_index )

@@ -1,0 +1,1587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960CE6002046BDD200BEFA2B /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960CE5FD2046BDD200BEFA2B /* libogg.a */; };
+		960CE6012046BDD200BEFA2B /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960CE5FE2046BDD200BEFA2B /* libvorbis.a */; };
+		960CE6022046BDD200BEFA2B /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960CE5FF2046BDD200BEFA2B /* libvorbisfile.a */; };
+		960F769A1FA28C6700CCDE26 /* ios.M in Sources */ = {isa = PBXBuildFile; fileRef = 969F0FC41F8A2B39007C2585 /* ios.M */; };
+		960F769B1FA28C6700CCDE26 /* area_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670F1F87D2B800164F10 /* area_game.cpp */; };
+		960F769C1FA28C6700CCDE26 /* audio_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FA1F87D2B500164F10 /* audio_settings.cpp */; };
+		960F769D1FA28C6700CCDE26 /* battle_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F41F87D2B500164F10 /* battle_game.cpp */; };
+		960F769E1FA28C6700CCDE26 /* battle_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671D1F87D2BA00164F10 /* battle_player.cpp */; };
+		960F769F1FA28C6700CCDE26 /* battle_transition_in.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671E1F87D2BA00164F10 /* battle_transition_in.cpp */; };
+		960F76A01FA28C6700CCDE26 /* battle_transition_in2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67241F87D2BB00164F10 /* battle_transition_in2.cpp */; };
+		960F76A11FA28C6700CCDE26 /* battle_transition_out.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67031F87D2B600164F10 /* battle_transition_out.cpp */; };
+		960F76A21FA28C6700CCDE26 /* battle_transition_out2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67251F87D2BC00164F10 /* battle_transition_out2.cpp */; };
+		960F76A31FA28C6700CCDE26 /* battles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67071F87D2B700164F10 /* battles.cpp */; };
+		960F76A41FA28C6700CCDE26 /* bolt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67261F87D2BC00164F10 /* bolt.cpp */; };
+		960F76A51FA28C6700CCDE26 /* buy_scroll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670D1F87D2B800164F10 /* buy_scroll.cpp */; };
+		960F76A61FA28C6700CCDE26 /* captain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F61F87D2B500164F10 /* captain.cpp */; };
+		960F76A71FA28C6700CCDE26 /* controls_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67201F87D2BA00164F10 /* controls_settings.cpp */; };
+		960F76A81FA28C6700CCDE26 /* cure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FD1F87D2B600164F10 /* cure.cpp */; };
+		960F76A91FA28C6700CCDE26 /* custom_slide_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67161F87D2B900164F10 /* custom_slide_entity.cpp */; };
+		960F76AA1FA28C6700CCDE26 /* dialogue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67021F87D2B600164F10 /* dialogue.cpp */; };
+		960F76AB1FA28C6700CCDE26 /* enemies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67151F87D2B900164F10 /* enemies.cpp */; };
+		960F76AC1FA28C6700CCDE26 /* fire.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67011F87D2B600164F10 /* fire.cpp */; };
+		960F76AD1FA28C6700CCDE26 /* fishing_prize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67141F87D2B900164F10 /* fishing_prize.cpp */; };
+		960F76AE1FA28C6700CCDE26 /* fishing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671A1F87D2BA00164F10 /* fishing.cpp */; };
+		960F76AF1FA28C6700CCDE26 /* general.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670E1F87D2B800164F10 /* general.cpp */; };
+		960F76B01FA28C6700CCDE26 /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67231F87D2BB00164F10 /* globals.cpp */; };
+		960F76B11FA28C6700CCDE26 /* gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FB1F87D2B500164F10 /* gui.cpp */; };
+		960F76B21FA28C6700CCDE26 /* heal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67081F87D2B700164F10 /* heal.cpp */; };
+		960F76B31FA28C6700CCDE26 /* hit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67041F87D2B600164F10 /* hit.cpp */; };
+		960F76B41FA28C6700CCDE26 /* ice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67211F87D2BB00164F10 /* ice.cpp */; };
+		960F76B51FA28C6700CCDE26 /* inn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67271F87D2BC00164F10 /* inn.cpp */; };
+		960F76B61FA28C6700CCDE26 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FF1F87D2B600164F10 /* inventory.cpp */; };
+		960F76B71FA28C6700CCDE26 /* jump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67191F87D2B900164F10 /* jump.cpp */; };
+		960F76B81FA28C6700CCDE26 /* menu_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67101F87D2B800164F10 /* menu_game.cpp */; };
+		960F76B91FA28C6700CCDE26 /* menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671F1F87D2BA00164F10 /* menu.cpp */; };
+		960F76BA1FA28C6700CCDE26 /* monster_rpg_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67051F87D2B600164F10 /* monster_rpg_3.cpp */; };
+		960F76BB1FA28C6700CCDE26 /* other_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67281F87D2BC00164F10 /* other_settings.cpp */; };
+		960F76BC1FA28C6700CCDE26 /* play_animation_and_delete.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F71F87D2B500164F10 /* play_animation_and_delete.cpp */; };
+		960F76BD1FA28C6700CCDE26 /* question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FE1F87D2B600164F10 /* question.cpp */; };
+		960F76BE1FA28C6700CCDE26 /* ran_away.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67171F87D2B900164F10 /* ran_away.cpp */; };
+		960F76BF1FA28C6700CCDE26 /* revive_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67001F87D2B600164F10 /* revive_entity.cpp */; };
+		960F76C01FA28C6700CCDE26 /* sailor_npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671B1F87D2BA00164F10 /* sailor_npc.cpp */; };
+		960F76C11FA28C6700CCDE26 /* sailor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F81F87D2B500164F10 /* sailor.cpp */; };
+		960F76C21FA28C6700CCDE26 /* sailship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67061F87D2B700164F10 /* sailship.cpp */; };
+		960F76C31FA28C6700CCDE26 /* save_slot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67111F87D2B800164F10 /* save_slot.cpp */; };
+		960F76C41FA28C6700CCDE26 /* scroll_help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67181F87D2B900164F10 /* scroll_help.cpp */; };
+		960F76C51FA28C6700CCDE26 /* settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671C1F87D2BA00164F10 /* settings.cpp */; };
+		960F76C61FA28C6700CCDE26 /* shop_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FC1F87D2B500164F10 /* shop_game.cpp */; };
+		960F76C71FA28C6700CCDE26 /* shop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67091F87D2B700164F10 /* shop.cpp */; };
+		960F76C81FA28C6700CCDE26 /* sliding_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67121F87D2B800164F10 /* sliding_menu.cpp */; };
+		960F76C91FA28C6700CCDE26 /* spells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670A1F87D2B700164F10 /* spells.cpp */; };
+		960F76CA1FA28C6700CCDE26 /* start_battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67221F87D2BB00164F10 /* start_battle.cpp */; };
+		960F76CB1FA28C6700CCDE26 /* transition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F91F87D2B500164F10 /* transition.cpp */; };
+		960F76CC1FA28C6700CCDE26 /* vampires.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F51F87D2B500164F10 /* vampires.cpp */; };
+		960F76CD1FA28C6700CCDE26 /* vbolt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67131F87D2B800164F10 /* vbolt.cpp */; };
+		960F76CE1FA28C6700CCDE26 /* video_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670B1F87D2B700164F10 /* video_settings.cpp */; };
+		960F76CF1FA28C6700CCDE26 /* widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670C1F87D2B800164F10 /* widgets.cpp */; };
+		960F76D11FA28C7500CCDE26 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 965B27361F92CE1500C76D93 /* data */; };
+		960F76D71FA28F9300CCDE26 /* libNooskewl_Wedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960F76D21FA28F9200CCDE26 /* libNooskewl_Wedge.a */; };
+		960F76D81FA28F9300CCDE26 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960F76D31FA28F9300CCDE26 /* libSDL2.a */; };
+		960F76D91FA28F9300CCDE26 /* libNooskewl_Shim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960F76D41FA28F9300CCDE26 /* libNooskewl_Shim.a */; };
+		960F76DB1FA28F9300CCDE26 /* libtgui3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960F76D61FA28F9300CCDE26 /* libtgui3.a */; };
+		960F76DD1FA28FF100CCDE26 /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 960F76DC1FA28FF100CCDE26 /* libz.1.2.8.tbd */; };
+		9615BD38206D948300406880 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD31206D948200406880 /* CoreVideo.framework */; };
+		9615BD39206D948300406880 /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD32206D948200406880 /* ForceFeedback.framework */; };
+		9615BD3A206D948300406880 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD33206D948300406880 /* Carbon.framework */; };
+		9615BD3B206D948300406880 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD34206D948300406880 /* IOKit.framework */; };
+		9615BD3C206D948300406880 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD35206D948300406880 /* Cocoa.framework */; };
+		9615BD3D206D948300406880 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD36206D948300406880 /* AudioToolbox.framework */; };
+		9615BD3E206D948300406880 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD37206D948300406880 /* CoreAudio.framework */; };
+		9615BD43206D94D300406880 /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD3F206D94D300406880 /* libvorbisfile.a */; };
+		9615BD44206D94D300406880 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD40206D94D300406880 /* libvorbis.a */; };
+		9615BD45206D94D300406880 /* libSDL2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD41206D94D300406880 /* libSDL2.dylib */; };
+		9615BD46206D94D300406880 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD42206D94D300406880 /* libogg.a */; };
+		9615BD48206D94DE00406880 /* libtgui3_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD47206D94DE00406880 /* libtgui3_static.a */; };
+		9615BD4A206D94EF00406880 /* libNooskewl_Shim_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD49206D94EF00406880 /* libNooskewl_Shim_static.a */; };
+		9615BD4C206D94FB00406880 /* libNooskewl_Wedge_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD4B206D94FB00406880 /* libNooskewl_Wedge_static.a */; };
+		9615BD4D206D951B00406880 /* enemy_drawing_hook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962F1FFE20651B030044EBA2 /* enemy_drawing_hook.cpp */; };
+		9615BD4E206D951B00406880 /* vfire.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962F1FFD20651B030044EBA2 /* vfire.cpp */; };
+		9615BD4F206D951B00406880 /* apple.M in Sources */ = {isa = PBXBuildFile; fileRef = 962875C92046B428004D775E /* apple.M */; };
+		9615BD50206D951B00406880 /* autosave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962875CD2046B47C004D775E /* autosave.cpp */; };
+		9615BD51206D951B00406880 /* language_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968C3A6F2038799A001B6F10 /* language_settings.cpp */; };
+		9615BD52206D951B00406880 /* vice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96CAD1842027EFE80022879B /* vice.cpp */; };
+		9615BD53206D951B00406880 /* gui_drawing_hook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96E80A9C1FA6E88200AE8576 /* gui_drawing_hook.cpp */; };
+		9615BD54206D951B00406880 /* area_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670F1F87D2B800164F10 /* area_game.cpp */; };
+		9615BD55206D951B00406880 /* audio_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FA1F87D2B500164F10 /* audio_settings.cpp */; };
+		9615BD56206D951B00406880 /* battle_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F41F87D2B500164F10 /* battle_game.cpp */; };
+		9615BD57206D951B00406880 /* battle_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671D1F87D2BA00164F10 /* battle_player.cpp */; };
+		9615BD58206D951B00406880 /* battle_transition_in.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671E1F87D2BA00164F10 /* battle_transition_in.cpp */; };
+		9615BD59206D951B00406880 /* battle_transition_in2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67241F87D2BB00164F10 /* battle_transition_in2.cpp */; };
+		9615BD5A206D951B00406880 /* battle_transition_out.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67031F87D2B600164F10 /* battle_transition_out.cpp */; };
+		9615BD5B206D951B00406880 /* battle_transition_out2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67251F87D2BC00164F10 /* battle_transition_out2.cpp */; };
+		9615BD5C206D951B00406880 /* battles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67071F87D2B700164F10 /* battles.cpp */; };
+		9615BD5D206D951B00406880 /* bolt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67261F87D2BC00164F10 /* bolt.cpp */; };
+		9615BD5E206D951B00406880 /* buy_scroll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670D1F87D2B800164F10 /* buy_scroll.cpp */; };
+		9615BD5F206D951B00406880 /* captain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F61F87D2B500164F10 /* captain.cpp */; };
+		9615BD60206D951B00406880 /* controls_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67201F87D2BA00164F10 /* controls_settings.cpp */; };
+		9615BD61206D951B00406880 /* cure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FD1F87D2B600164F10 /* cure.cpp */; };
+		9615BD62206D951B00406880 /* custom_slide_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67161F87D2B900164F10 /* custom_slide_entity.cpp */; };
+		9615BD63206D951B00406880 /* dialogue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67021F87D2B600164F10 /* dialogue.cpp */; };
+		9615BD64206D951B00406880 /* enemies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67151F87D2B900164F10 /* enemies.cpp */; };
+		9615BD65206D951B00406880 /* fire.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67011F87D2B600164F10 /* fire.cpp */; };
+		9615BD66206D951B00406880 /* fishing_prize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67141F87D2B900164F10 /* fishing_prize.cpp */; };
+		9615BD67206D951B00406880 /* fishing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671A1F87D2BA00164F10 /* fishing.cpp */; };
+		9615BD68206D951B00406880 /* general.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670E1F87D2B800164F10 /* general.cpp */; };
+		9615BD69206D951B00406880 /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67231F87D2BB00164F10 /* globals.cpp */; };
+		9615BD6A206D951B00406880 /* gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FB1F87D2B500164F10 /* gui.cpp */; };
+		9615BD6B206D951B00406880 /* heal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67081F87D2B700164F10 /* heal.cpp */; };
+		9615BD6C206D951B00406880 /* hit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67041F87D2B600164F10 /* hit.cpp */; };
+		9615BD6D206D951B00406880 /* ice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67211F87D2BB00164F10 /* ice.cpp */; };
+		9615BD6E206D951B00406880 /* inn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67271F87D2BC00164F10 /* inn.cpp */; };
+		9615BD6F206D951B00406880 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FF1F87D2B600164F10 /* inventory.cpp */; };
+		9615BD70206D951B00406880 /* jump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67191F87D2B900164F10 /* jump.cpp */; };
+		9615BD71206D951B00406880 /* menu_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67101F87D2B800164F10 /* menu_game.cpp */; };
+		9615BD72206D951B00406880 /* menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671F1F87D2BA00164F10 /* menu.cpp */; };
+		9615BD73206D951B00406880 /* monster_rpg_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67051F87D2B600164F10 /* monster_rpg_3.cpp */; };
+		9615BD74206D951B00406880 /* other_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67281F87D2BC00164F10 /* other_settings.cpp */; };
+		9615BD75206D951B00406880 /* play_animation_and_delete.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F71F87D2B500164F10 /* play_animation_and_delete.cpp */; };
+		9615BD76206D951B00406880 /* question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FE1F87D2B600164F10 /* question.cpp */; };
+		9615BD77206D951B00406880 /* ran_away.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67171F87D2B900164F10 /* ran_away.cpp */; };
+		9615BD78206D951B00406880 /* revive_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67001F87D2B600164F10 /* revive_entity.cpp */; };
+		9615BD79206D951B00406880 /* sailor_npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671B1F87D2BA00164F10 /* sailor_npc.cpp */; };
+		9615BD7A206D951B00406880 /* sailor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F81F87D2B500164F10 /* sailor.cpp */; };
+		9615BD7B206D951B00406880 /* sailship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67061F87D2B700164F10 /* sailship.cpp */; };
+		9615BD7C206D951B00406880 /* save_slot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67111F87D2B800164F10 /* save_slot.cpp */; };
+		9615BD7D206D951B00406880 /* scroll_help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67181F87D2B900164F10 /* scroll_help.cpp */; };
+		9615BD7E206D951B00406880 /* settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671C1F87D2BA00164F10 /* settings.cpp */; };
+		9615BD7F206D951B00406880 /* shop_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FC1F87D2B500164F10 /* shop_game.cpp */; };
+		9615BD80206D951B00406880 /* shop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67091F87D2B700164F10 /* shop.cpp */; };
+		9615BD81206D951B00406880 /* sliding_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67121F87D2B800164F10 /* sliding_menu.cpp */; };
+		9615BD82206D951B00406880 /* spells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670A1F87D2B700164F10 /* spells.cpp */; };
+		9615BD83206D951B00406880 /* start_battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67221F87D2BB00164F10 /* start_battle.cpp */; };
+		9615BD84206D951B00406880 /* transition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F91F87D2B500164F10 /* transition.cpp */; };
+		9615BD85206D951B00406880 /* vampires.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F51F87D2B500164F10 /* vampires.cpp */; };
+		9615BD86206D951B00406880 /* vbolt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67131F87D2B800164F10 /* vbolt.cpp */; };
+		9615BD87206D951B00406880 /* video_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670B1F87D2B700164F10 /* video_settings.cpp */; };
+		9615BD88206D951B00406880 /* widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670C1F87D2B800164F10 /* widgets.cpp */; };
+		9615BD90206D96A600406880 /* libSDL2.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9615BD89206D954C00406880 /* libSDL2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9615BD94206DA16400406880 /* libz.1.2.11.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615BD93206DA16400406880 /* libz.1.2.11.tbd */; };
+		961C66EF1F87D26600164F10 /* libNooskewl_Wedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C66EA1F87D26600164F10 /* libNooskewl_Wedge.a */; };
+		961C66F01F87D26600164F10 /* libNooskewl_Shim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C66EB1F87D26600164F10 /* libNooskewl_Shim.a */; };
+		961C66F21F87D26600164F10 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C66ED1F87D26600164F10 /* libSDL2.a */; };
+		961C66F31F87D26600164F10 /* libtgui3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C66EE1F87D26600164F10 /* libtgui3.a */; };
+		961C67291F87D2BC00164F10 /* battle_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F41F87D2B500164F10 /* battle_game.cpp */; };
+		961C672A1F87D2BC00164F10 /* vampires.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F51F87D2B500164F10 /* vampires.cpp */; };
+		961C672B1F87D2BC00164F10 /* captain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F61F87D2B500164F10 /* captain.cpp */; };
+		961C672C1F87D2BC00164F10 /* play_animation_and_delete.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F71F87D2B500164F10 /* play_animation_and_delete.cpp */; };
+		961C672D1F87D2BC00164F10 /* sailor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F81F87D2B500164F10 /* sailor.cpp */; };
+		961C672E1F87D2BC00164F10 /* transition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66F91F87D2B500164F10 /* transition.cpp */; };
+		961C672F1F87D2BC00164F10 /* audio_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FA1F87D2B500164F10 /* audio_settings.cpp */; };
+		961C67301F87D2BC00164F10 /* gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FB1F87D2B500164F10 /* gui.cpp */; };
+		961C67311F87D2BC00164F10 /* shop_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FC1F87D2B500164F10 /* shop_game.cpp */; };
+		961C67321F87D2BC00164F10 /* cure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FD1F87D2B600164F10 /* cure.cpp */; };
+		961C67331F87D2BC00164F10 /* question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FE1F87D2B600164F10 /* question.cpp */; };
+		961C67341F87D2BC00164F10 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C66FF1F87D2B600164F10 /* inventory.cpp */; };
+		961C67351F87D2BC00164F10 /* revive_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67001F87D2B600164F10 /* revive_entity.cpp */; };
+		961C67361F87D2BC00164F10 /* fire.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67011F87D2B600164F10 /* fire.cpp */; };
+		961C67371F87D2BC00164F10 /* dialogue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67021F87D2B600164F10 /* dialogue.cpp */; };
+		961C67381F87D2BC00164F10 /* battle_transition_out.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67031F87D2B600164F10 /* battle_transition_out.cpp */; };
+		961C67391F87D2BC00164F10 /* hit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67041F87D2B600164F10 /* hit.cpp */; };
+		961C673A1F87D2BC00164F10 /* monster_rpg_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67051F87D2B600164F10 /* monster_rpg_3.cpp */; };
+		961C673B1F87D2BC00164F10 /* sailship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67061F87D2B700164F10 /* sailship.cpp */; };
+		961C673C1F87D2BC00164F10 /* battles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67071F87D2B700164F10 /* battles.cpp */; };
+		961C673D1F87D2BC00164F10 /* heal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67081F87D2B700164F10 /* heal.cpp */; };
+		961C673E1F87D2BC00164F10 /* shop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67091F87D2B700164F10 /* shop.cpp */; };
+		961C673F1F87D2BC00164F10 /* spells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670A1F87D2B700164F10 /* spells.cpp */; };
+		961C67401F87D2BC00164F10 /* video_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670B1F87D2B700164F10 /* video_settings.cpp */; };
+		961C67411F87D2BC00164F10 /* widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670C1F87D2B800164F10 /* widgets.cpp */; };
+		961C67421F87D2BC00164F10 /* buy_scroll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670D1F87D2B800164F10 /* buy_scroll.cpp */; };
+		961C67431F87D2BC00164F10 /* general.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670E1F87D2B800164F10 /* general.cpp */; };
+		961C67441F87D2BC00164F10 /* area_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C670F1F87D2B800164F10 /* area_game.cpp */; };
+		961C67451F87D2BC00164F10 /* menu_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67101F87D2B800164F10 /* menu_game.cpp */; };
+		961C67461F87D2BC00164F10 /* save_slot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67111F87D2B800164F10 /* save_slot.cpp */; };
+		961C67471F87D2BC00164F10 /* sliding_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67121F87D2B800164F10 /* sliding_menu.cpp */; };
+		961C67481F87D2BC00164F10 /* vbolt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67131F87D2B800164F10 /* vbolt.cpp */; };
+		961C67491F87D2BC00164F10 /* fishing_prize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67141F87D2B900164F10 /* fishing_prize.cpp */; };
+		961C674A1F87D2BC00164F10 /* enemies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67151F87D2B900164F10 /* enemies.cpp */; };
+		961C674B1F87D2BC00164F10 /* custom_slide_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67161F87D2B900164F10 /* custom_slide_entity.cpp */; };
+		961C674C1F87D2BC00164F10 /* ran_away.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67171F87D2B900164F10 /* ran_away.cpp */; };
+		961C674D1F87D2BC00164F10 /* scroll_help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67181F87D2B900164F10 /* scroll_help.cpp */; };
+		961C674E1F87D2BC00164F10 /* jump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67191F87D2B900164F10 /* jump.cpp */; };
+		961C674F1F87D2BC00164F10 /* fishing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671A1F87D2BA00164F10 /* fishing.cpp */; };
+		961C67501F87D2BC00164F10 /* sailor_npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671B1F87D2BA00164F10 /* sailor_npc.cpp */; };
+		961C67511F87D2BC00164F10 /* settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671C1F87D2BA00164F10 /* settings.cpp */; };
+		961C67521F87D2BC00164F10 /* battle_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671D1F87D2BA00164F10 /* battle_player.cpp */; };
+		961C67531F87D2BC00164F10 /* battle_transition_in.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671E1F87D2BA00164F10 /* battle_transition_in.cpp */; };
+		961C67541F87D2BC00164F10 /* menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C671F1F87D2BA00164F10 /* menu.cpp */; };
+		961C67551F87D2BC00164F10 /* controls_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67201F87D2BA00164F10 /* controls_settings.cpp */; };
+		961C67561F87D2BC00164F10 /* ice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67211F87D2BB00164F10 /* ice.cpp */; };
+		961C67571F87D2BC00164F10 /* start_battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67221F87D2BB00164F10 /* start_battle.cpp */; };
+		961C67581F87D2BC00164F10 /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67231F87D2BB00164F10 /* globals.cpp */; };
+		961C67591F87D2BC00164F10 /* battle_transition_in2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67241F87D2BB00164F10 /* battle_transition_in2.cpp */; };
+		961C675A1F87D2BC00164F10 /* battle_transition_out2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67251F87D2BC00164F10 /* battle_transition_out2.cpp */; };
+		961C675B1F87D2BC00164F10 /* bolt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67261F87D2BC00164F10 /* bolt.cpp */; };
+		961C675C1F87D2BC00164F10 /* inn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67271F87D2BC00164F10 /* inn.cpp */; };
+		961C675D1F87D2BC00164F10 /* other_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961C67281F87D2BC00164F10 /* other_settings.cpp */; };
+		96234A8421B7596100BE4550 /* manual_spanish_tvos.html in Resources */ = {isa = PBXBuildFile; fileRef = 96234A8321B7596000BE4550 /* manual_spanish_tvos.html */; };
+		962455D1206F2E3000173A3D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962455D0206F2E3000173A3D /* GameKit.framework */; };
+		962455D3206F2E6200173A3D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962455D2206F2E6200173A3D /* StoreKit.framework */; };
+		962875CA2046B428004D775E /* apple.M in Sources */ = {isa = PBXBuildFile; fileRef = 962875C92046B428004D775E /* apple.M */; };
+		962875CC2046B433004D775E /* autosave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962875CB2046B433004D775E /* autosave.cpp */; };
+		962875CF2046B47C004D775E /* autosave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962875CD2046B47C004D775E /* autosave.cpp */; };
+		962F1FFF20651B030044EBA2 /* vfire.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962F1FFD20651B030044EBA2 /* vfire.cpp */; };
+		962F200020651B030044EBA2 /* enemy_drawing_hook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962F1FFE20651B030044EBA2 /* enemy_drawing_hook.cpp */; };
+		962F200120651B2C0044EBA2 /* enemy_drawing_hook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962F1FFE20651B030044EBA2 /* enemy_drawing_hook.cpp */; };
+		962F200220651B2C0044EBA2 /* vfire.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962F1FFD20651B030044EBA2 /* vfire.cpp */; };
+		965B27371F92CE1600C76D93 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 965B27361F92CE1500C76D93 /* data */; };
+		966A0E5C206F1EDE0060F144 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A0E5B206F1EDE0060F144 /* CloudKit.framework */; };
+		966B79681FA6EB0E002C1876 /* gui_drawing_hook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 966B79671FA6EB0E002C1876 /* gui_drawing_hook.cpp */; };
+		966FF7972053F92500F9DAE1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966FF7962053F92500F9DAE1 /* CloudKit.framework */; };
+		96704C0E2015923C00E3595D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DDA0091F88280D00361C52 /* Images.xcassets */; };
+		9685B16E1FA2BA540009483A /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9685B16D1FA2BA540009483A /* GameController.framework */; };
+		968C3A702038799B001B6F10 /* language_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968C3A6F2038799A001B6F10 /* language_settings.cpp */; };
+		968E7F4B204C7CBA00CFCD1F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968E7F4A204C7CBA00CFCD1F /* GameKit.framework */; };
+		968FD6FA2220A61000BF956C /* macOS Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968FD6F92220A61000BF956C /* macOS Icon.xcassets */; };
+		969413B220399F96006BA1D0 /* language_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968C3A6F2038799A001B6F10 /* language_settings.cpp */; };
+		9699E4C02220AB74007CD119 /* apple.M in Sources */ = {isa = PBXBuildFile; fileRef = 962875C92046B428004D775E /* apple.M */; };
+		969D152E206F4E5B007CDC08 /* manual_french.html in Resources */ = {isa = PBXBuildFile; fileRef = 96A6A95D206EE7C1001EE8E2 /* manual_french.html */; };
+		969D1530206F4E98007CDC08 /* manual_french_tvos.html in Resources */ = {isa = PBXBuildFile; fileRef = 969D152F206F4E98007CDC08 /* manual_french_tvos.html */; };
+		969D1538206F52ED007CDC08 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969D1537206F52ED007CDC08 /* GameKit.framework */; };
+		969D1539206F5537007CDC08 /* manual_french.html in Resources */ = {isa = PBXBuildFile; fileRef = 96A6A95D206EE7C1001EE8E2 /* manual_french.html */; };
+		969DDE7A206F5E200003B0A1 /* data.cpa in Resources */ = {isa = PBXBuildFile; fileRef = 969DDE79206F5E200003B0A1 /* data.cpa */; };
+		969DDE7B206F5E270003B0A1 /* manual_english.html in Resources */ = {isa = PBXBuildFile; fileRef = 96CB10252056C1BF006B10F0 /* manual_english.html */; };
+		969E0DB921B72DD2004E3F1D /* manual_spanish.html in Resources */ = {isa = PBXBuildFile; fileRef = 96B444AD21B72731005A9EAB /* manual_spanish.html */; };
+		969F0FC51F8A2B39007C2585 /* ios.M in Sources */ = {isa = PBXBuildFile; fileRef = 969F0FC41F8A2B39007C2585 /* ios.M */; };
+		96A6A960206EE7E6001EE8E2 /* 3rd_party.html in Resources */ = {isa = PBXBuildFile; fileRef = 96A6A95F206EE7E6001EE8E2 /* 3rd_party.html */; };
+		96B2BA8B1F87CD8500DACF6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA831F87CD8500DACF6E /* CoreGraphics.framework */; };
+		96B2BA8C1F87CD8500DACF6E /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA841F87CD8500DACF6E /* libz.1.2.8.tbd */; };
+		96B2BA8D1F87CD8500DACF6E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA851F87CD8500DACF6E /* CoreMotion.framework */; };
+		96B2BA8E1F87CD8500DACF6E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA861F87CD8500DACF6E /* OpenGLES.framework */; };
+		96B2BA8F1F87CD8500DACF6E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA871F87CD8500DACF6E /* AudioToolbox.framework */; };
+		96B2BA901F87CD8500DACF6E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA881F87CD8500DACF6E /* AVFoundation.framework */; };
+		96B2BA911F87CD8500DACF6E /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA891F87CD8500DACF6E /* GameController.framework */; };
+		96B2BA921F87CD8500DACF6E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA8A1F87CD8500DACF6E /* QuartzCore.framework */; };
+		96B2BA951F87CF0600DACF6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA931F87CF0600DACF6E /* UIKit.framework */; };
+		96B2BA961F87CF0600DACF6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2BA941F87CF0600DACF6E /* Foundation.framework */; };
+		96B444AE21B72731005A9EAB /* manual_spanish.html in Resources */ = {isa = PBXBuildFile; fileRef = 96B444AD21B72731005A9EAB /* manual_spanish.html */; };
+		96C93E9B2072D02300468D02 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C93E9A2072D02300468D02 /* CloudKit.framework */; };
+		96CAD1852027EFE80022879B /* vice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96CAD1842027EFE80022879B /* vice.cpp */; };
+		96CAD1862027EFF70022879B /* vice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96CAD1842027EFE80022879B /* vice.cpp */; };
+		96CB10262056C1BF006B10F0 /* 3rd_party.html in Resources */ = {isa = PBXBuildFile; fileRef = 96CB10242056C1BF006B10F0 /* 3rd_party.html */; };
+		96CB10272056C1BF006B10F0 /* manual_english.html in Resources */ = {isa = PBXBuildFile; fileRef = 96CB10252056C1BF006B10F0 /* manual_english.html */; };
+		96CB102C2056C712006B10F0 /* manual_english_tvos.html in Resources */ = {isa = PBXBuildFile; fileRef = 96CB102A2056C712006B10F0 /* manual_english_tvos.html */; };
+		96CB102D2056C712006B10F0 /* 3rd_party_tvos.html in Resources */ = {isa = PBXBuildFile; fileRef = 96CB102B2056C712006B10F0 /* 3rd_party_tvos.html */; };
+		96CD7F771F96262700A3168C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CD7F761F96262700A3168C /* Launch Screen.storyboard */; };
+		96E80A9D1FA6E88200AE8576 /* gui_drawing_hook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96E80A9C1FA6E88200AE8576 /* gui_drawing_hook.cpp */; };
+		96EA6DBB2046B7C6004AF0A2 /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EA6DB82046B7C6004AF0A2 /* libvorbisfile.a */; };
+		96EA6DBC2046B7C6004AF0A2 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EA6DB92046B7C6004AF0A2 /* libogg.a */; };
+		96EA6DBD2046B7C6004AF0A2 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EA6DBA2046B7C6004AF0A2 /* libvorbis.a */; };
+		96F56BDE1FBFFA5500365DFF /* tvOS Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F56BDD1FBFFA5500365DFF /* tvOS Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9615BD8F206D969400406880 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				9615BD90206D96A600406880 /* libSDL2.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		960CE5FD2046BDD200BEFA2B /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = ../../../libs/tvos/lib/libogg.a; sourceTree = "<group>"; };
+		960CE5FE2046BDD200BEFA2B /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis.a; path = ../../../libs/tvos/lib/libvorbis.a; sourceTree = "<group>"; };
+		960CE5FF2046BDD200BEFA2B /* libvorbisfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbisfile.a; path = ../../../libs/tvos/lib/libvorbisfile.a; sourceTree = "<group>"; };
+		960F76801FA28A8300CCDE26 /* Monster RPG 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monster RPG 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960F76D21FA28F9200CCDE26 /* libNooskewl_Wedge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNooskewl_Wedge.a; path = ../../../libs/tvos_sim/lib/libNooskewl_Wedge.a; sourceTree = "<group>"; };
+		960F76D31FA28F9300CCDE26 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../../libs/tvos_sim/lib/libSDL2.a; sourceTree = "<group>"; };
+		960F76D41FA28F9300CCDE26 /* libNooskewl_Shim.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNooskewl_Shim.a; path = ../../../libs/tvos_sim/lib/libNooskewl_Shim.a; sourceTree = "<group>"; };
+		960F76D51FA28F9300CCDE26 /* libSDL2_ttf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_ttf.a; path = ../../../libs/tvos_sim/lib/libSDL2_ttf.a; sourceTree = "<group>"; };
+		960F76D61FA28F9300CCDE26 /* libtgui3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtgui3.a; path = ../../../libs/tvos_sim/lib/libtgui3.a; sourceTree = "<group>"; };
+		960F76DC1FA28FF100CCDE26 /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.0.sdk/usr/lib/libz.1.2.8.tbd; sourceTree = DEVELOPER_DIR; };
+		9615BD1C206D93DD00406880 /* Monster RPG 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monster RPG 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9615BD27206D93DD00406880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9615BD31206D948200406880 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9615BD32206D948200406880 /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
+		9615BD33206D948300406880 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		9615BD34206D948300406880 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		9615BD35206D948300406880 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9615BD36206D948300406880 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9615BD37206D948300406880 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		9615BD3F206D94D300406880 /* libvorbisfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbisfile.a; path = ../../../libs/mac/lib/libvorbisfile.a; sourceTree = "<group>"; };
+		9615BD40206D94D300406880 /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis.a; path = ../../../libs/mac/lib/libvorbis.a; sourceTree = "<group>"; };
+		9615BD41206D94D300406880 /* libSDL2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2.dylib; path = ../../../libs/mac/lib/libSDL2.dylib; sourceTree = "<group>"; };
+		9615BD42206D94D300406880 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = ../../../libs/mac/lib/libogg.a; sourceTree = "<group>"; };
+		9615BD47206D94DE00406880 /* libtgui3_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtgui3_static.a; path = ../../../tgui3/build/libtgui3_static.a; sourceTree = "<group>"; };
+		9615BD49206D94EF00406880 /* libNooskewl_Shim_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNooskewl_Shim_static.a; path = ../../../Nooskewl_Shim/build/libNooskewl_Shim_static.a; sourceTree = "<group>"; };
+		9615BD4B206D94FB00406880 /* libNooskewl_Wedge_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNooskewl_Wedge_static.a; path = ../../../Nooskewl_Wedge/build/libNooskewl_Wedge_static.a; sourceTree = "<group>"; };
+		9615BD89206D954C00406880 /* libSDL2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2.dylib; path = ../../../libs/mac/lib/libSDL2.dylib; sourceTree = "<group>"; };
+		9615BD93206DA16400406880 /* libz.1.2.11.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.11.tbd; path = usr/lib/libz.1.2.11.tbd; sourceTree = SDKROOT; };
+		9615BD95206DB5A300406880 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../../origdata/icons/icon.icns; sourceTree = "<group>"; };
+		961C66EA1F87D26600164F10 /* libNooskewl_Wedge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNooskewl_Wedge.a; path = ../../../libs/ios/lib/libNooskewl_Wedge.a; sourceTree = "<group>"; };
+		961C66EB1F87D26600164F10 /* libNooskewl_Shim.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNooskewl_Shim.a; path = ../../../libs/ios/lib/libNooskewl_Shim.a; sourceTree = "<group>"; };
+		961C66EC1F87D26600164F10 /* libSDL2_ttf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_ttf.a; path = ../../../libs/ios/lib/libSDL2_ttf.a; sourceTree = "<group>"; };
+		961C66ED1F87D26600164F10 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../../libs/ios/lib/libSDL2.a; sourceTree = "<group>"; };
+		961C66EE1F87D26600164F10 /* libtgui3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtgui3.a; path = ../../../libs/ios/lib/libtgui3.a; sourceTree = "<group>"; };
+		961C66F41F87D2B500164F10 /* battle_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = battle_game.cpp; path = ../../src/battle_game.cpp; sourceTree = "<group>"; };
+		961C66F51F87D2B500164F10 /* vampires.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vampires.cpp; path = ../../src/vampires.cpp; sourceTree = "<group>"; };
+		961C66F61F87D2B500164F10 /* captain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = captain.cpp; path = ../../src/captain.cpp; sourceTree = "<group>"; };
+		961C66F71F87D2B500164F10 /* play_animation_and_delete.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = play_animation_and_delete.cpp; path = ../../src/play_animation_and_delete.cpp; sourceTree = "<group>"; };
+		961C66F81F87D2B500164F10 /* sailor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sailor.cpp; path = ../../src/sailor.cpp; sourceTree = "<group>"; };
+		961C66F91F87D2B500164F10 /* transition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transition.cpp; path = ../../src/transition.cpp; sourceTree = "<group>"; };
+		961C66FA1F87D2B500164F10 /* audio_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audio_settings.cpp; path = ../../src/audio_settings.cpp; sourceTree = "<group>"; };
+		961C66FB1F87D2B500164F10 /* gui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gui.cpp; path = ../../src/gui.cpp; sourceTree = "<group>"; };
+		961C66FC1F87D2B500164F10 /* shop_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shop_game.cpp; path = ../../src/shop_game.cpp; sourceTree = "<group>"; };
+		961C66FD1F87D2B600164F10 /* cure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cure.cpp; path = ../../src/cure.cpp; sourceTree = "<group>"; };
+		961C66FE1F87D2B600164F10 /* question.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = question.cpp; path = ../../src/question.cpp; sourceTree = "<group>"; };
+		961C66FF1F87D2B600164F10 /* inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = inventory.cpp; path = ../../src/inventory.cpp; sourceTree = "<group>"; };
+		961C67001F87D2B600164F10 /* revive_entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = revive_entity.cpp; path = ../../src/revive_entity.cpp; sourceTree = "<group>"; };
+		961C67011F87D2B600164F10 /* fire.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fire.cpp; path = ../../src/fire.cpp; sourceTree = "<group>"; };
+		961C67021F87D2B600164F10 /* dialogue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dialogue.cpp; path = ../../src/dialogue.cpp; sourceTree = "<group>"; };
+		961C67031F87D2B600164F10 /* battle_transition_out.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = battle_transition_out.cpp; path = ../../src/battle_transition_out.cpp; sourceTree = "<group>"; };
+		961C67041F87D2B600164F10 /* hit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hit.cpp; path = ../../src/hit.cpp; sourceTree = "<group>"; };
+		961C67051F87D2B600164F10 /* monster_rpg_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = monster_rpg_3.cpp; path = ../../src/monster_rpg_3.cpp; sourceTree = "<group>"; };
+		961C67061F87D2B700164F10 /* sailship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sailship.cpp; path = ../../src/sailship.cpp; sourceTree = "<group>"; };
+		961C67071F87D2B700164F10 /* battles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = battles.cpp; path = ../../src/battles.cpp; sourceTree = "<group>"; };
+		961C67081F87D2B700164F10 /* heal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = heal.cpp; path = ../../src/heal.cpp; sourceTree = "<group>"; };
+		961C67091F87D2B700164F10 /* shop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shop.cpp; path = ../../src/shop.cpp; sourceTree = "<group>"; };
+		961C670A1F87D2B700164F10 /* spells.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = spells.cpp; path = ../../src/spells.cpp; sourceTree = "<group>"; };
+		961C670B1F87D2B700164F10 /* video_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = video_settings.cpp; path = ../../src/video_settings.cpp; sourceTree = "<group>"; };
+		961C670C1F87D2B800164F10 /* widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = widgets.cpp; path = ../../src/widgets.cpp; sourceTree = "<group>"; };
+		961C670D1F87D2B800164F10 /* buy_scroll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = buy_scroll.cpp; path = ../../src/buy_scroll.cpp; sourceTree = "<group>"; };
+		961C670E1F87D2B800164F10 /* general.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = general.cpp; path = ../../src/general.cpp; sourceTree = "<group>"; };
+		961C670F1F87D2B800164F10 /* area_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = area_game.cpp; path = ../../src/area_game.cpp; sourceTree = "<group>"; };
+		961C67101F87D2B800164F10 /* menu_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = menu_game.cpp; path = ../../src/menu_game.cpp; sourceTree = "<group>"; };
+		961C67111F87D2B800164F10 /* save_slot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = save_slot.cpp; path = ../../src/save_slot.cpp; sourceTree = "<group>"; };
+		961C67121F87D2B800164F10 /* sliding_menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sliding_menu.cpp; path = ../../src/sliding_menu.cpp; sourceTree = "<group>"; };
+		961C67131F87D2B800164F10 /* vbolt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbolt.cpp; path = ../../src/vbolt.cpp; sourceTree = "<group>"; };
+		961C67141F87D2B900164F10 /* fishing_prize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fishing_prize.cpp; path = ../../src/fishing_prize.cpp; sourceTree = "<group>"; };
+		961C67151F87D2B900164F10 /* enemies.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = enemies.cpp; path = ../../src/enemies.cpp; sourceTree = "<group>"; };
+		961C67161F87D2B900164F10 /* custom_slide_entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = custom_slide_entity.cpp; path = ../../src/custom_slide_entity.cpp; sourceTree = "<group>"; };
+		961C67171F87D2B900164F10 /* ran_away.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ran_away.cpp; path = ../../src/ran_away.cpp; sourceTree = "<group>"; };
+		961C67181F87D2B900164F10 /* scroll_help.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scroll_help.cpp; path = ../../src/scroll_help.cpp; sourceTree = "<group>"; };
+		961C67191F87D2B900164F10 /* jump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jump.cpp; path = ../../src/jump.cpp; sourceTree = "<group>"; };
+		961C671A1F87D2BA00164F10 /* fishing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fishing.cpp; path = ../../src/fishing.cpp; sourceTree = "<group>"; };
+		961C671B1F87D2BA00164F10 /* sailor_npc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sailor_npc.cpp; path = ../../src/sailor_npc.cpp; sourceTree = "<group>"; };
+		961C671C1F87D2BA00164F10 /* settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = settings.cpp; path = ../../src/settings.cpp; sourceTree = "<group>"; };
+		961C671D1F87D2BA00164F10 /* battle_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = battle_player.cpp; path = ../../src/battle_player.cpp; sourceTree = "<group>"; };
+		961C671E1F87D2BA00164F10 /* battle_transition_in.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = battle_transition_in.cpp; path = ../../src/battle_transition_in.cpp; sourceTree = "<group>"; };
+		961C671F1F87D2BA00164F10 /* menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = menu.cpp; path = ../../src/menu.cpp; sourceTree = "<group>"; };
+		961C67201F87D2BA00164F10 /* controls_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = controls_settings.cpp; path = ../../src/controls_settings.cpp; sourceTree = "<group>"; };
+		961C67211F87D2BB00164F10 /* ice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ice.cpp; path = ../../src/ice.cpp; sourceTree = "<group>"; };
+		961C67221F87D2BB00164F10 /* start_battle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = start_battle.cpp; path = ../../src/start_battle.cpp; sourceTree = "<group>"; };
+		961C67231F87D2BB00164F10 /* globals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = globals.cpp; path = ../../src/globals.cpp; sourceTree = "<group>"; };
+		961C67241F87D2BB00164F10 /* battle_transition_in2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = battle_transition_in2.cpp; path = ../../src/battle_transition_in2.cpp; sourceTree = "<group>"; };
+		961C67251F87D2BC00164F10 /* battle_transition_out2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = battle_transition_out2.cpp; path = ../../src/battle_transition_out2.cpp; sourceTree = "<group>"; };
+		961C67261F87D2BC00164F10 /* bolt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bolt.cpp; path = ../../src/bolt.cpp; sourceTree = "<group>"; };
+		961C67271F87D2BC00164F10 /* inn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = inn.cpp; path = ../../src/inn.cpp; sourceTree = "<group>"; };
+		961C67281F87D2BC00164F10 /* other_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = other_settings.cpp; path = ../../src/other_settings.cpp; sourceTree = "<group>"; };
+		961C675E1F87D2CE00164F10 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96234A8321B7596000BE4550 /* manual_spanish_tvos.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = manual_spanish_tvos.html; path = ../../docs/manual_spanish_tvos.html; sourceTree = "<group>"; };
+		962455D0206F2E3000173A3D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		962455D2206F2E6200173A3D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		962875C92046B428004D775E /* apple.M */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = apple.M; path = ../../src/apple.M; sourceTree = "<group>"; };
+		962875CB2046B433004D775E /* autosave.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = autosave.cpp; path = ../../src/autosave.cpp; sourceTree = "<group>"; };
+		962875CD2046B47C004D775E /* autosave.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = autosave.cpp; path = ../../src/autosave.cpp; sourceTree = "<group>"; };
+		962F1FFD20651B030044EBA2 /* vfire.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = vfire.cpp; path = ../../src/vfire.cpp; sourceTree = "<group>"; };
+		962F1FFE20651B030044EBA2 /* enemy_drawing_hook.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = enemy_drawing_hook.cpp; path = ../../src/enemy_drawing_hook.cpp; sourceTree = "<group>"; };
+		96407A2C206F165100DA2CE8 /* Monster RPG 3 iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Monster RPG 3 iOS.entitlements"; sourceTree = "<group>"; };
+		965B27361F92CE1500C76D93 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../../data; sourceTree = "<group>"; };
+		966A0E5B206F1EDE0060F144 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		966B79671FA6EB0E002C1876 /* gui_drawing_hook.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = gui_drawing_hook.cpp; path = ../../src/gui_drawing_hook.cpp; sourceTree = "<group>"; };
+		966FF7932053F85D00F9DAE1 /* Monster RPG 3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Monster RPG 3.entitlements"; sourceTree = "<group>"; };
+		966FF7962053F92500F9DAE1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		9685B16D1FA2BA540009483A /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.1.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
+		968C3A6F2038799A001B6F10 /* language_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = language_settings.cpp; path = ../../src/language_settings.cpp; sourceTree = "<group>"; };
+		968E7F4A204C7CBA00CFCD1F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		968FD6F92220A61000BF956C /* macOS Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "macOS Icon.xcassets"; path = "Monster RPG 3 macOS/macOS Icon.xcassets"; sourceTree = "<group>"; };
+		969D152F206F4E98007CDC08 /* manual_french_tvos.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = manual_french_tvos.html; path = ../../docs/manual_french_tvos.html; sourceTree = "<group>"; };
+		969D1537206F52ED007CDC08 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		969DDE79206F5E200003B0A1 /* data.cpa */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.cpa; path = ../../../m3_mac_resources/data.cpa; sourceTree = "<group>"; };
+		969DDE7C206F5F360003B0A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		969F0FC41F8A2B39007C2585 /* ios.M */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ios.M; path = ../../src/ios.M; sourceTree = "<group>"; };
+		96A6A95D206EE7C1001EE8E2 /* manual_french.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = manual_french.html; path = ../../docs/manual_french.html; sourceTree = "<group>"; };
+		96A6A95F206EE7E6001EE8E2 /* 3rd_party.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = 3rd_party.html; path = ../../docs/3rd_party.html; sourceTree = "<group>"; };
+		96B2B9F31F87CC7500DACF6E /* monsterrpg3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = monsterrpg3.app; path = "Monster RPG 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B2BA831F87CD8500DACF6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		96B2BA841F87CD8500DACF6E /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/lib/libz.1.2.8.tbd; sourceTree = DEVELOPER_DIR; };
+		96B2BA851F87CD8500DACF6E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		96B2BA861F87CD8500DACF6E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		96B2BA871F87CD8500DACF6E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		96B2BA881F87CD8500DACF6E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		96B2BA891F87CD8500DACF6E /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
+		96B2BA8A1F87CD8500DACF6E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		96B2BA931F87CF0600DACF6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		96B2BA941F87CF0600DACF6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		96B444AD21B72731005A9EAB /* manual_spanish.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = manual_spanish.html; path = ../../docs/manual_spanish.html; sourceTree = "<group>"; };
+		96C93E9A2072D02300468D02 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		96CAD1842027EFE80022879B /* vice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vice.cpp; path = ../../src/vice.cpp; sourceTree = "<group>"; };
+		96CB10242056C1BF006B10F0 /* 3rd_party.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = 3rd_party.html; path = ../../docs/3rd_party.html; sourceTree = "<group>"; };
+		96CB10252056C1BF006B10F0 /* manual_english.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = manual_english.html; path = ../../docs/manual_english.html; sourceTree = "<group>"; };
+		96CB102A2056C712006B10F0 /* manual_english_tvos.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = manual_english_tvos.html; path = ../../docs/manual_english_tvos.html; sourceTree = "<group>"; };
+		96CB102B2056C712006B10F0 /* 3rd_party_tvos.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = 3rd_party_tvos.html; path = ../../docs/3rd_party_tvos.html; sourceTree = "<group>"; };
+		96CD7F761F96262700A3168C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		96DDA0091F88280D00361C52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "monsterrpg3 iOS/Images.xcassets"; sourceTree = "<group>"; };
+		96E80A9C1FA6E88200AE8576 /* gui_drawing_hook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gui_drawing_hook.cpp; path = ../../src/gui_drawing_hook.cpp; sourceTree = "<group>"; };
+		96EA6DB82046B7C6004AF0A2 /* libvorbisfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbisfile.a; path = ../../../libs/ios/lib/libvorbisfile.a; sourceTree = "<group>"; };
+		96EA6DB92046B7C6004AF0A2 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = ../../../libs/ios/lib/libogg.a; sourceTree = "<group>"; };
+		96EA6DBA2046B7C6004AF0A2 /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis.a; path = ../../../libs/ios/lib/libvorbis.a; sourceTree = "<group>"; };
+		96F56BDD1FBFFA5500365DFF /* tvOS Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "tvOS Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		960F767D1FA28A8300CCDE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968E7F4B204C7CBA00CFCD1F /* GameKit.framework in Frameworks */,
+				960CE6002046BDD200BEFA2B /* libogg.a in Frameworks */,
+				960CE6012046BDD200BEFA2B /* libvorbis.a in Frameworks */,
+				960CE6022046BDD200BEFA2B /* libvorbisfile.a in Frameworks */,
+				960F76DD1FA28FF100CCDE26 /* libz.1.2.8.tbd in Frameworks */,
+				9685B16E1FA2BA540009483A /* GameController.framework in Frameworks */,
+				960F76D71FA28F9300CCDE26 /* libNooskewl_Wedge.a in Frameworks */,
+				966FF7972053F92500F9DAE1 /* CloudKit.framework in Frameworks */,
+				960F76D81FA28F9300CCDE26 /* libSDL2.a in Frameworks */,
+				960F76D91FA28F9300CCDE26 /* libNooskewl_Shim.a in Frameworks */,
+				960F76DB1FA28F9300CCDE26 /* libtgui3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9615BD19206D93DD00406880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9615BD94206DA16400406880 /* libz.1.2.11.tbd in Frameworks */,
+				9615BD4C206D94FB00406880 /* libNooskewl_Wedge_static.a in Frameworks */,
+				9615BD4A206D94EF00406880 /* libNooskewl_Shim_static.a in Frameworks */,
+				9615BD48206D94DE00406880 /* libtgui3_static.a in Frameworks */,
+				9615BD43206D94D300406880 /* libvorbisfile.a in Frameworks */,
+				9615BD44206D94D300406880 /* libvorbis.a in Frameworks */,
+				9615BD45206D94D300406880 /* libSDL2.dylib in Frameworks */,
+				9615BD46206D94D300406880 /* libogg.a in Frameworks */,
+				9615BD38206D948300406880 /* CoreVideo.framework in Frameworks */,
+				96C93E9B2072D02300468D02 /* CloudKit.framework in Frameworks */,
+				9615BD39206D948300406880 /* ForceFeedback.framework in Frameworks */,
+				9615BD3A206D948300406880 /* Carbon.framework in Frameworks */,
+				9615BD3B206D948300406880 /* IOKit.framework in Frameworks */,
+				9615BD3C206D948300406880 /* Cocoa.framework in Frameworks */,
+				969D1538206F52ED007CDC08 /* GameKit.framework in Frameworks */,
+				9615BD3D206D948300406880 /* AudioToolbox.framework in Frameworks */,
+				9615BD3E206D948300406880 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B2B9F01F87CC7500DACF6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA6DBB2046B7C6004AF0A2 /* libvorbisfile.a in Frameworks */,
+				96EA6DBC2046B7C6004AF0A2 /* libogg.a in Frameworks */,
+				96EA6DBD2046B7C6004AF0A2 /* libvorbis.a in Frameworks */,
+				966A0E5C206F1EDE0060F144 /* CloudKit.framework in Frameworks */,
+				961C66EF1F87D26600164F10 /* libNooskewl_Wedge.a in Frameworks */,
+				961C66F01F87D26600164F10 /* libNooskewl_Shim.a in Frameworks */,
+				961C66F21F87D26600164F10 /* libSDL2.a in Frameworks */,
+				962455D3206F2E6200173A3D /* StoreKit.framework in Frameworks */,
+				961C66F31F87D26600164F10 /* libtgui3.a in Frameworks */,
+				96B2BA951F87CF0600DACF6E /* UIKit.framework in Frameworks */,
+				96B2BA961F87CF0600DACF6E /* Foundation.framework in Frameworks */,
+				96B2BA8B1F87CD8500DACF6E /* CoreGraphics.framework in Frameworks */,
+				96B2BA8C1F87CD8500DACF6E /* libz.1.2.8.tbd in Frameworks */,
+				96B2BA8D1F87CD8500DACF6E /* CoreMotion.framework in Frameworks */,
+				962455D1206F2E3000173A3D /* GameKit.framework in Frameworks */,
+				96B2BA8E1F87CD8500DACF6E /* OpenGLES.framework in Frameworks */,
+				96B2BA8F1F87CD8500DACF6E /* AudioToolbox.framework in Frameworks */,
+				96B2BA901F87CD8500DACF6E /* AVFoundation.framework in Frameworks */,
+				96B2BA911F87CD8500DACF6E /* GameController.framework in Frameworks */,
+				96B2BA921F87CD8500DACF6E /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9615BD1D206D93DD00406880 /* Monster RPG 3 macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9615BD27206D93DD00406880 /* Info.plist */,
+				969DDE7C206F5F360003B0A1 /* Images.xcassets */,
+			);
+			path = "Monster RPG 3 macOS";
+			sourceTree = "<group>";
+		};
+		96B2B9DE1F87CBC700DACF6E = {
+			isa = PBXGroup;
+			children = (
+				968FD6F92220A61000BF956C /* macOS Icon.xcassets */,
+				96234A8321B7596000BE4550 /* manual_spanish_tvos.html */,
+				96B444AD21B72731005A9EAB /* manual_spanish.html */,
+				969DDE79206F5E200003B0A1 /* data.cpa */,
+				969D152F206F4E98007CDC08 /* manual_french_tvos.html */,
+				96407A2C206F165100DA2CE8 /* Monster RPG 3 iOS.entitlements */,
+				96A6A95F206EE7E6001EE8E2 /* 3rd_party.html */,
+				96A6A95D206EE7C1001EE8E2 /* manual_french.html */,
+				9615BD95206DB5A300406880 /* icon.icns */,
+				9615BD89206D954C00406880 /* libSDL2.dylib */,
+				962F1FFE20651B030044EBA2 /* enemy_drawing_hook.cpp */,
+				962F1FFD20651B030044EBA2 /* vfire.cpp */,
+				96CB102B2056C712006B10F0 /* 3rd_party_tvos.html */,
+				96CB102A2056C712006B10F0 /* manual_english_tvos.html */,
+				96CB10242056C1BF006B10F0 /* 3rd_party.html */,
+				96CB10252056C1BF006B10F0 /* manual_english.html */,
+				966FF7932053F85D00F9DAE1 /* Monster RPG 3.entitlements */,
+				962875CB2046B433004D775E /* autosave.cpp */,
+				962875C92046B428004D775E /* apple.M */,
+				962875CD2046B47C004D775E /* autosave.cpp */,
+				968C3A6F2038799A001B6F10 /* language_settings.cpp */,
+				96CAD1842027EFE80022879B /* vice.cpp */,
+				96E80A9C1FA6E88200AE8576 /* gui_drawing_hook.cpp */,
+				966B79671FA6EB0E002C1876 /* gui_drawing_hook.cpp */,
+				96CD7F761F96262700A3168C /* Launch Screen.storyboard */,
+				965B27361F92CE1500C76D93 /* data */,
+				96DDA0091F88280D00361C52 /* Images.xcassets */,
+				96F56BDD1FBFFA5500365DFF /* tvOS Assets.xcassets */,
+				961C675E1F87D2CE00164F10 /* Info.plist */,
+				969F0FC41F8A2B39007C2585 /* ios.M */,
+				961C670F1F87D2B800164F10 /* area_game.cpp */,
+				961C66FA1F87D2B500164F10 /* audio_settings.cpp */,
+				961C66F41F87D2B500164F10 /* battle_game.cpp */,
+				961C671D1F87D2BA00164F10 /* battle_player.cpp */,
+				961C671E1F87D2BA00164F10 /* battle_transition_in.cpp */,
+				961C67241F87D2BB00164F10 /* battle_transition_in2.cpp */,
+				961C67031F87D2B600164F10 /* battle_transition_out.cpp */,
+				961C67251F87D2BC00164F10 /* battle_transition_out2.cpp */,
+				961C67071F87D2B700164F10 /* battles.cpp */,
+				961C67261F87D2BC00164F10 /* bolt.cpp */,
+				961C670D1F87D2B800164F10 /* buy_scroll.cpp */,
+				961C66F61F87D2B500164F10 /* captain.cpp */,
+				961C67201F87D2BA00164F10 /* controls_settings.cpp */,
+				961C66FD1F87D2B600164F10 /* cure.cpp */,
+				961C67161F87D2B900164F10 /* custom_slide_entity.cpp */,
+				961C67021F87D2B600164F10 /* dialogue.cpp */,
+				961C67151F87D2B900164F10 /* enemies.cpp */,
+				961C67011F87D2B600164F10 /* fire.cpp */,
+				961C67141F87D2B900164F10 /* fishing_prize.cpp */,
+				961C671A1F87D2BA00164F10 /* fishing.cpp */,
+				961C670E1F87D2B800164F10 /* general.cpp */,
+				961C67231F87D2BB00164F10 /* globals.cpp */,
+				961C66FB1F87D2B500164F10 /* gui.cpp */,
+				961C67081F87D2B700164F10 /* heal.cpp */,
+				961C67041F87D2B600164F10 /* hit.cpp */,
+				961C67211F87D2BB00164F10 /* ice.cpp */,
+				961C67271F87D2BC00164F10 /* inn.cpp */,
+				961C66FF1F87D2B600164F10 /* inventory.cpp */,
+				961C67191F87D2B900164F10 /* jump.cpp */,
+				961C67101F87D2B800164F10 /* menu_game.cpp */,
+				961C671F1F87D2BA00164F10 /* menu.cpp */,
+				961C67051F87D2B600164F10 /* monster_rpg_3.cpp */,
+				961C67281F87D2BC00164F10 /* other_settings.cpp */,
+				961C66F71F87D2B500164F10 /* play_animation_and_delete.cpp */,
+				961C66FE1F87D2B600164F10 /* question.cpp */,
+				961C67171F87D2B900164F10 /* ran_away.cpp */,
+				961C67001F87D2B600164F10 /* revive_entity.cpp */,
+				961C671B1F87D2BA00164F10 /* sailor_npc.cpp */,
+				961C66F81F87D2B500164F10 /* sailor.cpp */,
+				961C67061F87D2B700164F10 /* sailship.cpp */,
+				961C67111F87D2B800164F10 /* save_slot.cpp */,
+				961C67181F87D2B900164F10 /* scroll_help.cpp */,
+				961C671C1F87D2BA00164F10 /* settings.cpp */,
+				961C66FC1F87D2B500164F10 /* shop_game.cpp */,
+				961C67091F87D2B700164F10 /* shop.cpp */,
+				961C67121F87D2B800164F10 /* sliding_menu.cpp */,
+				961C670A1F87D2B700164F10 /* spells.cpp */,
+				961C67221F87D2BB00164F10 /* start_battle.cpp */,
+				961C66F91F87D2B500164F10 /* transition.cpp */,
+				961C66F51F87D2B500164F10 /* vampires.cpp */,
+				961C67131F87D2B800164F10 /* vbolt.cpp */,
+				961C670B1F87D2B700164F10 /* video_settings.cpp */,
+				961C670C1F87D2B800164F10 /* widgets.cpp */,
+				9615BD1D206D93DD00406880 /* Monster RPG 3 macOS */,
+				96B2B9F41F87CC7500DACF6E /* Products */,
+				96B2BA781F87CD2F00DACF6E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96B2B9F41F87CC7500DACF6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96B2B9F31F87CC7500DACF6E /* monsterrpg3.app */,
+				960F76801FA28A8300CCDE26 /* Monster RPG 3.app */,
+				9615BD1C206D93DD00406880 /* Monster RPG 3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96B2BA781F87CD2F00DACF6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96C93E9A2072D02300468D02 /* CloudKit.framework */,
+				969D1537206F52ED007CDC08 /* GameKit.framework */,
+				962455D2206F2E6200173A3D /* StoreKit.framework */,
+				962455D0206F2E3000173A3D /* GameKit.framework */,
+				966A0E5B206F1EDE0060F144 /* CloudKit.framework */,
+				9615BD93206DA16400406880 /* libz.1.2.11.tbd */,
+				9615BD4B206D94FB00406880 /* libNooskewl_Wedge_static.a */,
+				9615BD49206D94EF00406880 /* libNooskewl_Shim_static.a */,
+				9615BD47206D94DE00406880 /* libtgui3_static.a */,
+				9615BD42206D94D300406880 /* libogg.a */,
+				9615BD41206D94D300406880 /* libSDL2.dylib */,
+				9615BD40206D94D300406880 /* libvorbis.a */,
+				9615BD3F206D94D300406880 /* libvorbisfile.a */,
+				9615BD36206D948300406880 /* AudioToolbox.framework */,
+				9615BD33206D948300406880 /* Carbon.framework */,
+				9615BD35206D948300406880 /* Cocoa.framework */,
+				9615BD37206D948300406880 /* CoreAudio.framework */,
+				9615BD31206D948200406880 /* CoreVideo.framework */,
+				9615BD32206D948200406880 /* ForceFeedback.framework */,
+				9615BD34206D948300406880 /* IOKit.framework */,
+				966FF7962053F92500F9DAE1 /* CloudKit.framework */,
+				968E7F4A204C7CBA00CFCD1F /* GameKit.framework */,
+				96EA6DB92046B7C6004AF0A2 /* libogg.a */,
+				96EA6DBA2046B7C6004AF0A2 /* libvorbis.a */,
+				96EA6DB82046B7C6004AF0A2 /* libvorbisfile.a */,
+				960CE5FD2046BDD200BEFA2B /* libogg.a */,
+				960CE5FE2046BDD200BEFA2B /* libvorbis.a */,
+				960CE5FF2046BDD200BEFA2B /* libvorbisfile.a */,
+				9685B16D1FA2BA540009483A /* GameController.framework */,
+				960F76DC1FA28FF100CCDE26 /* libz.1.2.8.tbd */,
+				961C66EB1F87D26600164F10 /* libNooskewl_Shim.a */,
+				960F76D41FA28F9300CCDE26 /* libNooskewl_Shim.a */,
+				961C66EA1F87D26600164F10 /* libNooskewl_Wedge.a */,
+				961C66EC1F87D26600164F10 /* libSDL2_ttf.a */,
+				960F76D51FA28F9300CCDE26 /* libSDL2_ttf.a */,
+				961C66ED1F87D26600164F10 /* libSDL2.a */,
+				961C66EE1F87D26600164F10 /* libtgui3.a */,
+				960F76D21FA28F9200CCDE26 /* libNooskewl_Wedge.a */,
+				960F76D31FA28F9300CCDE26 /* libSDL2.a */,
+				960F76D61FA28F9300CCDE26 /* libtgui3.a */,
+				96B2BA941F87CF0600DACF6E /* Foundation.framework */,
+				96B2BA931F87CF0600DACF6E /* UIKit.framework */,
+				96B2BA871F87CD8500DACF6E /* AudioToolbox.framework */,
+				96B2BA881F87CD8500DACF6E /* AVFoundation.framework */,
+				96B2BA831F87CD8500DACF6E /* CoreGraphics.framework */,
+				96B2BA851F87CD8500DACF6E /* CoreMotion.framework */,
+				96B2BA891F87CD8500DACF6E /* GameController.framework */,
+				96B2BA841F87CD8500DACF6E /* libz.1.2.8.tbd */,
+				96B2BA861F87CD8500DACF6E /* OpenGLES.framework */,
+				96B2BA8A1F87CD8500DACF6E /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		960F767F1FA28A8300CCDE26 /* tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960F76991FA28A8300CCDE26 /* Build configuration list for PBXNativeTarget "tvOS" */;
+			buildPhases = (
+				960F767C1FA28A8300CCDE26 /* Sources */,
+				960F767D1FA28A8300CCDE26 /* Frameworks */,
+				960F767E1FA28A8300CCDE26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvOS;
+			productName = "Monster RPG 3";
+			productReference = 960F76801FA28A8300CCDE26 /* Monster RPG 3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9615BD1B206D93DD00406880 /* Monster RPG 3 macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9615BD2E206D93DD00406880 /* Build configuration list for PBXNativeTarget "Monster RPG 3 macOS" */;
+			buildPhases = (
+				9615BD18206D93DD00406880 /* Sources */,
+				9615BD19206D93DD00406880 /* Frameworks */,
+				9615BD1A206D93DD00406880 /* Resources */,
+				9615BD8F206D969400406880 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Monster RPG 3 macOS";
+			productName = "Monster RPG 3 macOS";
+			productReference = 9615BD1C206D93DD00406880 /* Monster RPG 3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96B2B9F21F87CC7500DACF6E /* iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96B2BA091F87CC7500DACF6E /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildPhases = (
+				96B2B9EF1F87CC7500DACF6E /* Sources */,
+				96B2B9F01F87CC7500DACF6E /* Frameworks */,
+				96B2B9F11F87CC7500DACF6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS;
+			productName = "monsterrpg3 iOS";
+			productReference = 96B2B9F31F87CC7500DACF6E /* monsterrpg3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96B2B9DF1F87CBC700DACF6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				TargetAttributes = {
+					960F767F1FA28A8300CCDE26 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+							com.apple.GameControllers.appletvos = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					9615BD1B206D93DD00406880 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.GameCenter.Mac = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					96B2B9F21F87CC7500DACF6E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 96B2B9E21F87CBC700DACF6E /* Build configuration list for PBXProject "Monster RPG 3" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96B2B9DE1F87CBC700DACF6E;
+			productRefGroup = 96B2B9F41F87CC7500DACF6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96B2B9F21F87CC7500DACF6E /* iOS */,
+				960F767F1FA28A8300CCDE26 /* tvOS */,
+				9615BD1B206D93DD00406880 /* Monster RPG 3 macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		960F767E1FA28A8300CCDE26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96234A8421B7596100BE4550 /* manual_spanish_tvos.html in Resources */,
+				969D1530206F4E98007CDC08 /* manual_french_tvos.html in Resources */,
+				96CB102C2056C712006B10F0 /* manual_english_tvos.html in Resources */,
+				96CB102D2056C712006B10F0 /* 3rd_party_tvos.html in Resources */,
+				96F56BDE1FBFFA5500365DFF /* tvOS Assets.xcassets in Resources */,
+				960F76D11FA28C7500CCDE26 /* data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9615BD1A206D93DD00406880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B444AE21B72731005A9EAB /* manual_spanish.html in Resources */,
+				969DDE7B206F5E270003B0A1 /* manual_english.html in Resources */,
+				968FD6FA2220A61000BF956C /* macOS Icon.xcassets in Resources */,
+				969DDE7A206F5E200003B0A1 /* data.cpa in Resources */,
+				969D1539206F5537007CDC08 /* manual_french.html in Resources */,
+				96A6A960206EE7E6001EE8E2 /* 3rd_party.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B2B9F11F87CC7500DACF6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969E0DB921B72DD2004E3F1D /* manual_spanish.html in Resources */,
+				969D152E206F4E5B007CDC08 /* manual_french.html in Resources */,
+				96CB10262056C1BF006B10F0 /* 3rd_party.html in Resources */,
+				96CB10272056C1BF006B10F0 /* manual_english.html in Resources */,
+				96704C0E2015923C00E3595D /* Images.xcassets in Resources */,
+				965B27371F92CE1600C76D93 /* data in Resources */,
+				96CD7F771F96262700A3168C /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		960F767C1FA28A8300CCDE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F1FFF20651B030044EBA2 /* vfire.cpp in Sources */,
+				962F200020651B030044EBA2 /* enemy_drawing_hook.cpp in Sources */,
+				962875CC2046B433004D775E /* autosave.cpp in Sources */,
+				962875CA2046B428004D775E /* apple.M in Sources */,
+				969413B220399F96006BA1D0 /* language_settings.cpp in Sources */,
+				96CAD1862027EFF70022879B /* vice.cpp in Sources */,
+				966B79681FA6EB0E002C1876 /* gui_drawing_hook.cpp in Sources */,
+				960F769A1FA28C6700CCDE26 /* ios.M in Sources */,
+				960F769B1FA28C6700CCDE26 /* area_game.cpp in Sources */,
+				960F769C1FA28C6700CCDE26 /* audio_settings.cpp in Sources */,
+				960F769D1FA28C6700CCDE26 /* battle_game.cpp in Sources */,
+				960F769E1FA28C6700CCDE26 /* battle_player.cpp in Sources */,
+				960F769F1FA28C6700CCDE26 /* battle_transition_in.cpp in Sources */,
+				960F76A01FA28C6700CCDE26 /* battle_transition_in2.cpp in Sources */,
+				960F76A11FA28C6700CCDE26 /* battle_transition_out.cpp in Sources */,
+				960F76A21FA28C6700CCDE26 /* battle_transition_out2.cpp in Sources */,
+				960F76A31FA28C6700CCDE26 /* battles.cpp in Sources */,
+				960F76A41FA28C6700CCDE26 /* bolt.cpp in Sources */,
+				960F76A51FA28C6700CCDE26 /* buy_scroll.cpp in Sources */,
+				960F76A61FA28C6700CCDE26 /* captain.cpp in Sources */,
+				960F76A71FA28C6700CCDE26 /* controls_settings.cpp in Sources */,
+				960F76A81FA28C6700CCDE26 /* cure.cpp in Sources */,
+				960F76A91FA28C6700CCDE26 /* custom_slide_entity.cpp in Sources */,
+				960F76AA1FA28C6700CCDE26 /* dialogue.cpp in Sources */,
+				960F76AB1FA28C6700CCDE26 /* enemies.cpp in Sources */,
+				960F76AC1FA28C6700CCDE26 /* fire.cpp in Sources */,
+				960F76AD1FA28C6700CCDE26 /* fishing_prize.cpp in Sources */,
+				960F76AE1FA28C6700CCDE26 /* fishing.cpp in Sources */,
+				960F76AF1FA28C6700CCDE26 /* general.cpp in Sources */,
+				960F76B01FA28C6700CCDE26 /* globals.cpp in Sources */,
+				960F76B11FA28C6700CCDE26 /* gui.cpp in Sources */,
+				960F76B21FA28C6700CCDE26 /* heal.cpp in Sources */,
+				960F76B31FA28C6700CCDE26 /* hit.cpp in Sources */,
+				960F76B41FA28C6700CCDE26 /* ice.cpp in Sources */,
+				960F76B51FA28C6700CCDE26 /* inn.cpp in Sources */,
+				960F76B61FA28C6700CCDE26 /* inventory.cpp in Sources */,
+				960F76B71FA28C6700CCDE26 /* jump.cpp in Sources */,
+				960F76B81FA28C6700CCDE26 /* menu_game.cpp in Sources */,
+				960F76B91FA28C6700CCDE26 /* menu.cpp in Sources */,
+				960F76BA1FA28C6700CCDE26 /* monster_rpg_3.cpp in Sources */,
+				960F76BB1FA28C6700CCDE26 /* other_settings.cpp in Sources */,
+				960F76BC1FA28C6700CCDE26 /* play_animation_and_delete.cpp in Sources */,
+				960F76BD1FA28C6700CCDE26 /* question.cpp in Sources */,
+				960F76BE1FA28C6700CCDE26 /* ran_away.cpp in Sources */,
+				960F76BF1FA28C6700CCDE26 /* revive_entity.cpp in Sources */,
+				960F76C01FA28C6700CCDE26 /* sailor_npc.cpp in Sources */,
+				960F76C11FA28C6700CCDE26 /* sailor.cpp in Sources */,
+				960F76C21FA28C6700CCDE26 /* sailship.cpp in Sources */,
+				960F76C31FA28C6700CCDE26 /* save_slot.cpp in Sources */,
+				960F76C41FA28C6700CCDE26 /* scroll_help.cpp in Sources */,
+				960F76C51FA28C6700CCDE26 /* settings.cpp in Sources */,
+				960F76C61FA28C6700CCDE26 /* shop_game.cpp in Sources */,
+				960F76C71FA28C6700CCDE26 /* shop.cpp in Sources */,
+				960F76C81FA28C6700CCDE26 /* sliding_menu.cpp in Sources */,
+				960F76C91FA28C6700CCDE26 /* spells.cpp in Sources */,
+				960F76CA1FA28C6700CCDE26 /* start_battle.cpp in Sources */,
+				960F76CB1FA28C6700CCDE26 /* transition.cpp in Sources */,
+				960F76CC1FA28C6700CCDE26 /* vampires.cpp in Sources */,
+				960F76CD1FA28C6700CCDE26 /* vbolt.cpp in Sources */,
+				960F76CE1FA28C6700CCDE26 /* video_settings.cpp in Sources */,
+				960F76CF1FA28C6700CCDE26 /* widgets.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9615BD18206D93DD00406880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9615BD4D206D951B00406880 /* enemy_drawing_hook.cpp in Sources */,
+				9615BD4E206D951B00406880 /* vfire.cpp in Sources */,
+				9615BD4F206D951B00406880 /* apple.M in Sources */,
+				9615BD50206D951B00406880 /* autosave.cpp in Sources */,
+				9615BD51206D951B00406880 /* language_settings.cpp in Sources */,
+				9615BD52206D951B00406880 /* vice.cpp in Sources */,
+				9615BD53206D951B00406880 /* gui_drawing_hook.cpp in Sources */,
+				9615BD54206D951B00406880 /* area_game.cpp in Sources */,
+				9615BD55206D951B00406880 /* audio_settings.cpp in Sources */,
+				9615BD56206D951B00406880 /* battle_game.cpp in Sources */,
+				9615BD57206D951B00406880 /* battle_player.cpp in Sources */,
+				9615BD58206D951B00406880 /* battle_transition_in.cpp in Sources */,
+				9615BD59206D951B00406880 /* battle_transition_in2.cpp in Sources */,
+				9615BD5A206D951B00406880 /* battle_transition_out.cpp in Sources */,
+				9615BD5B206D951B00406880 /* battle_transition_out2.cpp in Sources */,
+				9615BD5C206D951B00406880 /* battles.cpp in Sources */,
+				9615BD5D206D951B00406880 /* bolt.cpp in Sources */,
+				9615BD5E206D951B00406880 /* buy_scroll.cpp in Sources */,
+				9615BD5F206D951B00406880 /* captain.cpp in Sources */,
+				9615BD60206D951B00406880 /* controls_settings.cpp in Sources */,
+				9615BD61206D951B00406880 /* cure.cpp in Sources */,
+				9615BD62206D951B00406880 /* custom_slide_entity.cpp in Sources */,
+				9615BD63206D951B00406880 /* dialogue.cpp in Sources */,
+				9615BD64206D951B00406880 /* enemies.cpp in Sources */,
+				9615BD65206D951B00406880 /* fire.cpp in Sources */,
+				9615BD66206D951B00406880 /* fishing_prize.cpp in Sources */,
+				9615BD67206D951B00406880 /* fishing.cpp in Sources */,
+				9615BD68206D951B00406880 /* general.cpp in Sources */,
+				9615BD69206D951B00406880 /* globals.cpp in Sources */,
+				9615BD6A206D951B00406880 /* gui.cpp in Sources */,
+				9615BD6B206D951B00406880 /* heal.cpp in Sources */,
+				9615BD6C206D951B00406880 /* hit.cpp in Sources */,
+				9615BD6D206D951B00406880 /* ice.cpp in Sources */,
+				9615BD6E206D951B00406880 /* inn.cpp in Sources */,
+				9615BD6F206D951B00406880 /* inventory.cpp in Sources */,
+				9615BD70206D951B00406880 /* jump.cpp in Sources */,
+				9615BD71206D951B00406880 /* menu_game.cpp in Sources */,
+				9615BD72206D951B00406880 /* menu.cpp in Sources */,
+				9615BD73206D951B00406880 /* monster_rpg_3.cpp in Sources */,
+				9615BD74206D951B00406880 /* other_settings.cpp in Sources */,
+				9615BD75206D951B00406880 /* play_animation_and_delete.cpp in Sources */,
+				9615BD76206D951B00406880 /* question.cpp in Sources */,
+				9615BD77206D951B00406880 /* ran_away.cpp in Sources */,
+				9615BD78206D951B00406880 /* revive_entity.cpp in Sources */,
+				9615BD79206D951B00406880 /* sailor_npc.cpp in Sources */,
+				9615BD7A206D951B00406880 /* sailor.cpp in Sources */,
+				9615BD7B206D951B00406880 /* sailship.cpp in Sources */,
+				9615BD7C206D951B00406880 /* save_slot.cpp in Sources */,
+				9615BD7D206D951B00406880 /* scroll_help.cpp in Sources */,
+				9615BD7E206D951B00406880 /* settings.cpp in Sources */,
+				9615BD7F206D951B00406880 /* shop_game.cpp in Sources */,
+				9615BD80206D951B00406880 /* shop.cpp in Sources */,
+				9615BD81206D951B00406880 /* sliding_menu.cpp in Sources */,
+				9615BD82206D951B00406880 /* spells.cpp in Sources */,
+				9615BD83206D951B00406880 /* start_battle.cpp in Sources */,
+				9615BD84206D951B00406880 /* transition.cpp in Sources */,
+				9615BD85206D951B00406880 /* vampires.cpp in Sources */,
+				9615BD86206D951B00406880 /* vbolt.cpp in Sources */,
+				9615BD87206D951B00406880 /* video_settings.cpp in Sources */,
+				9615BD88206D951B00406880 /* widgets.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B2B9EF1F87CC7500DACF6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9699E4C02220AB74007CD119 /* apple.M in Sources */,
+				962F200120651B2C0044EBA2 /* enemy_drawing_hook.cpp in Sources */,
+				962F200220651B2C0044EBA2 /* vfire.cpp in Sources */,
+				962875CF2046B47C004D775E /* autosave.cpp in Sources */,
+				969F0FC51F8A2B39007C2585 /* ios.M in Sources */,
+				961C675A1F87D2BC00164F10 /* battle_transition_out2.cpp in Sources */,
+				961C67581F87D2BC00164F10 /* globals.cpp in Sources */,
+				961C67441F87D2BC00164F10 /* area_game.cpp in Sources */,
+				961C67501F87D2BC00164F10 /* sailor_npc.cpp in Sources */,
+				961C67481F87D2BC00164F10 /* vbolt.cpp in Sources */,
+				961C672E1F87D2BC00164F10 /* transition.cpp in Sources */,
+				961C672D1F87D2BC00164F10 /* sailor.cpp in Sources */,
+				961C674F1F87D2BC00164F10 /* fishing.cpp in Sources */,
+				961C67471F87D2BC00164F10 /* sliding_menu.cpp in Sources */,
+				961C675C1F87D2BC00164F10 /* inn.cpp in Sources */,
+				961C67331F87D2BC00164F10 /* question.cpp in Sources */,
+				961C67421F87D2BC00164F10 /* buy_scroll.cpp in Sources */,
+				961C673B1F87D2BC00164F10 /* sailship.cpp in Sources */,
+				961C67361F87D2BC00164F10 /* fire.cpp in Sources */,
+				961C67551F87D2BC00164F10 /* controls_settings.cpp in Sources */,
+				961C672A1F87D2BC00164F10 /* vampires.cpp in Sources */,
+				961C672B1F87D2BC00164F10 /* captain.cpp in Sources */,
+				961C67571F87D2BC00164F10 /* start_battle.cpp in Sources */,
+				961C675B1F87D2BC00164F10 /* bolt.cpp in Sources */,
+				961C674B1F87D2BC00164F10 /* custom_slide_entity.cpp in Sources */,
+				961C67541F87D2BC00164F10 /* menu.cpp in Sources */,
+				961C67431F87D2BC00164F10 /* general.cpp in Sources */,
+				961C674E1F87D2BC00164F10 /* jump.cpp in Sources */,
+				96CAD1852027EFE80022879B /* vice.cpp in Sources */,
+				961C67291F87D2BC00164F10 /* battle_game.cpp in Sources */,
+				961C67381F87D2BC00164F10 /* battle_transition_out.cpp in Sources */,
+				961C67301F87D2BC00164F10 /* gui.cpp in Sources */,
+				961C67401F87D2BC00164F10 /* video_settings.cpp in Sources */,
+				961C67371F87D2BC00164F10 /* dialogue.cpp in Sources */,
+				961C67451F87D2BC00164F10 /* menu_game.cpp in Sources */,
+				961C67531F87D2BC00164F10 /* battle_transition_in.cpp in Sources */,
+				961C67591F87D2BC00164F10 /* battle_transition_in2.cpp in Sources */,
+				961C674A1F87D2BC00164F10 /* enemies.cpp in Sources */,
+				96E80A9D1FA6E88200AE8576 /* gui_drawing_hook.cpp in Sources */,
+				961C673D1F87D2BC00164F10 /* heal.cpp in Sources */,
+				961C67561F87D2BC00164F10 /* ice.cpp in Sources */,
+				961C67351F87D2BC00164F10 /* revive_entity.cpp in Sources */,
+				961C67461F87D2BC00164F10 /* save_slot.cpp in Sources */,
+				961C67311F87D2BC00164F10 /* shop_game.cpp in Sources */,
+				961C673A1F87D2BC00164F10 /* monster_rpg_3.cpp in Sources */,
+				968C3A702038799B001B6F10 /* language_settings.cpp in Sources */,
+				961C67391F87D2BC00164F10 /* hit.cpp in Sources */,
+				961C67491F87D2BC00164F10 /* fishing_prize.cpp in Sources */,
+				961C675D1F87D2BC00164F10 /* other_settings.cpp in Sources */,
+				961C67511F87D2BC00164F10 /* settings.cpp in Sources */,
+				961C673F1F87D2BC00164F10 /* spells.cpp in Sources */,
+				961C67341F87D2BC00164F10 /* inventory.cpp in Sources */,
+				961C673E1F87D2BC00164F10 /* shop.cpp in Sources */,
+				961C672F1F87D2BC00164F10 /* audio_settings.cpp in Sources */,
+				961C674C1F87D2BC00164F10 /* ran_away.cpp in Sources */,
+				961C67521F87D2BC00164F10 /* battle_player.cpp in Sources */,
+				961C67321F87D2BC00164F10 /* cure.cpp in Sources */,
+				961C672C1F87D2BC00164F10 /* play_animation_and_delete.cpp in Sources */,
+				961C67411F87D2BC00164F10 /* widgets.cpp in Sources */,
+				961C673C1F87D2BC00164F10 /* battles.cpp in Sources */,
+				961C674D1F87D2BC00164F10 /* scroll_help.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		960F76971FA28A8300CCDE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Monster RPG 3 iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Installer: Nooskewl (ZCLK6CUZ99)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					IOS,
+					TVOS,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Monster_RPG_3/include,
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/tvos/include/SDL2,
+					/Users/trent/code/libs/tvos/include,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /Users/trent/code/libs/tvos/lib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-documentation",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.nooskewl.monsterrpg3;
+				PRODUCT_NAME = "Monster RPG 3";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		960F76981FA28A8300CCDE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Monster RPG 3 iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Installer: Nooskewl (ZCLK6CUZ99)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					IOS,
+					TVOS,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Monster_RPG_3/include,
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/tvos/include/SDL2,
+					/Users/trent/code/libs/tvos/include,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /Users/trent/code/libs/tvos/lib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-documentation",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.nooskewl.monsterrpg3;
+				PRODUCT_NAME = "Monster RPG 3";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+		9615BD2F206D93DD00406880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Monster RPG 3.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = MAS;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/mac/include,
+					/Users/trent/code/Monster_RPG_3/include,
+					/Users/trent/code/libs/mac/include/SDL2,
+				);
+				INFOPLIST_FILE = "Monster RPG 3 macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/build,
+					/Users/trent/code/Nooskewl_Shim/build,
+					/Users/trent/code/tgui3/build,
+					/Users/trent/code/libs/mac/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fvisibility=hidden",
+					"-Wno-comment",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.nooskewl.monsterrpg3mac;
+				PRODUCT_NAME = "Monster RPG 3";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		9615BD30206D93DD00406880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Monster RPG 3.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = MAS;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/mac/include,
+					/Users/trent/code/Monster_RPG_3/include,
+					/Users/trent/code/libs/mac/include/SDL2,
+				);
+				INFOPLIST_FILE = "Monster RPG 3 macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/build,
+					/Users/trent/code/Nooskewl_Shim/build,
+					/Users/trent/code/tgui3/build,
+					/Users/trent/code/libs/mac/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fvisibility=hidden",
+					"-Wno-comment",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.nooskewl.monsterrpg3mac;
+				PRODUCT_NAME = "Monster RPG 3";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		96B2B9E31F87CBC700DACF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		96B2B9E41F87CBC700DACF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Release;
+		};
+		96B2BA0A1F87CC7500DACF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Monster RPG 3 iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/ios/include/SDL2,
+					/Users/trent/code/libs/ios/include,
+					/Users/trent/code/Monster_RPG_3/include,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /Users/trent/code/libs/ios/lib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.nooskewl.monsterrpg3;
+				PRODUCT_NAME = "Monster RPG 3";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Debug;
+		};
+		96B2BA0B1F87CC7500DACF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Monster RPG 3 iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/ios/include/SDL2,
+					/Users/trent/code/libs/ios/include,
+					/Users/trent/code/Monster_RPG_3/include,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /Users/trent/code/libs/ios/lib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.nooskewl.monsterrpg3;
+				PRODUCT_NAME = "Monster RPG 3";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		960F76991FA28A8300CCDE26 /* Build configuration list for PBXNativeTarget "tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960F76971FA28A8300CCDE26 /* Debug */,
+				960F76981FA28A8300CCDE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9615BD2E206D93DD00406880 /* Build configuration list for PBXNativeTarget "Monster RPG 3 macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9615BD2F206D93DD00406880 /* Debug */,
+				9615BD30206D93DD00406880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96B2B9E21F87CBC700DACF6E /* Build configuration list for PBXProject "Monster RPG 3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B2B9E31F87CBC700DACF6E /* Debug */,
+				96B2B9E41F87CBC700DACF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96B2BA091F87CC7500DACF6E /* Build configuration list for PBXNativeTarget "iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B2BA0A1F87CC7500DACF6E /* Debug */,
+				96B2BA0B1F87CC7500DACF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96B2B9DF1F87CBC700DACF6E /* Project object */;
+}

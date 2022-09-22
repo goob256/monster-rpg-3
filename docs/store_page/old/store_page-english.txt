@@ -1,0 +1,10 @@
+Monster RPG 3 is a fantasy old-school/Japanese-style Role Playing Game (JRPG.) Monsters have reawakened in the land, and two friends are on a mission to find the source. Along the way they'll meet some interesting characters and fight in turn-based battles. Unique Vampire attacks complement the classic-style combat. A chip-tune soundtrack synthesized in real time sets the tone as the heroes save the day in unconventional fashion.
+
+Featuring:
+
+- Turn-based battles
+- Unique Vampire attacks
+- Real-time synthesized music/sounds
+- Controller support
+- Autosaves and cloud saves
+- Tiny download size for such a quest

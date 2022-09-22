@@ -1,0 +1,1 @@
+COUNT=1596; for f in `/c/mingw/msys/1.0/bin/find . -type f`; do while read line; do echo $COUNT:`echo $line|cut -f2 -d\|` >> lines.txt; echo `echo $line|cut -f1 -d\|`\|$COUNT >> $f.new; COUNT=$((COUNT+1)); done < $f; done

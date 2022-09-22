@@ -1,0 +1,19 @@
+@PO0 = { 0 1 0 1 0 1 0 }
+@PO1 = { -8 -8 }
+@VAS0 = { 255 255 255 255 255 0 }
+
+A t130
+A @TYPE3
+A o6e8d8c8d8@PO1e8d8c8>b8<@PO1
+A >@VAS0c1@VAS0
+
+B y64
+B v128
+B t130
+B o6e8r4.e8r4.
+B >@VAS0c1@VAS0
+
+C @TYPE3
+C t130
+C r1
+C o5 @RT0 @PO0c1@PO0

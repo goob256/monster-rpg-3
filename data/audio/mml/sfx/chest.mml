@@ -1,0 +1,4 @@
+@VAS0 = { 255 255 255 255 255 128 0 }
+@VAS1 = { 128 0 }
+A t128 o5 r8. v128 @VAS1 gw. @VAS1 r64
+B t128 o5 @TYPE3 a8 r16 @VAS0 bw. @VAS0

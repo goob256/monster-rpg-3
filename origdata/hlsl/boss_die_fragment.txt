@@ -1,0 +1,123 @@
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: COLOR0;
+	float4 gl_FragCoord : TEXCOORD1;
+};
+
+static const float SMALL_TEXTURE_OFFSET = 0.00001f;
+static const float M_PI = 3.1415926535897932384626433832795f;
+static const float MAX_X_LEN = 50.0f;
+static const float MAX_Y_LEN = 25.0f;
+static const float MAX_RAND = 10.0f;
+
+texture tex;
+sampler2D tex_s = sampler_state {
+	texture = <tex>;
+};
+texture noise;
+sampler2D noise_s = sampler_state {
+	texture = <noise>;
+};
+
+float p; // percent 0-1 total effect done
+float p2;
+float p3;
+float p4;
+float4 tint;
+int sprite_w;
+int sprite_h;
+int draw_x;
+int draw_y;
+int screen_offset_x;
+int screen_offset_y;
+int screen_w;
+int screen_h;
+int shim_screen_w;
+int shim_screen_h;
+float scale;
+int num_frames;
+float frame_offset;
+
+// Calculated gl_FragCoord equivalent from Input.gl_FragCoord (from the default vertex shader)
+// NOTE: invert_y=true makes this exactly the same as OpenGL, otherwise y is 0-(h-1) from top to bottom
+float4 get_gl_FragCoord(float4 input/*, bool invert_y*/)
+{
+	float4 gl_FragCoord = input / input.w;
+	gl_FragCoord.x = floor((gl_FragCoord.x + 1.0f) / 2.0f * screen_w);
+	gl_FragCoord.y = floor((1.0f - gl_FragCoord.y) / 2.0f * screen_h);
+	/*
+	if (invert_y) {
+		gl_FragCoord.y = screen_h - gl_FragCoord.y;
+	}
+	*/
+	return gl_FragCoord;
+}
+
+float put_in_bounds(float f)
+{
+	return min(1.0-SMALL_TEXTURE_OFFSET, max(SMALL_TEXTURE_OFFSET, f));
+}
+
+float4 main(VS_OUTPUT Input) : COLOR0
+{
+	float p2 = max(0.0f, (p - 0.5f) / 0.5f);
+	float p3 = max(0.0f, (p - 0.75f) / 0.25f);
+
+	float4 gl_FragCoord = get_gl_FragCoord(Input.gl_FragCoord);
+
+	float x = (gl_FragCoord.x - screen_offset_x) / scale;
+	float y = (gl_FragCoord.y - screen_offset_y) / scale;
+
+	float2 r = float2(x / shim_screen_w, y / shim_screen_h);
+	float4 noise_pixel = tex2D(noise_s, float2(put_in_bounds(r.x), put_in_bounds(r.y)));
+	r.x = ((noise_pixel.r * 255.0f * 255.0f) + (noise_pixel.g * 255.0f)) / 65280.0f * 2.0f - 1.0f;
+	r.y = ((noise_pixel.b * 255.0f * 255.0f) + (noise_pixel.a * 255.0f)) / 65280.0f * 2.0f - 1.0f;
+
+	x += p * p * MAX_RAND * r.x + p2 * p2 * MAX_RAND * r.x;
+	y += p * p * MAX_RAND * r.y + p2 * p2 * MAX_RAND * r.y;
+
+	x -= draw_x;
+	y -= draw_y;
+
+	float add_x = p * M_PI * 2.0f * 2.0f;
+	float len_x = p * MAX_X_LEN;
+	float cy = cos((y/sprite_h)*M_PI*2.0f+add_x);
+
+	if (p2 > 0.0f) {
+		float add_y = p2 * M_PI * 2.0f;
+		float len_y = p2 * MAX_Y_LEN;
+		float sx = sin((x/sprite_w)*M_PI*2.0f*2.0f+add_y);
+		y -= sx * len_y;
+	}
+
+	// After using it for y calculation...
+	x -= cy * len_x;
+
+	if (x < 0.0f || x > sprite_w-1.0f || y < 0.0f || y > sprite_h-1.0f) {
+		return float4(0.0f, 0.0f, 0.0f, 0.0f);
+	}
+	else {
+		x = x / (sprite_w-1.0f) / num_frames;
+		y = y / (sprite_h-1.0f);
+		y = 1.0 - y; // y was in 'normal' coordinates (0-h top to bottom)
+		x += frame_offset;
+		float4 result = tex2D(tex_s, float2(put_in_bounds(x), put_in_bounds(y)));
+		if (result.a == 0.0f) {
+			return float4(0.0f, 0.0f, 0.0f, 0.0f);
+		}
+		else {
+			float shade = (result.r + result.g + result.b) / 3.0f;
+			result = float4(
+				p4 * result.r + p2 * shade,
+				p4 * result.g + p2 * shade,
+				p4 * result.b + p2 * shade,
+				result.a
+			);
+			float4 inv = float4(1.0f, 1.0f, 1.0f, 1.0f) - result;
+			inv = p2 * inv * tint;
+			return (result + inv) * (1.0f - p3);
+		}
+	}
+}

@@ -1,0 +1,9 @@
+#!/bin/sh
+cd ~/code/tgui3
+git pull --rebase
+cd ~/code/Nooskewl_Shim
+git pull --rebase
+cd ~/code/Nooskewl_Wedge
+git pull --rebase
+cd ~/code/Monster_RPG_3
+git pull --rebase

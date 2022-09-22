@@ -1,0 +1,31 @@
+uniform mat4 modelview;
+uniform mat4 proj;
+uniform vec3 light_pos;
+uniform vec4 ground_colour;
+uniform mat4 normal_matrix;
+
+attribute vec3 in_position;
+attribute vec3 in_normal;
+attribute vec2 in_texcoord;
+attribute vec4 in_colour;
+
+varying vec2 texcoord;
+varying vec4 colour;
+
+void main()
+{
+	vec4 normal = normalize(normal_matrix * vec4(in_normal, 1.0));
+	vec4 pos4 = vec4(in_position, 1.0);
+	vec4 pos = modelview * pos4;
+	vec4 light_pos4 = vec4(light_pos, 1.0);
+	vec4 light_dir = normalize(light_pos4 - pos);
+	float light_intensity = max(dot(light_dir, normal), 0.0) * 0.667 + 0.333;
+	vec3 colour1 = (in_colour.rgb / max(0.0001, in_colour.a)/*avoid divide by zero*/)/*un-premultiply*/ * light_intensity;
+	// ground colour reflects off the bottom
+	light_dir = normalize((light_pos4 * vec4(1.0, -1.0, 1.0, 1.0)) - pos);
+	light_intensity = max(dot(light_dir, normal), 0.0) / 4.0 + 0.25;
+	vec3 colour2 = ground_colour.rgb * light_intensity;
+	colour = vec4(colour1 + colour2, 1.0) * in_colour.a;
+	texcoord = in_texcoord;
+	gl_Position = proj * modelview * pos4;
+}

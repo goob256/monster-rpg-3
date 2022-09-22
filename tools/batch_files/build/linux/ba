@@ -1,0 +1,18 @@
+#!/bin/sh
+if uname -a | grep raspberry > /dev/null ; then
+	NPROC=4
+else
+	NPROC=`nproc`
+fi
+CWD=`pwd`
+cd ~/code
+rm "Monster_RPG_3/build/MonsterRPG3"
+cd tgui3/build
+make -j$NPROC
+cd ../../Nooskewl_Shim/build
+make -j$NPROC
+cd ../../Nooskewl_Wedge/build
+make -j$NPROC
+cd ../../Monster_RPG_3/build
+make -j$NPROC
+cd $CWD

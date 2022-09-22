@@ -1,0 +1,39 @@
+struct VS_INPUT
+{
+	float3 Position : POSITION0;
+	float3 Normal	: NORMAL0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: TEXCOORD1;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: COLOR0;
+};
+
+float4 ground_colour;
+float3 light_pos;
+float4x4 normal_matrix;
+float4x4 modelview;
+float4x4 proj;
+
+VS_OUTPUT main(VS_INPUT Input)
+{
+	VS_OUTPUT Output;
+	float4 normal = normalize(mul(float4(Input.Normal, 1.0f), normal_matrix));
+	float4 pos = mul(float4(Input.Position, 1.0f), modelview);
+	float4 light_dir = normalize(float4(light_pos, 1.0f) - pos);
+	float light_intensity = max(dot(light_dir, normal), 0.0f) * 0.667f + 0.333f;
+	Output.Colour.rgb = Input.Colour.rgb / max(0.0001f, Input.Colour.a);
+	Output.Colour.rgb = Output.Colour.rgb * light_intensity;
+	// ground colour reflects off the bottom
+	light_dir = normalize(float4(light_pos * float3(1.0f, -1.0f, 1.0f), 1.0f) - pos);
+	light_intensity = max(dot(light_dir, normal), 0.0f) / 4.0f + 0.25f;
+	Output.TexCoord = Input.TexCoord;
+	float3 colour2 = ground_colour.rgb * light_intensity;
+	Output.Colour = float4(Output.Colour.rgb + colour2, 1.0f) * Input.Colour.a;
+	Output.Position = mul(mul(float4(Input.Position, 1.0f), modelview), proj);
+	return Output;
+}

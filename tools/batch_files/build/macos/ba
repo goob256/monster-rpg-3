@@ -1,0 +1,14 @@
+#!/bin/sh
+cd tgui3/build
+make -j4
+cd ../..
+cd Nooskewl_Shim/build
+make -j4
+cd ../..
+cd Nooskewl_Wedge/build
+make -j4
+cd ../..
+cd Monster_RPG_3/build
+rm MonsterRPG3
+make -j4
+cd ../..
