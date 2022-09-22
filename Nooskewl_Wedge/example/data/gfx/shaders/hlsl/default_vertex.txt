@@ -1,0 +1,29 @@
+struct VS_INPUT
+{
+	float4 Position : POSITION0;
+	float3 Normal	: NORMAL0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: TEXCOORD1;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Colour	: COLOR0;
+	float4 gl_FragCoord : TEXCOORD1;
+};
+
+float4x4 proj;
+float4x4 view;
+float4x4 model;
+
+VS_OUTPUT vs_main(VS_INPUT Input)
+{
+	VS_OUTPUT Output;
+	Output.Colour = Input.Colour;
+	Output.TexCoord = Input.TexCoord;
+	Output.gl_FragCoord = mul(Input.Position, mul(model, view));
+	Output.Position = mul(Output.gl_FragCoord, proj);
+	return Output;
+}

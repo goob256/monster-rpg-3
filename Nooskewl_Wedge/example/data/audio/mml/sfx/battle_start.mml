@@ -1,0 +1,5 @@
+@PO0 = { 0 20000 }
+@VAS0 = { 0 }
+@PO1 = { 0 5000 }
+A v255 @TYPE1 o1 @PO0 @VAS0 c2 @VAS0 @PO0 r64
+B v255 y32 o2 @PO1 @VAS0 c2 @VAS0 @PO1

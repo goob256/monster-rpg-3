@@ -1,0 +1,48 @@
+{ "frames": {
+   "punch 0.tga": {
+    "frame": { "x": 0, "y": 0, "w": 14, "h": 12 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 12 },
+    "sourceSize": { "w": 14, "h": 12 },
+    "duration": 100
+   },
+   "punch 1.tga": {
+    "frame": { "x": 14, "y": 0, "w": 14, "h": 12 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 12 },
+    "sourceSize": { "w": 14, "h": 12 },
+    "duration": 100
+   },
+   "punch 2.tga": {
+    "frame": { "x": 28, "y": 0, "w": 14, "h": 12 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 12 },
+    "sourceSize": { "w": 14, "h": 12 },
+    "duration": 100
+   },
+   "punch 3.tga": {
+    "frame": { "x": 42, "y": 0, "w": 14, "h": 12 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 12 },
+    "sourceSize": { "w": 14, "h": 12 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.9",
+  "image": "/home/trent/code/monster-rpg-3/data/sprites/eny/punch.tga",
+  "format": "I8",
+  "size": { "w": 56, "h": 12 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+uniform sampler2D tex;
+
+uniform float p; // percent 0-1 total effect done
+uniform float tint_p; // percent till full tint
+uniform vec4 tint;
+
+varying vec4 colour;
+varying vec2 texcoord;
+
+void main()
+{
+	vec4 result = texture2D(tex, texcoord) * colour;
+	float shade = (result.r + result.g + result.b) / 3.0;
+	float p2 = min(1.0, p / tint_p);
+	float p3 = 1.0 - p2;
+
+	result = vec4(
+		p3 * result.r + p2 * shade * tint.r,
+		p3 * result.g + p2 * shade * tint.g,
+		p3 * result.b + p2 * shade * tint.b,
+		result.a
+	);
+
+	result *= 1.0 - p;
+
+	gl_FragColor = result;
+}

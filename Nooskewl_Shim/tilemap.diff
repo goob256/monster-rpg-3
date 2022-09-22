@@ -1,0 +1,412 @@
+diff --git a/include/Nooskewl_Shim/tilemap.h b/include/Nooskewl_Shim/tilemap.h
+index 7060f71..4746ca8 100644
+--- a/include/Nooskewl_Shim/tilemap.h
++++ b/include/Nooskewl_Shim/tilemap.h
+@@ -51,12 +51,10 @@ public:
+ private:
+ 	struct Layer
+ 	{
+-		int **sheet;
+ 		int **x;
+ 		int **y;
+-		bool **solid;
+-		std::vector<int> sheets_used;
+ 	};
++	bool **solid;
+ 
+ 	Animation_Data *get_animation_data(util::Point<int> tile);
+ 	util::Point<int> get_animated_tile(util::Point<int> tile);
+diff --git a/src/tilemap.cpp b/src/tilemap.cpp
+index a1f0040..bb2473b 100644
+--- a/src/tilemap.cpp
++++ b/src/tilemap.cpp
+@@ -177,30 +177,25 @@ Tilemap::Tilemap(std::string map_filename, bool load_from_filesystem)
+ 	layers = new Layer[num_layers];
+ 
+ 	for (int layer = 0; layer < num_layers; layer++) {
+-		layers[layer].sheets_used = std::vector<int>();
+-		layers[layer].sheet = new int *[size.h];
+ 		layers[layer].x = new int *[size.h];
+ 		layers[layer].y = new int *[size.h];
+-		layers[layer].solid = new bool *[size.h];
+ 		for (int row = 0; row < size.h; row++) {
+-			layers[layer].sheet[row] = new int[size.w];
+ 			layers[layer].x[row] = new int[size.w];
+ 			layers[layer].y[row] = new int[size.w];
+-			layers[layer].solid[row] = new bool[size.w];
+ 			for (int col = 0; col < size.w; col++) {
+ 				layers[layer].x[row][col] = (signed char)util::SDL_fgetc(f);
+ 				layers[layer].y[row][col] = (signed char)util::SDL_fgetc(f);
+-				layers[layer].sheet[row][col] = (signed char)util::SDL_fgetc(f);
+-				layers[layer].solid[row][col] = util::SDL_fgetc(f) != 0;
+-				if (layers[layer].x[row][col] >= 0 && std::find(layers[layer].sheets_used.begin(), layers[layer].sheets_used.end(), layers[layer].sheet[row][col]) == layers[layer].sheets_used.end()) {
+-					layers[layer].sheets_used.push_back(layers[layer].sheet[row][col]);
+-				}
+ 			}
+ 		}
+ 	}
++	
++	solid = new bool *[size.h];
+ 
+-	for (int layer = 0; layer < num_layers; layer++) {
+-		std::sort(layers[layer].sheets_used.begin(), layers[layer].sheets_used.end());
++	for (int row = 0; row < size.h; row++) {
++		solid[row] = new bool[size.w];
++		for (int col = 0; col < size.w; col++) {
++			solid[row][col] = util::SDL_fgetc(f) != 0;
++		}
+ 	}
+ 
+ 	util::close_file(f);
+@@ -211,19 +206,20 @@ Tilemap::~Tilemap()
+ 	if (layers) {
+ 		for (int layer = 0; layer < num_layers; layer++) {
+ 			for (int row = 0; row < size.h; row++) {
+-				delete[] layers[layer].sheet[row];
+ 				delete[] layers[layer].x[row];
+ 				delete[] layers[layer].y[row];
+-				delete[] layers[layer].solid[row];
+ 			}
+-			delete[] layers[layer].sheet;
+ 			delete[] layers[layer].x;
+ 			delete[] layers[layer].y;
+-			delete[] layers[layer].solid;
+ 		}
+-
++		
+ 		delete[] layers;
+ 	}
++
++	for (int row = 0; row < size.h; row++) {
++		delete[] solid[row];
++	}
++	delete[] solid;
+ }
+ 
+ int Tilemap::get_num_layers()
+@@ -242,35 +238,19 @@ bool Tilemap::is_solid(int layer, util::Point<int> position)
+ 		return true;
+ 	}
+ 
+-	int start_layer = layer < 0 ? 0 : layer;
+-	int end_layer = layer < 0 ? num_layers - 1 : layer;
+-
+-	for (int i = start_layer; i <= end_layer; i++) {
+-		Layer l = layers[i];
+-		if (l.solid[position.y][position.x]) {
+-			return true;
+-		}
+-	}
+-
+-	return false;
++	return solid[position.y][position.x];
+ }
+ 
+ void Tilemap::set_solid(int layer, util::Point<int> position, util::Size<int> solid_size, bool solid)
+ {
+-	int start_layer = layer < 0 ? 0 : layer;
+-	int end_layer = layer < 0 ? num_layers - 1 : layer;
+-
+-	for (int i = start_layer; i <= end_layer; i++) {
+-		Layer l = layers[i];
+-		for (int y = 0; y < solid_size.h; y++) {
+-			for (int x = 0; x < solid_size.w; x++) {
+-				int xx = position.x + x;
+-				int yy = position.y + y;
+-				if (xx < 0 || yy < 0 || xx >= size.w || yy >= size.h) {
+-					continue;
+-				}
+-				l.solid[yy][xx] = solid;
++	for (int y = 0; y < solid_size.h; y++) {
++		for (int x = 0; x < solid_size.w; x++) {
++			int xx = position.x + x;
++			int yy = position.y + y;
++			if (xx < 0 || yy < 0 || xx >= size.w || yy >= size.h) {
++				continue;
+ 			}
++			this->solid[yy][xx] = solid;
+ 		}
+ 	}
+ }
+@@ -287,13 +267,10 @@ void Tilemap::swap_tiles(int layer1, int layer2, util::Point<int> topleft, util:
+ 			if (xx < 0 || yy < 0 || xx >= size.w || yy >= size.h) {
+ 				continue;
+ 			}
+-			int sheet = l_2.sheet[yy][xx];
+ 			int tx = l_2.x[yy][xx];
+ 			int ty = l_2.y[yy][xx];
+-			l_2.sheet[yy][xx] = l_1.sheet[yy][xx];
+ 			l_2.x[yy][xx] = l_1.x[yy][xx];
+ 			l_2.y[yy][xx] = l_1.y[yy][xx];
+-			l_1.sheet[yy][xx] = sheet;
+ 			l_1.x[yy][xx] = tx;
+ 			l_1.y[yy][xx] = ty;
+ 		}
+@@ -302,9 +279,6 @@ void Tilemap::swap_tiles(int layer1, int layer2, util::Point<int> topleft, util:
+ 
+ bool Tilemap::collides(int layer, util::Point<int> topleft, util::Point<int> bottomright)
+ {
+-	int start_layer = layer < 0 ? 0 : layer;
+-	int end_layer = layer < 0 ? num_layers - 1 : layer;
+-
+ 	int start_column = topleft.x / shim::tile_size;
+ 	int end_column = bottomright.x / shim::tile_size;
+ 	int start_row = topleft.y / shim::tile_size;
+@@ -315,14 +289,10 @@ bool Tilemap::collides(int layer, util::Point<int> topleft, util::Point<int> bot
+ 	start_row = MIN(size.h-1, MAX(0, start_row));
+ 	end_row = MIN(size.h-1, MAX(0, end_row));
+ 
+-	for (int i = start_layer; i <= end_layer; i++) {
+-		Layer l = layers[i];
+-
+-		for (int row = start_row; row <= end_row; row++) {
+-			for (int column = start_column; column <= end_column; column++) {
+-				if (l.solid[row][column]) {
+-					return true;
+-				}
++	for (int row = start_row; row <= end_row; row++) {
++		for (int column = start_column; column <= end_column; column++) {
++			if (solid[row][column]) {
++				return true;
+ 			}
+ 		}
+ 	}
+@@ -336,115 +306,111 @@ void Tilemap::draw(int start_layer, int end_layer, util::Point<float> position,
+ 	util::debugmsg("drawing layers %d to %d (inclusive)\n", start_layer, end_layer);
+ #endif
+ 
+-	for (size_t sheet = 0; sheet < sheets.size(); sheet++) {
+-		sheets[sheet]->start_batch();
++	sheets[0]->start_batch();
+ 
+-		for (int layer = start_layer; layer <= end_layer; layer++) {
+-			Layer l = layers[layer];
++	for (int layer = start_layer; layer <= end_layer; layer++) {
++		Layer l = layers[layer];
+ 
+-			if (std::find(l.sheets_used.begin(), l.sheets_used.end(), sheet) == l.sheets_used.end()) {
+-				continue;
+-			}
++		// Clipping
++		util::Size<int> target_size = shim::screen_size;
++		util::Size<int> pixel_size = size * shim::tile_size;
++		util::Point<int> offset((target_size.w-pixel_size.w)/2, (target_size.h-pixel_size.h)/2);
++
++		util::Point<int> start_tile, end_tile;
++		if (position.x < 0) {
++			start_tile.x = MIN(size.w - 1, fabs(position.x) / shim::tile_size);
++		}
++		else {
++			start_tile.x = 0;
++		}
++		if (position.x+pixel_size.w > target_size.w) {
++			end_tile.x = MIN(size.w - 1, (fabs(position.x) + target_size.w) / shim::tile_size);
++		}
++		else {
++			end_tile.x = size.w-1;
++		}
++		if (position.y < 0) {
++			start_tile.y = MIN(size.h - 1, fabs(position.y) / shim::tile_size);
++		}
++		else {
++			start_tile.y = 0;
++		}
++		if (position.y+pixel_size.h > target_size.h) {
++			end_tile.y = MIN(size.h - 1, (fabs(position.y) + target_size.h) / shim::tile_size);
++		}
++		else {
++			end_tile.y = size.h-1;
++		}
+ 
+-			// Clipping
+-			util::Size<int> target_size = shim::screen_size;
+-			util::Size<int> pixel_size = size * shim::tile_size;
+-			util::Point<int> offset((target_size.w-pixel_size.w)/2, (target_size.h-pixel_size.h)/2);
++		for (int row = start_tile.y; row <= end_tile.y; row++) {
++			for (int col = start_tile.x; col <= end_tile.x; col++) {
++				int x = l.x[row][col];
+ 
+-			util::Point<int> start_tile, end_tile;
+-			if (position.x < 0) {
+-				start_tile.x = MIN(size.w - 1, fabs(position.x) / shim::tile_size);
+-			}
+-			else {
+-				start_tile.x = 0;
+-			}
+-			if (position.x+pixel_size.w > target_size.w) {
+-				end_tile.x = MIN(size.w - 1, (fabs(position.x) + target_size.w) / shim::tile_size);
+-			}
+-			else {
+-				end_tile.x = size.w-1;
+-			}
+-			if (position.y < 0) {
+-				start_tile.y = MIN(size.h - 1, fabs(position.y) / shim::tile_size);
+-			}
+-			else {
+-				start_tile.y = 0;
+-			}
+-			if (position.y+pixel_size.h > target_size.h) {
+-				end_tile.y = MIN(size.h - 1, (fabs(position.y) + target_size.h) / shim::tile_size);
+-			}
+-			else {
+-				end_tile.y = size.h-1;
+-			}
++				if (x < 0) {
++					continue;
++				}
+ 
+-			for (int row = start_tile.y; row <= end_tile.y; row++) {
+-				for (int col = start_tile.x; col <= end_tile.x; col++) {
+-					int s = l.sheet[row][col];
+-					if (s == (int)sheet) {
+-						int x = l.x[row][col];
+-						int y = l.y[row][col];
+-
+-						util::Point<int> tile = get_animated_tile(util::Point<int>(x, y));
+-
+-						int sx = tile.x * (shim::tile_size + 2) + 1;
+-						int sy = tile.y * (shim::tile_size + 2) + 1;
+-						float dx = position.x + col * shim::tile_size;
+-						float dy = position.y + row * shim::tile_size;
+-						int dw = shim::tile_size;
+-						int dh = shim::tile_size;
+-
+-						if (clip_small_tilemaps) {
+-							if (offset.x > 0) {
+-								if (dx < offset.x) {
+-									int diff = offset.x - dx;
+-									if (diff >= shim::tile_size) {
+-										continue;
+-									}
+-									dx += diff;
+-									sx += diff;
+-									dw -= diff;
+-								}
+-								if (dx+dw > offset.x+pixel_size.w) {
+-									int diff = (dx+dw) - (offset.x+pixel_size.w);
+-									if (diff >= shim::tile_size) {
+-										continue;
+-									}
+-									dw -= diff;
+-								}
++				int y = l.y[row][col];
++
++				util::Point<int> tile = get_animated_tile(util::Point<int>(x, y));
++
++				int sx = tile.x * (shim::tile_size + 2) + 1;
++				int sy = tile.y * (shim::tile_size + 2) + 1;
++				float dx = position.x + col * shim::tile_size;
++				float dy = position.y + row * shim::tile_size;
++				int dw = shim::tile_size;
++				int dh = shim::tile_size;
++
++				if (clip_small_tilemaps) {
++					if (offset.x > 0) {
++						if (dx < offset.x) {
++							int diff = offset.x - dx;
++							if (diff >= shim::tile_size) {
++								continue;
++							}
++							dx += diff;
++							sx += diff;
++							dw -= diff;
++						}
++						if (dx+dw > offset.x+pixel_size.w) {
++							int diff = (dx+dw) - (offset.x+pixel_size.w);
++							if (diff >= shim::tile_size) {
++								continue;
+ 							}
+-							if (offset.y > 0) {
+-								if (dy < offset.y) {
+-									int diff = offset.y - dy;
+-									if (diff >= shim::tile_size) {
+-										continue;
+-									}
+-									dy += diff;
+-									sy += diff;
+-									dh -= diff;
+-								}
+-								if (dy+dh > offset.y+pixel_size.h) {
+-									int diff = (dy+dh) - (offset.y+pixel_size.h);
+-									if (diff >= shim::tile_size) {
+-										continue;
+-									}
+-									dh -= diff;
+-								}
++							dw -= diff;
++						}
++					}
++					if (offset.y > 0) {
++						if (dy < offset.y) {
++							int diff = offset.y - dy;
++							if (diff >= shim::tile_size) {
++								continue;
+ 							}
++							dy += diff;
++							sy += diff;
++							dh -= diff;
++						}
++						if (dy+dh > offset.y+pixel_size.h) {
++							int diff = (dy+dh) - (offset.y+pixel_size.h);
++							if (diff >= shim::tile_size) {
++								continue;
++							}
++							dh -= diff;
+ 						}
+-
+-						sheets[s]->draw_region(
+-							util::Point<int>(sx, sy),
+-							util::Size<int>(dw, dh),
+-							util::Point<float>(dx, dy),
+-							0
+-						);
+ 					}
+ 				}
++
++				sheets[0]->draw_region(
++					util::Point<int>(sx, sy),
++					util::Size<int>(dw, dh),
++					util::Point<float>(dx, dy),
++					0
++				);
+ 			}
+ 		}
+-
+-		sheets[sheet]->end_batch();
+ 	}
++
++	sheets[0]->end_batch();
+ }
+ 
+ void Tilemap::draw(int layer, util::Point<float> position, bool clip_small_tilemaps)
+@@ -497,10 +463,10 @@ bool Tilemap::get_tile(int layer, util::Point<int> position, int &sheet, int &x,
+ 		return false;
+ 	}
+ 
+-	sheet = layers[layer].sheet[position.y][position.x];
++	sheet = 0;
+ 	x = layers[layer].x[position.y][position.x];
+ 	y = layers[layer].y[position.y][position.x];
+-	solid = layers[layer].solid[position.y][position.x];
++	solid = this->solid[position.y][position.x];
+ 
+ 	return true;
+ }
+@@ -518,11 +484,16 @@ void Tilemap::save(std::string filename)
+ 			for (int col = 0; col < size.w; col++) {
+ 				util::SDL_fputc(layers[layer].x[row][col], file);
+ 				util::SDL_fputc(layers[layer].y[row][col], file);
+-				util::SDL_fputc(is_solid(-1, util::Point<int>(col, row)), file);
+ 			}
+ 		}
+ 	}
+ 
++	for (int row = 0; row < size.h; row++) {
++		for (int col = 0; col < size.w; col++) {
++			util::SDL_fputc(is_solid(-1, util::Point<int>(col, row)), file);
++		}
++	}
++
+ 	SDL_RWclose(file);
+ }
+ 

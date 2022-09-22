@@ -1,0 +1,1101 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		077DD6BC6B6A487F9F6481C8 /* set_visible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C14BB73B85C45959EB4B515 /* set_visible.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0BB9A72C06E2478988EC545C /* look_around_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD2BBE6843940BDABEE9AA6 /* look_around_input.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0CF7DA92D9B946D8A167362D /* omnipresent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9837688CA338443FBA26C330 /* omnipresent.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1C79637610C4404287A87CE2 /* area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67685999D8C14A07AFEFEDBA /* area.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		21F09FA198774DDA9555A65B /* generic_immediate_callback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99C35814F9BF40EF99CB2AEA /* generic_immediate_callback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		261F0FAD4CAF4F09A7F2F625 /* delay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12588CF6A7DF4103A9FC8208 /* delay.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2BF3FD033A114F149B7759E6 /* onscreen_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96F44A147A134A51BFFFED6F /* onscreen_controller.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2C5EB6950F5948E4B0D13862 /* chest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F630F83197384C438AFECAD4 /* chest.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		303506650A4B477EAE6EDD6B /* map_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1874A5377ECB4FE88D929B32 /* map_entity.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		347D4BFD0BE24D3BA438E309 /* shop_step.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAAD67D5DD994F7B96FA9A2B /* shop_step.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		36E5521F8200495CA8F067B2 /* slide_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B1AEE634778436C978D5E9E /* slide_entity.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		39C067660C6D46E38F1FE9A4 /* generic_callback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D28C106C93CE498E81FC8C39 /* generic_callback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3B3365B3B9784A91B2B798C8 /* stop_sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5F628DEF0714B668DF6A9EA /* stop_sound.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		401D672904B74E64A9975729 /* area_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F44AC89C4DEF915426A0 /* area_game.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		414A5477ED9C419FBEAA4DCE /* a_star.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4068D058498C446AAFB7E1D0 /* a_star.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4CF78E4CD3EF4D22A90B8742 /* battle_enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD3EDA134AA044FB9F61F146 /* battle_enemy.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4EEFB46F49764FE7A22B9464 /* pause_presses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF7272993F3D4A22A64DD6A7 /* pause_presses.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		56C779C901BA400D9955A56D /* battle_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B914D7BEC5948C49E61BAC1 /* battle_game.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5B5E087C416E42A18B6B7F43 /* delete_map_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 157AE23B06B94D7FAD49D153 /* delete_map_entity.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5EDECAAE68D4471AA09CEF97 /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7824851A3B874D0A9CBF24B6 /* npc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		63AEB1873253466CB2E8473B /* stop_music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17D0D708D784A2F8DB93524 /* stop_music.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		67325913468644A29618FF4D /* set_direction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94FDA2AE9F3F48CA85C65180 /* set_direction.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6BB1D8C338824C0BA9CB340B /* check_positions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEF419409D68402D881B7F2B /* check_positions.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6CD6F64A98D142F399DCE811 /* general.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECBE4D612174076B38E4C34 /* general.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7215472D94344D8A87D0794A /* wait_for_integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1A02BC515C049FA8453BA6D /* wait_for_integer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		785453398E804B3E858C3827 /* wander_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB64AE3B41A45F4AE2808C3 /* wander_input.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7A9452EFB87A4ACA9A021312 /* player_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1D59DCBE13F47668EA97DF9 /* player_input.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7EEA08B906FC4AE288D28D18 /* battle_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7EDABD4F1BD4D19AE2435D1 /* battle_player.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		92A182F7C1924ED68C46F924 /* generic_gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F47587092C054869AA95DE9E /* generic_gui.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		952B162D7B5141F8B1E2835A /* play_animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC92EEA1C7894A48B8C2B73B /* play_animation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		95E1764212724A9794E3168B /* set_integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B4FB6F3F51E407D97D572B9 /* set_integer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		95EBB4C170F94E9496947211 /* play_music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D35AA54C8AAC4F138C0FFFC6 /* play_music.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		960F76431FA289E600CCDE26 /* a_star.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4068D058498C446AAFB7E1D0 /* a_star.cpp */; };
+		960F76441FA289E600CCDE26 /* area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67685999D8C14A07AFEFEDBA /* area.cpp */; };
+		960F76451FA289E600CCDE26 /* area_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F44AC89C4DEF915426A0 /* area_game.cpp */; };
+		960F76461FA289E600CCDE26 /* battle_end.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 149148B24C7A45948596AA2D /* battle_end.cpp */; };
+		960F76471FA289E600CCDE26 /* battle_enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD3EDA134AA044FB9F61F146 /* battle_enemy.cpp */; };
+		960F76481FA289E600CCDE26 /* battle_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D59AEDF97094C5390AF0208 /* battle_entity.cpp */; };
+		960F76491FA289E600CCDE26 /* battle_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B914D7BEC5948C49E61BAC1 /* battle_game.cpp */; };
+		960F764A1FA289E600CCDE26 /* battle_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7EDABD4F1BD4D19AE2435D1 /* battle_player.cpp */; };
+		960F764B1FA289E600CCDE26 /* branch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB4A1C8D5D53460E9939F23E /* branch.cpp */; };
+		960F764C1FA289E600CCDE26 /* check_positions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEF419409D68402D881B7F2B /* check_positions.cpp */; };
+		960F764D1FA289E600CCDE26 /* chest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F630F83197384C438AFECAD4 /* chest.cpp */; };
+		960F764E1FA289E600CCDE26 /* delay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12588CF6A7DF4103A9FC8208 /* delay.cpp */; };
+		960F764F1FA289E600CCDE26 /* delete_map_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 157AE23B06B94D7FAD49D153 /* delete_map_entity.cpp */; };
+		960F76501FA289E600CCDE26 /* fade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57E8683E6FFB4322BA3DAEEC /* fade.cpp */; };
+		960F76511FA289E600CCDE26 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD006B8FCDC049F1A89D405B /* game.cpp */; };
+		960F76521FA289E600CCDE26 /* general.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECBE4D612174076B38E4C34 /* general.cpp */; };
+		960F76531FA289E600CCDE26 /* generic_callback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D28C106C93CE498E81FC8C39 /* generic_callback.cpp */; };
+		960F76541FA289E600CCDE26 /* generic_gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F47587092C054869AA95DE9E /* generic_gui.cpp */; };
+		960F76551FA289E600CCDE26 /* generic_immediate_callback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99C35814F9BF40EF99CB2AEA /* generic_immediate_callback.cpp */; };
+		960F76561FA289E600CCDE26 /* give_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFD4382484F04A608CAB4970 /* give_object.cpp */; };
+		960F76571FA289E600CCDE26 /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4797FE20FD304A5386041090 /* globals.cpp */; };
+		960F76581FA289E600CCDE26 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A785CDBFD983470E972BFE4A /* input.cpp */; };
+		960F76591FA289E600CCDE26 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BCA00281246C28A75E189 /* inventory.cpp */; };
+		960F765A1FA289E600CCDE26 /* look_around_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD2BBE6843940BDABEE9AA6 /* look_around_input.cpp */; };
+		960F765B1FA289E600CCDE26 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8FE39028B4387BBC6FC25 /* main.cpp */; };
+		960F765C1FA289E600CCDE26 /* map_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1874A5377ECB4FE88D929B32 /* map_entity.cpp */; };
+		960F765D1FA289E600CCDE26 /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7824851A3B874D0A9CBF24B6 /* npc.cpp */; };
+		960F765E1FA289E600CCDE26 /* omnipresent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9837688CA338443FBA26C330 /* omnipresent.cpp */; };
+		960F765F1FA289E600CCDE26 /* onscreen_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96F44A147A134A51BFFFED6F /* onscreen_controller.cpp */; };
+		960F76611FA289E600CCDE26 /* pause_presses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF7272993F3D4A22A64DD6A7 /* pause_presses.cpp */; };
+		960F76621FA289E600CCDE26 /* pause_sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65AE22C64DDC4CB89CA9BB6B /* pause_sprite.cpp */; };
+		960F76631FA289E600CCDE26 /* pause_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C77B946AE427993C2FBED /* pause_task.cpp */; };
+		960F76641FA289E600CCDE26 /* play_animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC92EEA1C7894A48B8C2B73B /* play_animation.cpp */; };
+		960F76651FA289E600CCDE26 /* play_music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D35AA54C8AAC4F138C0FFFC6 /* play_music.cpp */; };
+		960F76661FA289E600CCDE26 /* play_sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB35B0098294FEAB477D099 /* play_sound.cpp */; };
+		960F76671FA289E600CCDE26 /* player_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1D59DCBE13F47668EA97DF9 /* player_input.cpp */; };
+		960F76681FA289E600CCDE26 /* set_animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 917B544F8360488FA941B6FE /* set_animation.cpp */; };
+		960F76691FA289E600CCDE26 /* set_direction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94FDA2AE9F3F48CA85C65180 /* set_direction.cpp */; };
+		960F766A1FA289E600CCDE26 /* set_integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B4FB6F3F51E407D97D572B9 /* set_integer.cpp */; };
+		960F766B1FA289E600CCDE26 /* set_music_volume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7027C3A1A1F401BAAC1BC2B /* set_music_volume.cpp */; };
+		960F766C1FA289E600CCDE26 /* set_solid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E0014366914E3882433524 /* set_solid.cpp */; };
+		960F766D1FA289E600CCDE26 /* set_visible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C14BB73B85C45959EB4B515 /* set_visible.cpp */; };
+		960F766E1FA289E600CCDE26 /* shop_step.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAAD67D5DD994F7B96FA9A2B /* shop_step.cpp */; };
+		960F766F1FA289E600CCDE26 /* slide_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B1AEE634778436C978D5E9E /* slide_entity.cpp */; };
+		960F76701FA289E600CCDE26 /* special_number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FBDCD8E687340DBBA9A0212 /* special_number.cpp */; };
+		960F76711FA289E600CCDE26 /* spells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97DCE88DA337445A9EDD792F /* spells.cpp */; };
+		960F76721FA289E600CCDE26 /* stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B10AB9EB2D1843A7B3A35F57 /* stats.cpp */; };
+		960F76731FA289E600CCDE26 /* step.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA346BA47E24134A3B3997C /* step.cpp */; };
+		960F76741FA289E600CCDE26 /* stop_music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17D0D708D784A2F8DB93524 /* stop_music.cpp */; };
+		960F76751FA289E600CCDE26 /* stop_sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5F628DEF0714B668DF6A9EA /* stop_sound.cpp */; };
+		960F76761FA289E600CCDE26 /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0FC7192FA47E0836726B7 /* system.cpp */; };
+		960F76771FA289E600CCDE26 /* task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D58511A6632F44AFA6F8F42B /* task.cpp */; };
+		960F76781FA289E600CCDE26 /* tile_movement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0614CE56684E4A928AA58206 /* tile_movement.cpp */; };
+		960F76791FA289E600CCDE26 /* wait.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E3C94D51422458C8DFB3A7F /* wait.cpp */; };
+		960F767A1FA289E600CCDE26 /* wait_for_integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1A02BC515C049FA8453BA6D /* wait_for_integer.cpp */; };
+		960F767B1FA289E600CCDE26 /* wander_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB64AE3B41A45F4AE2808C3 /* wander_input.cpp */; };
+		96E80A9B1FA6E80700AE8576 /* pause_player_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96E80A9A1FA6E80600AE8576 /* pause_player_input.cpp */; };
+		980651C9DD874FB5BED9BC74 /* tile_movement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0614CE56684E4A928AA58206 /* tile_movement.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9C090133B1134F5093F0F694 /* pause_sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65AE22C64DDC4CB89CA9BB6B /* pause_sprite.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A0E410358D45440DABBF21EB /* wait.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E3C94D51422458C8DFB3A7F /* wait.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A332D94029EB4EE887AB1A24 /* set_solid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0E0014366914E3882433524 /* set_solid.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A9C8C25D1AFC499AA67A9B02 /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4797FE20FD304A5386041090 /* globals.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AC5B1D2B9F1544E1A064B646 /* set_music_volume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7027C3A1A1F401BAAC1BC2B /* set_music_volume.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B29CDFF60CA04A149F7406AA /* special_number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FBDCD8E687340DBBA9A0212 /* special_number.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BD108FB13E414A3F8B5F140D /* fade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57E8683E6FFB4322BA3DAEEC /* fade.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BE06CFE945C443ABA9C44EAB /* task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D58511A6632F44AFA6F8F42B /* task.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C1C6D3E512C642ED9EA07D55 /* spells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97DCE88DA337445A9EDD792F /* spells.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C4AB609DD9CE454FAFD2DA17 /* pause_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C77B946AE427993C2FBED /* pause_task.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C4DCEA3D3C944651B7435831 /* set_animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 917B544F8360488FA941B6FE /* set_animation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C5DABE5D71244955B8F10A5A /* play_sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB35B0098294FEAB477D099 /* play_sound.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C86455C3FFF548CB8F3F640F /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BCA00281246C28A75E189 /* inventory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CE49F19CC06D43A48F54B069 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD006B8FCDC049F1A89D405B /* game.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D086E5E4DF184EBA810230E8 /* battle_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D59AEDF97094C5390AF0208 /* battle_entity.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D7902CB7CECE4D15B1B41598 /* battle_end.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 149148B24C7A45948596AA2D /* battle_end.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DC9C5BCF473D44E0B711CE84 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A785CDBFD983470E972BFE4A /* input.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E0FAB1937E00465E93D1EED3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8FE39028B4387BBC6FC25 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E34E569113484D5F956A2E42 /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0FC7192FA47E0836726B7 /* system.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E4C2CEA34C834E2CA492357B /* give_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFD4382484F04A608CAB4970 /* give_object.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		ED08B65396BE49439D6A4671 /* branch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB4A1C8D5D53460E9939F23E /* branch.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F5350D3273E84684A39A794D /* stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B10AB9EB2D1843A7B3A35F57 /* stats.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F987080483E84211982D481E /* step.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA346BA47E24134A3B3997C /* step.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		960F76361FA2894200CCDE26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0614CE56684E4A928AA58206 /* tile_movement.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tile_movement.cpp; path = src/tile_movement.cpp; sourceTree = SOURCE_ROOT; };
+		0B1AEE634778436C978D5E9E /* slide_entity.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = slide_entity.cpp; path = src/slide_entity.cpp; sourceTree = SOURCE_ROOT; };
+		0B4FB6F3F51E407D97D572B9 /* set_integer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = set_integer.cpp; path = src/set_integer.cpp; sourceTree = SOURCE_ROOT; };
+		12588CF6A7DF4103A9FC8208 /* delay.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = delay.cpp; path = src/delay.cpp; sourceTree = SOURCE_ROOT; };
+		149148B24C7A45948596AA2D /* battle_end.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = battle_end.cpp; path = src/battle_end.cpp; sourceTree = SOURCE_ROOT; };
+		157AE23B06B94D7FAD49D153 /* delete_map_entity.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = delete_map_entity.cpp; path = src/delete_map_entity.cpp; sourceTree = SOURCE_ROOT; };
+		1874A5377ECB4FE88D929B32 /* map_entity.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = map_entity.cpp; path = src/map_entity.cpp; sourceTree = SOURCE_ROOT; };
+		1FBDCD8E687340DBBA9A0212 /* special_number.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = special_number.cpp; path = src/special_number.cpp; sourceTree = SOURCE_ROOT; };
+		2B914D7BEC5948C49E61BAC1 /* battle_game.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = battle_game.cpp; path = src/battle_game.cpp; sourceTree = SOURCE_ROOT; };
+		3AD0FC7192FA47E0836726B7 /* system.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = system.cpp; path = src/system.cpp; sourceTree = SOURCE_ROOT; };
+		4068D058498C446AAFB7E1D0 /* a_star.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = a_star.cpp; path = src/a_star.cpp; sourceTree = SOURCE_ROOT; };
+		4797FE20FD304A5386041090 /* globals.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = globals.cpp; path = src/globals.cpp; sourceTree = SOURCE_ROOT; };
+		57E8683E6FFB4322BA3DAEEC /* fade.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fade.cpp; path = src/fade.cpp; sourceTree = SOURCE_ROOT; };
+		5BC8FE39028B4387BBC6FC25 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		65AE22C64DDC4CB89CA9BB6B /* pause_sprite.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pause_sprite.cpp; path = src/pause_sprite.cpp; sourceTree = SOURCE_ROOT; };
+		67685999D8C14A07AFEFEDBA /* area.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = area.cpp; path = src/area.cpp; sourceTree = SOURCE_ROOT; };
+		6C0BCA00281246C28A75E189 /* inventory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = inventory.cpp; path = src/inventory.cpp; sourceTree = SOURCE_ROOT; };
+		7824851A3B874D0A9CBF24B6 /* npc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = npc.cpp; path = src/npc.cpp; sourceTree = SOURCE_ROOT; };
+		7EB35B0098294FEAB477D099 /* play_sound.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = play_sound.cpp; path = src/play_sound.cpp; sourceTree = SOURCE_ROOT; };
+		87C9DC94D62B486E90D572CD /* libNooskewl_Wedge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libNooskewl_Wedge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9C77B946AE427993C2FBED /* pause_task.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pause_task.cpp; path = src/pause_task.cpp; sourceTree = SOURCE_ROOT; };
+		8D59AEDF97094C5390AF0208 /* battle_entity.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = battle_entity.cpp; path = src/battle_entity.cpp; sourceTree = SOURCE_ROOT; };
+		917B544F8360488FA941B6FE /* set_animation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = set_animation.cpp; path = src/set_animation.cpp; sourceTree = SOURCE_ROOT; };
+		94FDA2AE9F3F48CA85C65180 /* set_direction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = set_direction.cpp; path = src/set_direction.cpp; sourceTree = SOURCE_ROOT; };
+		960F76381FA2894200CCDE26 /* libNooskewl_Wedge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNooskewl_Wedge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E80A9A1FA6E80600AE8576 /* pause_player_input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pause_player_input.cpp; path = src/pause_player_input.cpp; sourceTree = "<group>"; };
+		96F44A147A134A51BFFFED6F /* onscreen_controller.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = onscreen_controller.cpp; path = src/onscreen_controller.cpp; sourceTree = SOURCE_ROOT; };
+		97DCE88DA337445A9EDD792F /* spells.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = spells.cpp; path = src/spells.cpp; sourceTree = SOURCE_ROOT; };
+		9837688CA338443FBA26C330 /* omnipresent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = omnipresent.cpp; path = src/omnipresent.cpp; sourceTree = SOURCE_ROOT; };
+		99C35814F9BF40EF99CB2AEA /* generic_immediate_callback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generic_immediate_callback.cpp; path = src/generic_immediate_callback.cpp; sourceTree = SOURCE_ROOT; };
+		9C14BB73B85C45959EB4B515 /* set_visible.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = set_visible.cpp; path = src/set_visible.cpp; sourceTree = SOURCE_ROOT; };
+		9E3C94D51422458C8DFB3A7F /* wait.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wait.cpp; path = src/wait.cpp; sourceTree = SOURCE_ROOT; };
+		A61E59939A49418BB5ECB497 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A785CDBFD983470E972BFE4A /* input.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = input.cpp; path = src/input.cpp; sourceTree = SOURCE_ROOT; };
+		AD3EDA134AA044FB9F61F146 /* battle_enemy.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = battle_enemy.cpp; path = src/battle_enemy.cpp; sourceTree = SOURCE_ROOT; };
+		AF7272993F3D4A22A64DD6A7 /* pause_presses.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pause_presses.cpp; path = src/pause_presses.cpp; sourceTree = SOURCE_ROOT; };
+		AFD4382484F04A608CAB4970 /* give_object.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = give_object.cpp; path = src/give_object.cpp; sourceTree = SOURCE_ROOT; };
+		B0E0014366914E3882433524 /* set_solid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = set_solid.cpp; path = src/set_solid.cpp; sourceTree = SOURCE_ROOT; };
+		B10AB9EB2D1843A7B3A35F57 /* stats.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stats.cpp; path = src/stats.cpp; sourceTree = SOURCE_ROOT; };
+		B17D0D708D784A2F8DB93524 /* stop_music.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stop_music.cpp; path = src/stop_music.cpp; sourceTree = SOURCE_ROOT; };
+		B1A02BC515C049FA8453BA6D /* wait_for_integer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wait_for_integer.cpp; path = src/wait_for_integer.cpp; sourceTree = SOURCE_ROOT; };
+		B3F3F44AC89C4DEF915426A0 /* area_game.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = area_game.cpp; path = src/area_game.cpp; sourceTree = SOURCE_ROOT; };
+		BFB64AE3B41A45F4AE2808C3 /* wander_input.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wander_input.cpp; path = src/wander_input.cpp; sourceTree = SOURCE_ROOT; };
+		C1D59DCBE13F47668EA97DF9 /* player_input.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = player_input.cpp; path = src/player_input.cpp; sourceTree = SOURCE_ROOT; };
+		C5F628DEF0714B668DF6A9EA /* stop_sound.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stop_sound.cpp; path = src/stop_sound.cpp; sourceTree = SOURCE_ROOT; };
+		C7EDABD4F1BD4D19AE2435D1 /* battle_player.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = battle_player.cpp; path = src/battle_player.cpp; sourceTree = SOURCE_ROOT; };
+		CB4A1C8D5D53460E9939F23E /* branch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = branch.cpp; path = src/branch.cpp; sourceTree = SOURCE_ROOT; };
+		CC92EEA1C7894A48B8C2B73B /* play_animation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = play_animation.cpp; path = src/play_animation.cpp; sourceTree = SOURCE_ROOT; };
+		CD006B8FCDC049F1A89D405B /* game.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = game.cpp; path = src/game.cpp; sourceTree = SOURCE_ROOT; };
+		D28C106C93CE498E81FC8C39 /* generic_callback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generic_callback.cpp; path = src/generic_callback.cpp; sourceTree = SOURCE_ROOT; };
+		D35AA54C8AAC4F138C0FFFC6 /* play_music.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = play_music.cpp; path = src/play_music.cpp; sourceTree = SOURCE_ROOT; };
+		D58511A6632F44AFA6F8F42B /* task.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = task.cpp; path = src/task.cpp; sourceTree = SOURCE_ROOT; };
+		DAAD67D5DD994F7B96FA9A2B /* shop_step.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shop_step.cpp; path = src/shop_step.cpp; sourceTree = SOURCE_ROOT; };
+		E7027C3A1A1F401BAAC1BC2B /* set_music_volume.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = set_music_volume.cpp; path = src/set_music_volume.cpp; sourceTree = SOURCE_ROOT; };
+		ECA346BA47E24134A3B3997C /* step.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = step.cpp; path = src/step.cpp; sourceTree = SOURCE_ROOT; };
+		EECBE4D612174076B38E4C34 /* general.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = general.cpp; path = src/general.cpp; sourceTree = SOURCE_ROOT; };
+		F47587092C054869AA95DE9E /* generic_gui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generic_gui.cpp; path = src/generic_gui.cpp; sourceTree = SOURCE_ROOT; };
+		F630F83197384C438AFECAD4 /* chest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = chest.cpp; path = src/chest.cpp; sourceTree = SOURCE_ROOT; };
+		FBD2BBE6843940BDABEE9AA6 /* look_around_input.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = look_around_input.cpp; path = src/look_around_input.cpp; sourceTree = SOURCE_ROOT; };
+		FEF419409D68402D881B7F2B /* check_positions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = check_positions.cpp; path = src/check_positions.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		960F76351FA2894200CCDE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		126764F827E345FC99281413 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		34BA7418675E466CBD71EAD5 /* Nooskewl_Wedge */ = {
+			isa = PBXGroup;
+			children = (
+				885587DB467E4C4A8E63C687 /* Source Files */,
+				A61E59939A49418BB5ECB497 /* CMakeLists.txt */,
+			);
+			name = Nooskewl_Wedge;
+			sourceTree = "<group>";
+		};
+		54E45CEAE0984AB39565BBFA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				34BA7418675E466CBD71EAD5 /* Nooskewl_Wedge */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		555D1A5E49DD4885BBBEDD06 = {
+			isa = PBXGroup;
+			children = (
+				54E45CEAE0984AB39565BBFA /* Sources */,
+				126764F827E345FC99281413 /* Resources */,
+				72B6C755E36F412BA8731211 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72B6C755E36F412BA8731211 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87C9DC94D62B486E90D572CD /* libNooskewl_Wedge.a */,
+				960F76381FA2894200CCDE26 /* libNooskewl_Wedge.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		885587DB467E4C4A8E63C687 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				96E80A9A1FA6E80600AE8576 /* pause_player_input.cpp */,
+				4068D058498C446AAFB7E1D0 /* a_star.cpp */,
+				67685999D8C14A07AFEFEDBA /* area.cpp */,
+				B3F3F44AC89C4DEF915426A0 /* area_game.cpp */,
+				149148B24C7A45948596AA2D /* battle_end.cpp */,
+				AD3EDA134AA044FB9F61F146 /* battle_enemy.cpp */,
+				8D59AEDF97094C5390AF0208 /* battle_entity.cpp */,
+				2B914D7BEC5948C49E61BAC1 /* battle_game.cpp */,
+				C7EDABD4F1BD4D19AE2435D1 /* battle_player.cpp */,
+				CB4A1C8D5D53460E9939F23E /* branch.cpp */,
+				FEF419409D68402D881B7F2B /* check_positions.cpp */,
+				F630F83197384C438AFECAD4 /* chest.cpp */,
+				12588CF6A7DF4103A9FC8208 /* delay.cpp */,
+				157AE23B06B94D7FAD49D153 /* delete_map_entity.cpp */,
+				57E8683E6FFB4322BA3DAEEC /* fade.cpp */,
+				CD006B8FCDC049F1A89D405B /* game.cpp */,
+				EECBE4D612174076B38E4C34 /* general.cpp */,
+				D28C106C93CE498E81FC8C39 /* generic_callback.cpp */,
+				F47587092C054869AA95DE9E /* generic_gui.cpp */,
+				99C35814F9BF40EF99CB2AEA /* generic_immediate_callback.cpp */,
+				AFD4382484F04A608CAB4970 /* give_object.cpp */,
+				4797FE20FD304A5386041090 /* globals.cpp */,
+				A785CDBFD983470E972BFE4A /* input.cpp */,
+				6C0BCA00281246C28A75E189 /* inventory.cpp */,
+				FBD2BBE6843940BDABEE9AA6 /* look_around_input.cpp */,
+				5BC8FE39028B4387BBC6FC25 /* main.cpp */,
+				1874A5377ECB4FE88D929B32 /* map_entity.cpp */,
+				7824851A3B874D0A9CBF24B6 /* npc.cpp */,
+				9837688CA338443FBA26C330 /* omnipresent.cpp */,
+				96F44A147A134A51BFFFED6F /* onscreen_controller.cpp */,
+				AF7272993F3D4A22A64DD6A7 /* pause_presses.cpp */,
+				65AE22C64DDC4CB89CA9BB6B /* pause_sprite.cpp */,
+				8B9C77B946AE427993C2FBED /* pause_task.cpp */,
+				CC92EEA1C7894A48B8C2B73B /* play_animation.cpp */,
+				D35AA54C8AAC4F138C0FFFC6 /* play_music.cpp */,
+				7EB35B0098294FEAB477D099 /* play_sound.cpp */,
+				C1D59DCBE13F47668EA97DF9 /* player_input.cpp */,
+				917B544F8360488FA941B6FE /* set_animation.cpp */,
+				94FDA2AE9F3F48CA85C65180 /* set_direction.cpp */,
+				0B4FB6F3F51E407D97D572B9 /* set_integer.cpp */,
+				E7027C3A1A1F401BAAC1BC2B /* set_music_volume.cpp */,
+				B0E0014366914E3882433524 /* set_solid.cpp */,
+				9C14BB73B85C45959EB4B515 /* set_visible.cpp */,
+				DAAD67D5DD994F7B96FA9A2B /* shop_step.cpp */,
+				0B1AEE634778436C978D5E9E /* slide_entity.cpp */,
+				1FBDCD8E687340DBBA9A0212 /* special_number.cpp */,
+				97DCE88DA337445A9EDD792F /* spells.cpp */,
+				B10AB9EB2D1843A7B3A35F57 /* stats.cpp */,
+				ECA346BA47E24134A3B3997C /* step.cpp */,
+				B17D0D708D784A2F8DB93524 /* stop_music.cpp */,
+				C5F628DEF0714B668DF6A9EA /* stop_sound.cpp */,
+				3AD0FC7192FA47E0836726B7 /* system.cpp */,
+				D58511A6632F44AFA6F8F42B /* task.cpp */,
+				0614CE56684E4A928AA58206 /* tile_movement.cpp */,
+				9E3C94D51422458C8DFB3A7F /* wait.cpp */,
+				B1A02BC515C049FA8453BA6D /* wait_for_integer.cpp */,
+				BFB64AE3B41A45F4AE2808C3 /* wander_input.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		960F76371FA2894200CCDE26 /* tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960F76421FA2894200CCDE26 /* Build configuration list for PBXNativeTarget "tvOS" */;
+			buildPhases = (
+				960F76341FA2894200CCDE26 /* Sources */,
+				960F76351FA2894200CCDE26 /* Frameworks */,
+				960F76361FA2894200CCDE26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvOS;
+			productName = "Nooskewl Wedge";
+			productReference = 960F76381FA2894200CCDE26 /* libNooskewl_Wedge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D3A7161422E64078A09AD608 /* iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC428DA421A449C5822DA2E2 /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildPhases = (
+				E8B041B5B77E436E8EE7F8B8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS;
+			productName = Nooskewl_Wedge;
+			productReference = 87C9DC94D62B486E90D572CD /* libNooskewl_Wedge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		465CB25401A5407EA7F64666 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					960F76371FA2894200CCDE26 = {
+						CreatedOnToolsVersion = 9.0.1;
+						DevelopmentTeam = ZCLK6CUZ99;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7DD6CC07E5504E27BAA03198 /* Build configuration list for PBXProject "Nooskewl_Wedge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 555D1A5E49DD4885BBBEDD06;
+			projectDirPath = ../../;
+			projectRoot = "";
+			targets = (
+				D3A7161422E64078A09AD608 /* iOS */,
+				960F76371FA2894200CCDE26 /* tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		960F76341FA2894200CCDE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960F76431FA289E600CCDE26 /* a_star.cpp in Sources */,
+				960F76441FA289E600CCDE26 /* area.cpp in Sources */,
+				960F76451FA289E600CCDE26 /* area_game.cpp in Sources */,
+				960F76461FA289E600CCDE26 /* battle_end.cpp in Sources */,
+				960F76471FA289E600CCDE26 /* battle_enemy.cpp in Sources */,
+				960F76481FA289E600CCDE26 /* battle_entity.cpp in Sources */,
+				960F76491FA289E600CCDE26 /* battle_game.cpp in Sources */,
+				960F764A1FA289E600CCDE26 /* battle_player.cpp in Sources */,
+				960F764B1FA289E600CCDE26 /* branch.cpp in Sources */,
+				960F764C1FA289E600CCDE26 /* check_positions.cpp in Sources */,
+				960F764D1FA289E600CCDE26 /* chest.cpp in Sources */,
+				960F764E1FA289E600CCDE26 /* delay.cpp in Sources */,
+				960F764F1FA289E600CCDE26 /* delete_map_entity.cpp in Sources */,
+				960F76501FA289E600CCDE26 /* fade.cpp in Sources */,
+				960F76511FA289E600CCDE26 /* game.cpp in Sources */,
+				960F76521FA289E600CCDE26 /* general.cpp in Sources */,
+				960F76531FA289E600CCDE26 /* generic_callback.cpp in Sources */,
+				960F76541FA289E600CCDE26 /* generic_gui.cpp in Sources */,
+				960F76551FA289E600CCDE26 /* generic_immediate_callback.cpp in Sources */,
+				960F76561FA289E600CCDE26 /* give_object.cpp in Sources */,
+				960F76571FA289E600CCDE26 /* globals.cpp in Sources */,
+				960F76581FA289E600CCDE26 /* input.cpp in Sources */,
+				960F76591FA289E600CCDE26 /* inventory.cpp in Sources */,
+				960F765A1FA289E600CCDE26 /* look_around_input.cpp in Sources */,
+				960F765B1FA289E600CCDE26 /* main.cpp in Sources */,
+				960F765C1FA289E600CCDE26 /* map_entity.cpp in Sources */,
+				960F765D1FA289E600CCDE26 /* npc.cpp in Sources */,
+				960F765E1FA289E600CCDE26 /* omnipresent.cpp in Sources */,
+				960F765F1FA289E600CCDE26 /* onscreen_controller.cpp in Sources */,
+				960F76611FA289E600CCDE26 /* pause_presses.cpp in Sources */,
+				960F76621FA289E600CCDE26 /* pause_sprite.cpp in Sources */,
+				960F76631FA289E600CCDE26 /* pause_task.cpp in Sources */,
+				960F76641FA289E600CCDE26 /* play_animation.cpp in Sources */,
+				960F76651FA289E600CCDE26 /* play_music.cpp in Sources */,
+				960F76661FA289E600CCDE26 /* play_sound.cpp in Sources */,
+				960F76671FA289E600CCDE26 /* player_input.cpp in Sources */,
+				960F76681FA289E600CCDE26 /* set_animation.cpp in Sources */,
+				960F76691FA289E600CCDE26 /* set_direction.cpp in Sources */,
+				960F766A1FA289E600CCDE26 /* set_integer.cpp in Sources */,
+				960F766B1FA289E600CCDE26 /* set_music_volume.cpp in Sources */,
+				960F766C1FA289E600CCDE26 /* set_solid.cpp in Sources */,
+				960F766D1FA289E600CCDE26 /* set_visible.cpp in Sources */,
+				960F766E1FA289E600CCDE26 /* shop_step.cpp in Sources */,
+				960F766F1FA289E600CCDE26 /* slide_entity.cpp in Sources */,
+				960F76701FA289E600CCDE26 /* special_number.cpp in Sources */,
+				960F76711FA289E600CCDE26 /* spells.cpp in Sources */,
+				960F76721FA289E600CCDE26 /* stats.cpp in Sources */,
+				960F76731FA289E600CCDE26 /* step.cpp in Sources */,
+				960F76741FA289E600CCDE26 /* stop_music.cpp in Sources */,
+				960F76751FA289E600CCDE26 /* stop_sound.cpp in Sources */,
+				960F76761FA289E600CCDE26 /* system.cpp in Sources */,
+				960F76771FA289E600CCDE26 /* task.cpp in Sources */,
+				960F76781FA289E600CCDE26 /* tile_movement.cpp in Sources */,
+				960F76791FA289E600CCDE26 /* wait.cpp in Sources */,
+				960F767A1FA289E600CCDE26 /* wait_for_integer.cpp in Sources */,
+				960F767B1FA289E600CCDE26 /* wander_input.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B041B5B77E436E8EE7F8B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414A5477ED9C419FBEAA4DCE /* a_star.cpp in Sources */,
+				1C79637610C4404287A87CE2 /* area.cpp in Sources */,
+				401D672904B74E64A9975729 /* area_game.cpp in Sources */,
+				D7902CB7CECE4D15B1B41598 /* battle_end.cpp in Sources */,
+				4CF78E4CD3EF4D22A90B8742 /* battle_enemy.cpp in Sources */,
+				96E80A9B1FA6E80700AE8576 /* pause_player_input.cpp in Sources */,
+				D086E5E4DF184EBA810230E8 /* battle_entity.cpp in Sources */,
+				56C779C901BA400D9955A56D /* battle_game.cpp in Sources */,
+				7EEA08B906FC4AE288D28D18 /* battle_player.cpp in Sources */,
+				ED08B65396BE49439D6A4671 /* branch.cpp in Sources */,
+				6BB1D8C338824C0BA9CB340B /* check_positions.cpp in Sources */,
+				2C5EB6950F5948E4B0D13862 /* chest.cpp in Sources */,
+				261F0FAD4CAF4F09A7F2F625 /* delay.cpp in Sources */,
+				5B5E087C416E42A18B6B7F43 /* delete_map_entity.cpp in Sources */,
+				BD108FB13E414A3F8B5F140D /* fade.cpp in Sources */,
+				CE49F19CC06D43A48F54B069 /* game.cpp in Sources */,
+				6CD6F64A98D142F399DCE811 /* general.cpp in Sources */,
+				39C067660C6D46E38F1FE9A4 /* generic_callback.cpp in Sources */,
+				92A182F7C1924ED68C46F924 /* generic_gui.cpp in Sources */,
+				21F09FA198774DDA9555A65B /* generic_immediate_callback.cpp in Sources */,
+				E4C2CEA34C834E2CA492357B /* give_object.cpp in Sources */,
+				A9C8C25D1AFC499AA67A9B02 /* globals.cpp in Sources */,
+				DC9C5BCF473D44E0B711CE84 /* input.cpp in Sources */,
+				C86455C3FFF548CB8F3F640F /* inventory.cpp in Sources */,
+				0BB9A72C06E2478988EC545C /* look_around_input.cpp in Sources */,
+				E0FAB1937E00465E93D1EED3 /* main.cpp in Sources */,
+				303506650A4B477EAE6EDD6B /* map_entity.cpp in Sources */,
+				5EDECAAE68D4471AA09CEF97 /* npc.cpp in Sources */,
+				0CF7DA92D9B946D8A167362D /* omnipresent.cpp in Sources */,
+				2BF3FD033A114F149B7759E6 /* onscreen_controller.cpp in Sources */,
+				4EEFB46F49764FE7A22B9464 /* pause_presses.cpp in Sources */,
+				9C090133B1134F5093F0F694 /* pause_sprite.cpp in Sources */,
+				C4AB609DD9CE454FAFD2DA17 /* pause_task.cpp in Sources */,
+				952B162D7B5141F8B1E2835A /* play_animation.cpp in Sources */,
+				95EBB4C170F94E9496947211 /* play_music.cpp in Sources */,
+				C5DABE5D71244955B8F10A5A /* play_sound.cpp in Sources */,
+				7A9452EFB87A4ACA9A021312 /* player_input.cpp in Sources */,
+				C4DCEA3D3C944651B7435831 /* set_animation.cpp in Sources */,
+				67325913468644A29618FF4D /* set_direction.cpp in Sources */,
+				95E1764212724A9794E3168B /* set_integer.cpp in Sources */,
+				AC5B1D2B9F1544E1A064B646 /* set_music_volume.cpp in Sources */,
+				A332D94029EB4EE887AB1A24 /* set_solid.cpp in Sources */,
+				077DD6BC6B6A487F9F6481C8 /* set_visible.cpp in Sources */,
+				347D4BFD0BE24D3BA438E309 /* shop_step.cpp in Sources */,
+				36E5521F8200495CA8F067B2 /* slide_entity.cpp in Sources */,
+				B29CDFF60CA04A149F7406AA /* special_number.cpp in Sources */,
+				C1C6D3E512C642ED9EA07D55 /* spells.cpp in Sources */,
+				F5350D3273E84684A39A794D /* stats.cpp in Sources */,
+				F987080483E84211982D481E /* step.cpp in Sources */,
+				63AEB1873253466CB2E8473B /* stop_music.cpp in Sources */,
+				3B3365B3B9784A91B2B798C8 /* stop_sound.cpp in Sources */,
+				E34E569113484D5F956A2E42 /* system.cpp in Sources */,
+				BE06CFE945C443ABA9C44EAB /* task.cpp in Sources */,
+				980651C9DD874FB5BED9BC74 /* tile_movement.cpp in Sources */,
+				A0E410358D45440DABBF21EB /* wait.cpp in Sources */,
+				7215472D94344D8A87D0794A /* wait_for_integer.cpp in Sources */,
+				785453398E804B3E858C3827 /* wander_input.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		506DC35B33704A3BAF5485B0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				ENABLE_BITCODE = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Nooskewl_Wedge_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/libs/ios/include,
+					/Users/trent/code/libs/ios/include/SDL2,
+					/Users/trent/code/tgui3/include,
+					"/Users/trent/code/SDL2_ttf-2.0.14/external/freetype-2.4.12/include",
+					/Users/trent/code/Nooskewl_Shim/include,
+				);
+				INSTALL_PATH = "/Users/trent/code/Nooskewl_Wedge/apple/ios/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/trent/code/libs/ios/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/Users/trent/code/libs/ios/lib,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "-DIOS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nooskewl_Wedge;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/trent/code/Nooskewl_Wedge/apple/ios;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		5B898B96BA134AAC90FB2EC7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				ENABLE_BITCODE = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Nooskewl_Wedge_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/libs/ios/include,
+					/Users/trent/code/libs/ios/include/SDL2,
+					/Users/trent/code/tgui3/include,
+					"/Users/trent/code/SDL2_ttf-2.0.14/external/freetype-2.4.12/include",
+					/Users/trent/code/Nooskewl_Shim/include,
+				);
+				INSTALL_PATH = "/Users/trent/code/Nooskewl_Wedge/apple/ios/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/trent/code/libs/ios/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/Users/trent/code/libs/ios/lib,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "-DIOS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nooskewl_Wedge;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/trent/code/Nooskewl_Wedge/apple/ios;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		79087B49F5C44FDC8B0C68DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/trent/code/Nooskewl_Wedge/apple/ios/build;
+			};
+			name = Release;
+		};
+		960F763E1FA2894200CCDE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TVOS,
+					IOS,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/tvos/include/SDL2,
+					/Users/trent/code/libs/tvos/include,
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-documentation",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Nooskewl_Wedge;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		960F763F1FA2894200CCDE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TVOS,
+					IOS,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/tvos/include/SDL2,
+					/Users/trent/code/libs/tvos/include,
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-documentation",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Nooskewl_Wedge;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+		960F76401FA2894200CCDE26 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TVOS,
+					IOS,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/tvos/include/SDL2,
+					/Users/trent/code/libs/tvos/include,
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-documentation",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Nooskewl_Wedge;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
+			};
+			name = MinSizeRel;
+		};
+		960F76411FA2894200CCDE26 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZCLK6CUZ99;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TVOS,
+					IOS,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/Nooskewl_Shim/include,
+					/Users/trent/code/tgui3/include,
+					/Users/trent/code/libs/tvos/include/SDL2,
+					/Users/trent/code/libs/tvos/include,
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-documentation",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Nooskewl_Wedge;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
+			};
+			name = RelWithDebInfo;
+		};
+		B6AD654952574BF3A6CF5E75 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/trent/code/Nooskewl_Wedge/apple/ios/build;
+			};
+			name = MinSizeRel;
+		};
+		C0E183606ACD45F09CD7960B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/trent/code/Nooskewl_Wedge/apple/ios/build;
+			};
+			name = RelWithDebInfo;
+		};
+		CA4F6AC790B245879FFAC85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				ENABLE_BITCODE = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Nooskewl_Wedge_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/libs/ios/include,
+					/Users/trent/code/libs/ios/include/SDL2,
+					/Users/trent/code/tgui3/include,
+					"/Users/trent/code/SDL2_ttf-2.0.14/external/freetype-2.4.12/include",
+					/Users/trent/code/Nooskewl_Shim/include,
+				);
+				INSTALL_PATH = "/Users/trent/code/Nooskewl_Wedge/apple/ios/Release${EFFECTIVE_PLATFORM_NAME}";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/trent/code/libs/ios/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/Users/trent/code/libs/ios/lib,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "-DIOS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nooskewl_Wedge;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/trent/code/Nooskewl_Wedge/apple/ios;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		D712D07A32EA4CB49D6645B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				ENABLE_BITCODE = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Nooskewl_Wedge_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/trent/code/Nooskewl_Wedge/include,
+					/Users/trent/code/libs/ios/include,
+					/Users/trent/code/libs/ios/include/SDL2,
+					/Users/trent/code/tgui3/include,
+					"/Users/trent/code/SDL2_ttf-2.0.14/external/freetype-2.4.12/include",
+					/Users/trent/code/Nooskewl_Shim/include,
+				);
+				INSTALL_PATH = "/Users/trent/code/Nooskewl_Wedge/apple/ios/Debug${EFFECTIVE_PLATFORM_NAME}";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/trent/code/libs/ios/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/Users/trent/code/libs/ios/lib,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "-DIOS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nooskewl_Wedge;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/trent/code/Nooskewl_Wedge/apple/ios;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		DB44C365B6694C2182DF48FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/trent/code/Nooskewl_Wedge/apple/ios/build;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DD6CC07E5504E27BAA03198 /* Build configuration list for PBXProject "Nooskewl_Wedge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB44C365B6694C2182DF48FA /* Debug */,
+				79087B49F5C44FDC8B0C68DE /* Release */,
+				B6AD654952574BF3A6CF5E75 /* MinSizeRel */,
+				C0E183606ACD45F09CD7960B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		960F76421FA2894200CCDE26 /* Build configuration list for PBXNativeTarget "tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960F763E1FA2894200CCDE26 /* Debug */,
+				960F763F1FA2894200CCDE26 /* Release */,
+				960F76401FA2894200CCDE26 /* MinSizeRel */,
+				960F76411FA2894200CCDE26 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CC428DA421A449C5822DA2E2 /* Build configuration list for PBXNativeTarget "iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D712D07A32EA4CB49D6645B0 /* Debug */,
+				CA4F6AC790B245879FFAC85C /* Release */,
+				5B898B96BA134AAC90FB2EC7 /* MinSizeRel */,
+				506DC35B33704A3BAF5485B0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 465CB25401A5407EA7F64666 /* Project object */;
+}

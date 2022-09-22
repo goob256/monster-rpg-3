@@ -1,0 +1,27 @@
+texture tex;
+sampler2D s = sampler_state {
+	texture = <tex>;
+};
+
+float p; // percent 0-1 total effect done
+float tint_p; // percent till full tint
+float4 tint;
+
+float4 ps_main(VS_OUTPUT Input) : COLOR0
+{
+	float4 result = Input.Colour * tex2D(s, Input.TexCoord);
+	float shade = (result.r + result.g + result.b) / 3.0f;
+	float p2 = min(1.0f, p / tint_p);
+	float p3 = 1.0f - p2;
+
+	result = float4(
+		p3 * result.r + p2 * shade * tint.r,
+		p3 * result.g + p2 * shade * tint.g,
+		p3 * result.b + p2 * shade * tint.b,
+		result.a
+	);
+
+	result *= 1.0f - p;
+
+	return result;
+}

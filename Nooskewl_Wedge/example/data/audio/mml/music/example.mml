@@ -1,0 +1,139 @@
+@VAS0 = { 0 }
+@PO0  = { 0 -32 }
+
+A v160 t60
+A o5d4>a3r24<g16r16
+A f4d4f16r16e16f16
+A a4d16r16e16f16g4
+A e4>a4r4
+A <d4>a4<g16r16e16f16
+A a4r8g16r16e8f8
+A <d4>a4r8a16r16
+A <c4>e4r8a16g16
+A a4d4r8a16r16
+A g4d4r8g16r16
+A f4d4r8f16r16
+A e4>a4r4
+A a4<d4.>a8
+A <f4d3r24d8
+A e4c4c24r12>a16<c16
+A d4....r2
+
+B v160 t60 @TYPE4
+B o4d2.
+B f2w8g8
+B a2.
+B e2.
+B d2w8e8
+B c2.
+B >a2.
+B <c2.
+B >a2<d4
+B >b2<d4
+B >a2<d4
+B e2.
+B d2.
+B c2.
+B >a4...r32a8r8
+B d8.r16d4...
+
+C v128 t60 @TYPE0
+C @VAS0 @PO0
+C r4o2g16.r8r32g8r4.
+C g16.r8r32g16.r4.
+C r32
+C g16.r8r32g8r4.
+C g16.r32g16.r32g16.r4.
+C r32
+C g16.r8r32g8r4.
+C g16.r8r32g16.r4.
+C r32
+C g16.r8r32g8r4.
+C g16.r32g16.r32g16.r4.
+C r32
+C g16.r8r32g8r4.
+C g16.r8r32g16.r4.
+C r32
+C g16.r8r32g8r4.
+C g16.r32g16.r32g16.r4.
+C r32
+C g16.r8r32g8r4.
+C g16.r8r32g16.r4.
+C r32
+C g16.r8r32g8r4.
+C g16.r32g16.r32g16.
+C @PO0 @VAS0
+
+D v160 t60 @TYPE2
+D @VAS0 @PO0
+D r4o2g16.r8r32g8r4.
+D g16.r8r32g16.r4.
+D r32
+D g16.r8r32g8r4.
+D g16.r32g16.r32g16.r4.
+D r32
+D g16.r8r32g8r4.
+D g16.r8r32g16.r4.
+D r32
+D g16.r8r32g8r4.
+D g16.r32g16.r32g16.r4.
+D r32
+D g16.r8r32g8r4.
+D g16.r8r32g16.r4.
+D r32
+D g16.r8r32g8r4.
+D g16.r32g16.r32g16.r4.
+D r32
+D g16.r8r32g8r4.
+D g16.r8r32g16.r4.
+D r32
+D g16.r8r32g8r4.
+D g16.r32g16.r32g16.
+D @PO0 @VAS0
+
+E v160 t60 @TYPE4
+E @VAS0 @PO0
+E r4o3g16.r8r32g8r4.
+E g16.r8r32g16.r4.
+E r32
+E g16.r8r32g8r4.
+E g16.r32g16.r32g16.r4.
+E r32
+E g16.r8r32g8r4.
+E g16.r8r32g16.r4.
+E r32
+E g16.r8r32g8r4.
+E g16.r32g16.r32g16.r4.
+E r32
+E g16.r8r32g8r4.
+E g16.r8r32g16.r4.
+E r32
+E g16.r8r32g8r4.
+E g16.r32g16.r32g16.r4.
+E r32
+E g16.r8r32g8r4.
+E g16.r8r32g16.r4.
+E r32
+E g16.r8r32g8r4.
+E g16.r32g16.r32g16.
+E @PO0 @VAS0
+
+F v160 t60 @TYPE1
+F @VAS0
+F o7g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.r4...r8.
+F g16.
+F @VAS0

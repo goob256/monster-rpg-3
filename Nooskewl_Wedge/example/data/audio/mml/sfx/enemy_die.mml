@@ -1,0 +1,5 @@
+@PO2 = { 500 0 }
+@PO1 = { 750 0 }
+@PO0 = { 1000 0 }
+A o4 l16 @PO0 a @PO0 r64 @PO1 a @PO1 r64 @PO2 a @PO2 r64
+B @TYPE1 o4 l16 @PO0 a @PO0 r64 @PO1 a @PO1 r64 @PO2 a @PO2
