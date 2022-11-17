@@ -19,36 +19,36 @@ if "%1"=="m" goto monster_rpg_3
 if "%1"=="d" goto data
 :tgui3
 del c:\users\trent\code\m3\tgui3.dll
-cd c:\users\trent\code\tgui3
+cd c:\users\trent\code\monster-rpg-3\tgui3
 rmdir /s /q build
 mkdir build
 cd build
-c:\users\trent\code\Monster_RPG_3\tools\batch_files\cmake\windows\tgui3.bat %FLAGS%
+c:\users\trent\code\monster-rpg-3\tools\batch_files\cmake\windows\tgui3.bat %FLAGS%
 goto done
 :nooskewl_shim
 del c:\users\trent\code\m3\nooskewl_shim.dll
-cd c:\users\trent\code\nooskewl_shim
+cd c:\users\trent\code\monster-rpg-3\Nooskewl_shim
 rmdir /s /q build
 mkdir build
 cd build
-c:\users\trent\code\Monster_RPG_3\tools\batch_files\cmake\windows\nooskewl_shim.bat %FLAGS%
+c:\users\trent\code\monster-rpg-3\tools\batch_files\cmake\windows\nooskewl_shim.bat %FLAGS%
 goto done
 :nooskewl_wedge
 del c:\users\trent\code\m3\nooskewl_wedge.dll
-cd c:\users\trent\code\nooskewl_shim
-cd c:\users\trent\code\nooskewl_wedge
+cd c:\users\trent\code\monster-rpg-3\Nooskewl_shim
+cd c:\users\trent\code\monster-rpg-3\Nooskewl_wedge
 rmdir /s /q build
 mkdir build
 cd build
-c:\users\trent\code\Monster_RPG_3\tools\batch_files\cmake\windows\nooskewl_wedge.bat %FLAGS%
+c:\users\trent\code\monster-rpg-3\tools\batch_files\cmake\windows\nooskewl_wedge.bat %FLAGS%
 goto done
 :monster_rpg_3
 del "c:\users\trent\code\m3\Monster RPG 3.exe"
-cd c:\users\trent\code\Monster_RPG_3
+cd c:\users\trent\code\monster-rpg-3
 rmdir /s /q build
 mkdir build
 cd build
-c:\users\trent\code\Monster_RPG_3\tools\batch_files\cmake\windows\Monster_RPG_3.bat %FLAGS%
+c:\users\trent\code\monster-rpg-3\tools\batch_files\cmake\windows\monster-rpg-3.bat %FLAGS%
 goto done
 :data
 rmdir /s /q c:\users\trent\code\m3\data
