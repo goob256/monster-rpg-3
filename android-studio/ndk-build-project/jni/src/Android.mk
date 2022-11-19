@@ -5,10 +5,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := main
 
 SDL_PATH := ../SDL2
-TGUI3_PATH := ../../../../../tgui3
-SHIM_PATH := ../../../../../Nooskewl_Shim
-WEDGE_PATH := ../../../../../Nooskewl_Wedge
-M3_PATH := ../../../../../Monster_RPG_3
+TGUI3_PATH := ../../../../tgui3
+SHIM_PATH := ../../../../Nooskewl_Shim
+WEDGE_PATH := ../../../../Nooskewl_Wedge
+M3_PATH := ../../../../../monster-rpg-3
 ANDROID_DIR := ../../../../../android.m3-m2-cp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_PATH)/include \
