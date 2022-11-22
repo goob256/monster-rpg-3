@@ -388,6 +388,11 @@ int Main_Menu_GUI::get_translated_hotkey(int code)
 			code = TGUIK_u;
 		}
 	}
+	else if (GLOBALS->language == "Brazilian") {
+		if (code == TGUIK_w) {
+			code = TGUIK_r;
+		}
+	}
 	
 	return code;
 }
@@ -892,6 +897,9 @@ void Stats_GUI::set_text()
 
 	if (stats->level < (int)wedge::globals->levels.size()+1) {
 		int next = wedge::globals->levels[stats->level-1].experience - stats->experience;
+		if (next < 0) {
+			next = 0;
+		}
 		next_label->set_text(util::itos(next));
 	}
 	else {
