@@ -8380,6 +8380,7 @@ public:
 		credits.push_back("")END;
 		credits.push_back(GLOBALS->game_t->translate(1757)/* Originally: Adam Wallisson */);
 		credits.push_back(GLOBALS->game_t->translate(1758)/* Originally: Stéfany Wine */);
+		credits.push_back(GLOBALS->game_t->translate(1759)/* Originally: Stella Mares */);
 		credits.push_back("")END;
 		credits.push_back("")END;
 		credits.push_back("")END;
