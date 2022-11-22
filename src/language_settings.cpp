@@ -107,10 +107,8 @@ void Language_Settings_GUI::set_text()
 	items.push_back(GLOBALS->game_t->translate(GLOBALS->english_game_t->get_id("English")));
 	languages[items.back()] = "English";
 
-	/*
 	items.push_back(GLOBALS->game_t->translate(GLOBALS->english_game_t->get_id("Brazilian Portuguese")));
 	languages[items.back()] = "Brazilian";
-	*/
 
 	items.push_back(GLOBALS->game_t->translate(GLOBALS->english_game_t->get_id("French")));
 	languages[items.back()] = "French";

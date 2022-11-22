@@ -8376,6 +8376,14 @@ public:
 		credits.push_back("")END;
 		credits.push_back("")END;
 		credits.push_back("")END;
+		credits.push_back(GLOBALS->game_t->translate(1756)/* Originally: ^Tradução para Português */);
+		credits.push_back("")END;
+		credits.push_back(GLOBALS->game_t->translate(1757)/* Originally: Adam Wallisson */);
+		credits.push_back(GLOBALS->game_t->translate(1758)/* Originally: Stéfany Wine */);
+		credits.push_back("")END;
+		credits.push_back("")END;
+		credits.push_back("")END;
+		credits.push_back("")END;
 		credits.push_back(GLOBALS->game_t->translate(1724)/* Originally: ^French Translation */);
 		credits.push_back("")END;
 		credits.push_back(GLOBALS->game_t->translate(1725)/* Originally: Words of Magic */);

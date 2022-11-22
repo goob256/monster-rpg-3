@@ -396,7 +396,7 @@ int main(int argc, char **argv)
 
 			tmp_language = languages[syslang];
 
-			if (tmp_language != "English" && tmp_language != "French" && tmp_language != "Spanish") {
+			if (tmp_language != "English" && tmp_language != "French" && tmp_language != "Spanish" && tmp_language != "Brazilian") {
 				tmp_language = "English";
 			}
 			
