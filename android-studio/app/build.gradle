@@ -6,8 +6,8 @@ android {
         applicationId "com.nooskewl.m3"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 10101
-        versionName '1.5.15'
+        versionCode 10102
+        versionName '1.5.16'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
         ndk {

@@ -275,7 +275,7 @@
 285:Espada de Chama
 286:Uma lâmina derretida.$Queima continuamente.
 1000:ATAQUE SURPRESA!
-1001:Ganhou %d Ouro
+1001:Ganhou %d Moedas
 1002:Ganhou %d Experiência
 1003:Inventário lotado!
 1004:Ganhou %d %s!
@@ -345,8 +345,8 @@
 1106:Vou negociar. Um feitiço por anel.
 1109:Vou sentir falta dos meus garotos...
 1111:Vendedor de Pergaminhos.
-1115:Gostaria de comprar um Pergaminho de Regeneração+? Só 250 de ouro!
-1120:Gostaria de comprar um Pergaminho de Cura? Só 100 de ouro!
+1115:Gostaria de comprar um Pergaminho de Regeneração+? Só 250 moedas!
+1120:Gostaria de comprar um Pergaminho de Cura? Só 100 moedas!
 1121:Prisioneiro
 1122:Poderia sair daqui quando eu quisesse...
 1124:Quer conhecer meu rato de estimação? Hahaha!
@@ -446,7 +446,7 @@
 1284:Chegamos, senhorita!
 1285:O reino é ao Norte daqui, do outro lado do... hummm... do deserto!
 1286:Ir para o oeste!
-1294:Quer comprar um Pergaminho de Gelo? São só 1000 de ouro!
+1294:Quer comprar um Pergaminho de Gelo? São só 1000 moedas!
 1296:Você vai precisar de proteção se estiver indo para o Norte...
 1298:Armadura Ocidental é inútil aqui!
 1300:Ué? Como viemos parar aqui de novo???
@@ -479,7 +479,7 @@
 1340:Defendendo...
 1341:Impossível fugir...
 1342:Lançar!
-1346:Ouro perdido: %d!
+1346:moedas perdido: %d!
 1347:Atacar
 1348:Item
 1349:Feitiço
@@ -493,7 +493,7 @@
 1357:Você veio para levar minha Runa?
 1359:Que Runa? Do que você tá falando?
 1361:Você nunca vai pegar minha Runa!
-1363:Eu disse  %d beijos? Eu quis dizer OURO!
+1363:Eu disse  %d beijos? Eu quis dizer MOEDAS!
 1366:Azar o seu!
 1368:Levantar a âncora, companheiros! Lá vamos nós!
 1370:Virem ela, companheiros! Estamos voltando!
@@ -577,7 +577,7 @@
 1479:ATQ
 1480:DEF
 1481:SORTE
-1482:Ouro
+1482:Moedas
 1485:Sem Itens
 1488:Sem MP suficiente!
 1489:Todos
@@ -607,8 +607,8 @@
 1518:Configurações de Idioma
 1519:Configurações de Vídeo
 1524:Licenças de Terceiros
-1526:Comprar  %d por %d ouro
-1527:Vender  %d por %d ouro
+1526:Comprar  %d por %d moedas
+1527:Vender  %d por %d moedas
 1532:Armadura
 1535:COMPRAS
 1536:VENDAS
@@ -660,10 +660,10 @@
 1611:Meu pai era um Homem Poderoso, o pai DELE era um Homem Poderoso!
 1612:A Rainha está lá em cima.
 1613:A Sala do Trono é por aqui!
-1614:*tosse* Sua Majestade...$*tosse* Sou eu!
+1614:*ronco* Sua Majestade...$*ronco* Sou eu!
 1615:Você tá indo para as montanhas? Corajoso!
 1616:Você tá indo para as montanhas? Corajoso!^Até porque você não conhece o Ômega Curador...
-1617:*Tosse*$*murmúrio* Feiticeiro...$...demônios *Tosse*
+1617:*ronco*$*murmúrio* Feiticeiro...$...demônios *ronco*
 1618:Estou sentindo como se... estivesse partindo...
 1619:A vida de marinheiro é o que me resta!
 1620:Há peixes grandes e poderosos nas profundezas!
