@@ -58,6 +58,7 @@ struct Joystick {
 	SDL_HapticEffect haptic_effect;
 	int haptic_effect_id;
 #endif
+	SDL_GameController *gc;
 	REPEAT_VEC joystick_repeats;
 };
 
@@ -173,12 +174,13 @@ static void check_joysticks()
 			if (joysticks[i].haptic) {
 				SDL_HapticClose(joysticks[i].haptic);
 			}
-			SDL_JoystickClose(joysticks[i].joy);
+			SDL_GameControllerClose(joysticks[i].gc);
 		}
 		joysticks.clear();
 		for (int i = 0; i < num_joysticks; i++) {
 			Joystick j;
-			j.joy = SDL_JoystickOpen(i);
+			j.gc = SDL_GameControllerOpen(i);
+			j.joy = SDL_GameControllerGetJoystick(j.gc);
 #ifdef TVOS
 			// Ignore joystick input from Siri Remote (still get keys)
 			if (SDL_JoystickNumButtons(j.joy) <= 3) { // Siri Remote has 3 buttons
@@ -276,8 +278,8 @@ void reset()
 		if (j.haptic) {
 		       SDL_HapticClose(j.haptic);
 		}
-		if (j.joy) {
-			SDL_JoystickClose(j.joy);
+		if (j.gc) {
+			SDL_GameControllerClose(j.gc);
 		}
 	}
 
@@ -660,28 +662,9 @@ void rumble(float strength, Uint32 length)
 		for (size_t i = 0; i < joysticks.size(); i++) {
 			Joystick &j = joysticks[i];
 
-			if (j.haptic) {
-#if USE_CONSTANT_RUMBLE
-				if (j.haptic_effect_id < 0) {
-					util::infomsg("Haptic effect was not supported and not created.\n");
-				}
-				else {
-					j.haptic_effect.constant.level = 0x7fff * strength;
-					j.haptic_effect.constant.length = length;
-					SDL_HapticUpdateEffect(j.haptic, j.haptic_effect_id, &j.haptic_effect);
-					SDL_HapticRunEffect(j.haptic, j.haptic_effect_id, 1);
-				}
-#else
-				if (SDL_HapticRumbleSupported(j.haptic)) {
-					if (SDL_HapticRumblePlay(j.haptic, strength, length) != 0) {
-						util::infomsg("Error playing rumble effect!\n");
-						return;
-					}
-				}
-				else {
-					util::infomsg("Rumble not supported by haptic device\n");
-				}
-#endif
+			//SDL_GameControllerRumble(j.gc, strength*0xffff, strength*0xffff, length);
+			if (j.gc) {
+				SDL_GameControllerRumble(j.gc, 0x7777, 0x7777, length);
 			}
 		}
 	}
