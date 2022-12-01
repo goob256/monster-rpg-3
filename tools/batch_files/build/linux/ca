@@ -9,7 +9,7 @@ PI=0
 if uname -a | grep raspberry > /dev/null ; then
 	USER_INCLUDE_PATH=""
 else
-	USER_INCLUDE_PATH="~/code/Monster_RPG_3/origdata/libs/include;/usr/include/SDL2;"
+	USER_INCLUDE_PATH="~/code/monster-rpg-3/origdata/libs/include;/usr/include/SDL2;"
 fi
 
 while [ "${1-}" ] ; do
@@ -46,27 +46,27 @@ M3_FLAGS="$FLAGS $M3_FLAGS"
 
 pushd . > /dev/null
 
-cd ~/code
+cd ~/code/monster-rpg-3
 cd tgui3
 rm -rf build
 mkdir build
 cd build
-cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH~/code/Nooskewl_Shim/external/SDL2_ttf-2.0.14" $TGUI3_FLAGS
+cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH~/code/monster-rpg-3/Nooskewl_Shim/external/SDL2_ttf-2.0.14" $TGUI3_FLAGS
 cd ../../Nooskewl_Shim
 rm -rf build
 mkdir build
 cd build
-cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH/usr/include/freetype2;~/code/Nooskewl_Shim/external/SDL2_ttf-2.0.14;~/code/tgui3/include" -DUSER_LIBRARY_PATH="~/code/tgui3/build" $SHIM_FLAGS
+cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH/usr/include/freetype2;~/code/monster-rpg-3/Nooskewl_Shim/external/SDL2_ttf-2.0.14;~/code/monster-rpg-3/tgui3/include" -DUSER_LIBRARY_PATH="~/code/monster-rpg-3/tgui3/build" $SHIM_FLAGS
 cd ../../Nooskewl_Wedge
 rm -rf build
 mkdir build
 cd build
-cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH~/code/Nooskewl_Shim/external/SDL2_ttf-2.0.14;~/code/tgui3/include;~/code/Nooskewl_Shim/include" -DUSER_LIBRARY_PATH="~/code/tgui3/build;~/code/Nooskewl_Shim/build" $WEDGE_FLAGS
-cd ../../Monster_RPG_3
+cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH~/code/monster-rpg-3/Nooskewl_Shim/external/SDL2_ttf-2.0.14;~/code/monster-rpg-3/tgui3/include;~/code/monster-rpg-3/Nooskewl_Shim/include" -DUSER_LIBRARY_PATH="~/code/monster-rpg-3/tgui3/build;~/code/monster-rpg-3/Nooskewl_Shim/build" $WEDGE_FLAGS
+cd ../..
 rm -rf build
 mkdir build
 cd build
-#cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH~/code/SDL2-2.0.6-installed/include;~/code/Nooskewl_Shim/external/SDL2_ttf-2.0.14;~/code/tgui3/include;~/code/Nooskewl_Shim/include;~/code/Nooskewl_Wedge/include;/home/trent/code/third_party/steamworks/public" -DUSER_LIBRARY_PATH="~/code/tgui3/build;~/code/Nooskewl_Shim/build;~/code/Nooskewl_Wedge/build;/home/trent/code/third_party/steamworks/redistributable_bin/linux32" $M3_FLAGS
-cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH~/code/Nooskewl_Shim/external/SDL2_ttf-2.0.14;~/code/tgui3/include;~/code/Nooskewl_Shim/include;~/code/Nooskewl_Wedge/include" -DUSER_LIBRARY_PATH="~/code/tgui3/build;~/code/Nooskewl_Shim/build;~/code/Nooskewl_Wedge/build" $M3_FLAGS
+#cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH~/code/SDL2-2.0.6-installed/include;~/code/monster-rpg-3/Nooskewl_Shim/external/SDL2_ttf-2.0.14;~/code/monster-rpg-3/tgui3/include;~/code/monster-rpg-3/Nooskewl_Shim/include;~/code/monster-rpg-3/Nooskewl_Wedge/include;/home/trent/code/third_party/steamworks/public" -DUSER_LIBRARY_PATH="~/code/monster-rpg-3/tgui3/build;~/code/monster-rpg-3/Nooskewl_Shim/build;~/code/monster-rpg-3/Nooskewl_Wedge/build;/home/trent/code/third_party/steamworks/redistributable_bin/linux32" $M3_FLAGS
+cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH~/code/monster-rpg-3/Nooskewl_Shim/external/SDL2_ttf-2.0.14;~/code/monster-rpg-3/tgui3/include;~/code/monster-rpg-3/Nooskewl_Shim/include;~/code/monster-rpg-3/Nooskewl_Wedge/include" -DUSER_LIBRARY_PATH="~/code/monster-rpg-3/tgui3/build;~/code/monster-rpg-3/Nooskewl_Shim/build;~/code/monster-rpg-3/Nooskewl_Wedge/build" $M3_FLAGS
 
 popd > /dev/null

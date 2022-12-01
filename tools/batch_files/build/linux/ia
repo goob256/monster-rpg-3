@@ -4,14 +4,11 @@ cd ~/code
 #cp tgui3/build/lib* m3
 #cp Nooskewl_Shim/build/lib* m3
 #cp Nooskewl_Wedge/build/lib* m3
-cp Monster_RPG_3/build/MonsterRPG3 m3
+cp monster-rpg-3/build/MonsterRPG3 m3
 strip "m3/MonsterRPG3"
-#cp -a Monster_RPG_3/data m3
-cp "Monster_RPG_3/docs/3rd_party.html" m3
-cp Monster_RPG_3/docs/manual_english.html m3
-cp Monster_RPG_3/docs/manual_french.html m3
-cp Monster_RPG_3/docs/manual_spanish.html m3
-cp Monster_RPG_3/origdata/MonsterRPG3.png m3
-cd Monster_RPG_3/data
-sh ../../Nooskewl_Shim/tools/cpa/mkcpa.sh ../../m3/data.cpa
+#cp -a monster-rpg-3/data m3
+cp "monster-rpg-3/docs/3rd_party.html" m3
+cp monster-rpg-3/origdata/MonsterRPG3.png m3
+cd monster-rpg-3/data
+sh ../Nooskewl_Shim/tools/cpa/mkcpa.sh ../../m3/data.cpa
 cd $CWD

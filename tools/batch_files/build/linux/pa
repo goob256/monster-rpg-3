@@ -7,6 +7,6 @@ cd ../Nooskewl_Shim
 git pull --rebase
 cd ../Nooskewl_Wedge
 git pull --rebase
-cd ../Monster_RPG_3
+cd ../monster-rpg-3
 git pull --rebase
 cd $CWD
