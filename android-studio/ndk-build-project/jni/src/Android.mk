@@ -9,7 +9,7 @@ TGUI3_PATH := ../../../../tgui3
 SHIM_PATH := ../../../../Nooskewl_Shim
 WEDGE_PATH := ../../../../Nooskewl_Wedge
 M3_PATH := ../../../../../monster-rpg-3
-ANDROID_DIR := ../../../../../android.m3-m2-cp
+ANDROID_DIR := ../../../../../android.older
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_PATH)/include \
 	$(LOCAL_PATH)/$(TGUI3_PATH)/include \
