@@ -7,7 +7,7 @@ The fonts are not covered by the Monster RPG 3 license and should not be
 reused.
 
 All of the graphics in data/ have the palettes removed. You can load the
-palette from data/palettes when you load a image and it will work (tested
+palette from data/gfx/palettes when you load a image and it will work (tested
 only in Aseprite.)
 
 One of my goals with Monster RPG 3 was to ship the smallest game I could.
